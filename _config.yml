@@ -2,7 +2,7 @@
 title: SajanBasnet Blogs
 description: Blog from Sajan Basnet
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://developerblogs.github.io/"
 
 # User settings
 username: Sajan Basnet
@@ -15,6 +15,6 @@ email: sajanbasnet75@gmail.com
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-172425420-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
