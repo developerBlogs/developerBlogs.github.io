@@ -6,7 +6,7 @@
     <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
-    <h3><a class="blog-link" href="/blog/01/2020/07/12/welcome.html">Ruby On Rails Api Only App</a> </h3>
+    <h3><a class="blog-link" href="{{paginator.posts.first.url}}">{{paginator.posts.first.title}}</a> </h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat <a class="blog-link" href="/blog/01/2020/07/12/welcome.html"><strong>read more...</strong></a></p>
   </div>
 </div>
@@ -15,7 +15,7 @@
     <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
   </div>
   <div class="contents-right">
-    <h3> <a class="blog-link" href="/blog/01/2020/07/12/welcome.html">How I Got My First Job as Software Engineer</a> </h3>
+    <h3> <a class="blog-link" href="{{paginator.posts.last.url}}">{{paginator.posts.last.title}}</a> </h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat <a class="blog-link" href="/blog/01/2020/07/12/welcome.html"><strong>read more...</strong></a></p></p>
   </div>
 </div>
