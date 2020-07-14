@@ -3,6 +3,8 @@ title: SajanBasnet Blogs
 description: Blog from Sajan Basnet
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 url: "https://developerblogs.github.io/"
+disqus_shortname: developerblogs
+
 
 # User settings
 username: Sajan Basnet
@@ -18,3 +20,16 @@ google-analytics:
   id: "UA-172425420-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
+
+baseurl: ""
+
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: "/page/:num/"
+
+markdown: kramdown
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-gist
+  - jekyll-debug

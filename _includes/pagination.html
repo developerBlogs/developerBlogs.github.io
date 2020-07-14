@@ -1,0 +1,38 @@
+{% if paginator.total_pages > 1 %}
+<div class="container">
+  <div class="row">
+    {% assign url = site.baseurl | append: "/blogs/" %}
+    <div class="col-4">
+      {% if paginator.previous_page %}
+      {% if paginator.previous_page > 1 %}
+        {% assign prev = 'page/' | append: paginator.previous_page %}
+      {% endif %}
+      <!-- Pager -->
+      <div class="clearfix">
+        <span><a class="btn btn-primary float-right" href="{{ url | append: prev }}">&#8668; Previous Posts </a></span>
+      </div>
+      {% else %}
+        <div class="clearfix">
+          <span><a class="btn btn-primary float-right disabled" href="{{ url | append: prev }}"> &#8668; Previous Posts</a></span>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="col-4">
+      <span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span>
+    </div>
+    
+    <div class="col-4">
+      {% if paginator.next_page %}
+      <div class="clearfix">
+        <span><a class="btn btn-primary float-right" href="{{ url | append: 'page/' | append: paginator.next_page }}">Next Posts &#8669;</a></span>
+      </div>
+      {% else %}
+        <div class="clearfix">
+          <span><a class="btn btn-primary float-right disabled" href="{{ url | append: 'page/' | append: paginator.next_page }}">Next Posts &#8669;</a></span>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
