@@ -22,11 +22,14 @@ google-analytics:
 exclude: ['package.json', 'src' , 'node_modules']
 
 baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
 markdown: kramdown
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-gist
   - jekyll-debug

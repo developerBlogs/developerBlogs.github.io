@@ -1,0 +1,13 @@
+---
+layout: blog-list
+pagination:
+  enabled: true
+---
+
+<ol class="posts">
+    {% for post in paginator.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+    {% endfor %}
+  </ol>
+
+{% include pagination.html %}
