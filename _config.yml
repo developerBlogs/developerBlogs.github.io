@@ -23,13 +23,15 @@ exclude: ['package.json', 'src' , 'node_modules']
 
 baseurl: ""
 
-pagination:
-  enabled: true
-  per_page: 6
-  permalink: "/page/:num/"
+paginate: 6
+paginate_path: "/blogs/page/:num/"
+# pagination:
+#   enabled: true
+#   per_page: 6
+#   permalink: "/page/:num/"
 
 markdown: kramdown
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-gist
   - jekyll-debug
