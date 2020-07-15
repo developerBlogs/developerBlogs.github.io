@@ -1,38 +1,39 @@
+
 {% if paginator.total_pages > 1 %}
-<div class="container">
-  <div class="row">
+  <div class="d-flex flex-row justify-content-between">
     {% assign url = site.baseurl | append: "/blogs/" %}
-    <div class="col-4">
+    <div class="">
       {% if paginator.previous_page %}
       {% if paginator.previous_page > 1 %}
-        {% assign prev = 'page/' | append: paginator.previous_page %}
+      {% assign prev = 'page/' | append: paginator.previous_page %}
       {% endif %}
       <!-- Pager -->
-      <div class="clearfix">
-        <span><a class="btn btn-primary float-right" href="{{ url | append: prev }}">&#8668; Previous Posts </a></span>
+      <div class="">
+        <span><a class="btn btn-primary" href="{{ url | append: prev }}">&#8668; Previous </a></span>
       </div>
       {% else %}
-        <div class="clearfix">
-          <span><a class="btn btn-primary float-right disabled" href="{{ url | append: prev }}"> &#8668; Previous Posts</a></span>
-        </div>
+      <div class="">
+        <span><a class="btn btn-primary disabled bg-light text-dark" href="{{ url | append: prev }}"> &#8668; Previous</a></span>
+      </div>
       {% endif %}
     </div>
 
-    <div class="col-4">
-      <span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span>
+    <div class="align-self-center">
+      <span class="page-number"><strong>{{paginator.page}} of {{paginator.total_pages}}</strong></span>
     </div>
-    
-    <div class="col-4">
+
+    <div class="">
       {% if paginator.next_page %}
-      <div class="clearfix">
-        <span><a class="btn btn-primary float-right" href="{{ url | append: 'page/' | append: paginator.next_page }}">Next Posts &#8669;</a></span>
+      <div class="">
+        <span><a class="btn btn-primary" href="{{ url | append: 'page/' | append: paginator.next_page }}">Next
+            &#8669;</a></span>
       </div>
       {% else %}
-        <div class="clearfix">
-          <span><a class="btn btn-primary float-right disabled" href="{{ url | append: 'page/' | append: paginator.next_page }}">Next Posts &#8669;</a></span>
-        </div>
+      <div class="clearfix">
+        <span><a class="btn btn-primary float-right disabled"
+            href="{{ url | append: 'page/' | append: paginator.next_page }}">Next &#8669;</a></span>
+      </div>
       {% endif %}
     </div>
   </div>
-</div>
 {% endif %}

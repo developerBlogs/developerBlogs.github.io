@@ -1,28 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-<link rel="stylesheet" href="{{ "/assets/css/all.min.css" | prepend: site.baseurl }}">
+{%- include head.html -%}
+<link rel="stylesheet" href="{{ "/assets/css/bootstrap.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ "/assets/css/clean-blog.min.css" | prepend: site.baseurl }}">
 <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<body>
-  <!-- Page Header -->
-  <div class="container-fluid nav" style="background-color: #1a222c; padding-bottom: 45px;">
-    <!-- <div class="overlay"></div> -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
-          <div class="site-heading">
-            <h1 style="color: snow;">My Blogs</h1>
-            <span class="subheading" style="color: mintcream;">Hope it helps</span>
-          </div>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<style>
+  p {
+    line-height: 1.5;
+    margin: 1px 0;
+}
+</style>
+<!-- Page Header -->
+<div class="nav" style="background-color: #1a222c; padding-bottom: 45px;">
+  <!-- <div class="overlay"></div> -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+        <div class="site-heading" style="padding-top: 32px;">
+          <h1 style="color: snow;">Dev Blogs</h1>
+          <span class="subheading" style="color: mintcream;">Happy To Help</span>
         </div>
       </div>
     </div>
   </div>
-  {{content}}
-  <hr>
-  <!-- Footer -->
-  {% include footer.html %}
-</body>
-</html>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      {% for post in paginator.posts %}
+      <div class="post-preview">
+        <a href="{{ post.url }}">
+          <h2 class="post-title blog-links">
+            {{ post.title }}
+          </h2>
+          <h3 class="post-subtitle blog-links">
+            {{ post.excerpt }}
+          </h3>
+        </a>
+        <p class="post-meta">Posted by
+          <a href={{site.url}}>Sajan Basnet</a>
+          {{ post.date | date_to_string }}</p>
+      </div>
+      <hr>
+      {% endfor %}
+      {% include pagination.html %}
+    </div>
+  </div>
+</div>
+{%- include footer.html -%}
