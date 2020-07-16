@@ -10,17 +10,34 @@
     line-height: 1.5;
     margin: 1px 0;
   }
-  h1, h2, h3, h4, stong {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  stong {
     margin-top: 1em;
     padding-top: 10px;
     line-height: 1.25;
     color: #333;
-}
-@media only screen and (max-width: 768px) {
-  p{
-      font-size: 20px;
   }
-}
+  .foot-text{
+      font-size: 18px;
+    }
+    .foot{
+      padding: 20px;
+    }
+  @media only screen and (max-width: 768px) {
+    p {
+      font-size: 20px;
+    }
+    .foot-text{
+      font-size: 14px;
+    }
+    .foot{
+      padding: 20px;
+    }
+  }
 </style>
 <!-- Page Header -->
 <div class="nav" style="background-color: #1a222c; padding-bottom: 45px;">
@@ -62,4 +79,8 @@
   </div>
 </div>
 </div>
-{%- include footer.html -%}
+<footer class="footer foot">
+  <!-- <p>&copy; {{site.username}}</p> -->
+  <span class="foot-text">Built with Jekyll and <span class="love">❤</span> by <a href="https://github.com/sajanbasnet75">Sajan Basnet</a></span>
+</footer>
+{% include google-analytics.html %}

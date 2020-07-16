@@ -10,11 +10,23 @@
     font-size: 24px;
     color: #212529;
     font-family: Lora,'Times New Roman',serif;
-}
+  }
+  .foot-text{
+      font-size: 18px;
+    }
+    .foot{
+      padding: 20px;
+    }
 @media only screen and (max-width: 768px) {
   p{
       font-size: 20px;
   }
+  .foot-text{
+      font-size: 14px;
+    }
+    .foot{
+      padding: 15px;
+    }
 }
 </style>
 <!-- Navigation -->
@@ -78,4 +90,8 @@
     </div>
   </div>
 </article>
-{% include footer.html %}
+<footer class="footer foot">
+  <!-- <p>&copy; {{site.username}}</p> -->
+  <span class="foot-text">Built with Jekyll and <span class="love">❤</span> by <a href="https://github.com/sajanbasnet75">Sajan Basnet</a></span>
+</footer>
+{% include google-analytics.html %}
