@@ -9,6 +9,17 @@
   p {
     line-height: 1.5;
     margin: 1px 0;
+  }
+  h1, h2, h3, h4, stong {
+    margin-top: 1em;
+    padding-top: 10px;
+    line-height: 1.25;
+    color: #333;
+}
+@media only screen and (max-width: 768px) {
+  p{
+      font-size: 20px;
+  }
 }
 </style>
 <!-- Page Header -->
@@ -49,5 +60,6 @@
       {% include pagination.html %}
     </div>
   </div>
+</div>
 </div>
 {%- include footer.html -%}
