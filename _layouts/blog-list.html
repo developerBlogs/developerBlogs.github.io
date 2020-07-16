@@ -9,6 +9,7 @@
   p {
     line-height: 1.5;
     margin: 1px 0;
+    font-size: 24px;
   }
 
   h1,
@@ -21,20 +22,33 @@
     line-height: 1.25;
     color: #333;
   }
-  .foot-text{
-      font-size: 18px;
-    }
-    .foot{
-      padding: 20px;
-    }
+
+  .foot-text {
+    font-size: 18px;
+  }
+
+  .foot {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
   @media only screen and (max-width: 768px) {
     p {
       font-size: 20px;
     }
-    .foot-text{
+
+    .foot-text {
       font-size: 14px;
     }
-    .foot{
+
+    .foot {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
       padding: 20px;
     }
   }
@@ -58,6 +72,16 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
+      {% assign psize = site.posts | size %}
+      {% if psize == 0 %}
+      <div class="text-center">
+        <img class="img-fluid rounded mx-auto d-block"
+          src="https://image.freepik.com/free-vector/construction-graphic_45678-169.jpg" alt="">
+      </div>
+      <div class="text-center">
+        <h5 class="">Sorry!!! No Post available yet</h5>
+      </div>
+      {% else %}
       {% for post in paginator.posts %}
       <div class="post-preview">
         <a href="{{ post.url }}">
@@ -75,12 +99,14 @@
       <hr>
       {% endfor %}
       {% include pagination.html %}
+      {% endif %}
     </div>
   </div>
 </div>
 </div>
 <footer class="footer foot">
   <!-- <p>&copy; {{site.username}}</p> -->
-  <span class="foot-text">Built with Jekyll and <span class="love">❤</span> by <a href="https://github.com/sajanbasnet75">Sajan Basnet</a></span>
+  <span class="foot-text">Built with Jekyll and <span class="love">❤</span> by <a
+      href="https://github.com/sajanbasnet75">Sajan Basnet</a></span>
 </footer>
 {% include google-analytics.html %}
