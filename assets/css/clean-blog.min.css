@@ -194,7 +194,7 @@ header.masthead .site-heading .subheading {
     }
 }
 header.masthead .post-heading h1 {
-    font-size: 35px;
+    font-size: 30px;
 }
 header.masthead .post-heading .meta,
 header.masthead .post-heading .subheading {
@@ -202,13 +202,13 @@ header.masthead .post-heading .subheading {
     display: block;
 }
 header.masthead .post-heading .subheading {
-    font-size: 24px;
+    font-size: 27px;
     font-weight: 600;
-    margin: 10px 0 30px;
+    margin: 2px 0 30px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 header.masthead .post-heading .meta {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 300;
     font-style: italic;
     font-family: Lora, "Times New Roman", serif;
@@ -219,9 +219,6 @@ header.masthead .post-heading .meta a {
 @media only screen and (min-width: 768px) {
     header.masthead .post-heading h1 {
         font-size: 55px;
-    }
-    header.masthead .post-heading .subheading {
-        font-size: 30px;
     }
 }
 .post-preview {
@@ -276,9 +273,9 @@ header.masthead .post-heading .meta a {
 
 .post_title{
     margin-bottom: -0.28em;
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: -0.022em;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .post_subtitle > p{
@@ -295,6 +292,32 @@ header.masthead .post-heading .meta a {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    color: #495057;
+}
+
+@media only screen and (max-width: 768px) {
+    .post_subtitle > p{
+        margin-top: 1.11em;
+        font-size: 16px;
+        margin-bottom: -0.46em;
+        font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+        letter-spacing: -0.003em;
+        line-height: 28px;
+        word-break: break-word;
+        font-weight: 400;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        color: #495057;
+    }
+    .post_title{
+      margin-bottom: -0.28em;
+      font-size: 24px;
+      letter-spacing: -0.022em;
+      font-weight: 900;
+  }
 }
 
 .posted-by{

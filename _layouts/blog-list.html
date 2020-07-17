@@ -17,10 +17,11 @@
   h3,
   h4,
   stong {
+    font-size: 22px;
     margin-top: 1em;
     padding-top: 10px;
     line-height: 1.25;
-    color: #333;
+    color: #495057;
   }
 
   .foot-text {
@@ -37,7 +38,7 @@
 
   @media only screen and (max-width: 768px) {
     p {
-      font-size: 20px;
+      font-size: 15px;
     }
 
     .foot-text {
@@ -50,6 +51,19 @@
       left: 0;
       width: 100%;
       padding: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    stong {
+      margin-top: 1em;
+      padding-top: 10px;
+      line-height: 1.25;
+      color: #495057;
+      font-size: 19px;
+      font-weight: 600;
     }
   }
 </style>
@@ -87,6 +101,9 @@
           <span class="post_title blog-links">
             {{ post.title }}
           </span>
+          <span class="post_title blog-links">
+            &nbsp- {{ post.subtitle }}
+          </span>
           <span class="post_subtitle blog-links">
             {{ post.excerpt }}
           </span>
@@ -104,7 +121,7 @@
 </div>
 <footer class="footer foot">
   <!-- <p>&copy; {{site.username}}</p> -->
-  <span class="foot-text">Built with Jekyll and <span class="love"><i class="fa fa-heart" aria-hidden="true"></i></span> by <a
-      href="https://developerblogs.github.io/">Sajan Basnet</a></span>
+  <span class="foot-text">Built with Jekyll and <span class="love"><i class="fa fa-heart" aria-hidden="true"></i></span>
+    by <a href="https://developerblogs.github.io/">Sajan Basnet</a></span>
 </footer>
 {% include google-analytics.html %}

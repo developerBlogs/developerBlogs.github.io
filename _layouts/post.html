@@ -6,28 +6,53 @@
     line-height: 1.5;
     margin: 30px 0;
   }
+
   .post-font {
     font-size: 24px;
     color: #212529;
-    font-family: Lora,'Times New Roman',serif;
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
   }
-  .foot-text{
+
+  .foot-text {
+    font-size: 18px;
+  }
+
+  .foot {
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    p {
       font-size: 18px;
     }
-    .foot{
-      padding: 20px;
-    }
-@media only screen and (max-width: 768px) {
-  p{
-      font-size: 20px;
-  }
-  .foot-text{
+
+    .foot-text {
       font-size: 14px;
     }
-    .foot{
+
+    .foot {
       padding: 15px;
     }
-}
+
+    h1,
+    h2,
+    h3,
+    h4,
+    stong {
+      margin-top: 1em;
+      padding-top: 10px;
+      line-height: 1.25;
+      color: #495057;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .post-font {
+      font-size: 17px;
+      color: #212529;
+      font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+  }
 </style>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -44,10 +69,10 @@
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-heading">
           <h1 style="color: snow;">{{ page.title }}</h1>
-          <!-- <h2 class="subheading" style="color: whitesmoke;">{{post.subtitle}}</h2> -->
+          <h2 class="subheading" style="color: whitesmoke;">{{page.subtitle}}</h2>
           <span class="meta">
             <p class="post-meta">Posted by
-              <a href={{site.url}}>Sajan Basnet</a>&nbsp;{{ page.date | date_to_string }}</p>
+              <a href={{site.url}}>Sajan Basnet</a>&nbsp;{{ page.date | date_to_string }}</p></span>
         </div>
       </div>
     </div>
@@ -59,9 +84,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <p>
           {{ content }}
-        </p>
       </div>
     </div>
     <hr>
@@ -91,6 +114,7 @@
   </div>
 </article>
 <footer class="footer foot">
-  <span class="foot-text">Built with Jekyll and <span class="love"><i class="fa fa-heart" aria-hidden="true"></i></span>by <a href="https://developerblogs.github.io">Sajan Basnet</a></span>
+  <span class="foot-text">Built with Jekyll and <span class="love"><i class="fa fa-heart"
+        aria-hidden="true"></i></span>by <a href="https://developerblogs.github.io">Sajan Basnet</a></span>
 </footer>
 {% include google-analytics.html %}
