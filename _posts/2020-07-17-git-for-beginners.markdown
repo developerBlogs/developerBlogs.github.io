@@ -70,8 +70,7 @@ Indeed, git is good. It lets you jump to any version of your project easily with
 No matter how big or small the changes is you just dont want to mess up the present stable code. So with git you can just create a new feature branch and start working in it without changing you old code which lies in master branch.
 
 ### 5. You will end up needing git eventually.
-There might be no any software companies out their who will not be using any version control system. So, its better to learn git before being hired to a company and have more chance to get hired.
+There might be no any software companies out their who will not be using any version control system. So, its better to learn git before being hired to a company and have more chance to get hiredN
 
-
-Head out to the next section where you can learn **"How To Use Git?"**.
+Next section is ***comming soon*** where you can learn **"How To Use Git?"**.
 
