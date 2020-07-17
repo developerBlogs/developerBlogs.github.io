@@ -60,7 +60,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
         <div class="site-heading" style="">
-          <h2 style="color: snow; margin: 0px; padding: 10px">Dev Blogs</h2>
+          <h2 style="color: snow; margin: 0px; padding: 10px;">DevBlogs</h2>
         </div>
       </div>
     </div>
@@ -84,18 +84,17 @@
       {% for post in paginator.posts %}
       <div class="post-preview">
         <a href="{{ post.url }}">
-          <h2 class="post-title blog-links">
+          <span class="post_title blog-links">
             {{ post.title }}
-          </h2>
-          <h3 class="post-subtitle blog-links">
+          </span>
+          <span class="post_subtitle blog-links">
             {{ post.excerpt }}
-          </h3>
+          </span>
         </a>
-        <p class="post-meta">Posted by
-          <a href={{site.url}}>Sajan Basnet</a>
+        <p class="post-meta posted-by">
+          <a href={{site.url}} class="text-muted">Sajan Basnet,</a>
           {{ post.date | date_to_string }}</p>
       </div>
-      <hr>
       {% endfor %}
       {% include pagination.html %}
       {% endif %}

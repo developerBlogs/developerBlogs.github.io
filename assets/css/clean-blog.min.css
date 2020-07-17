@@ -224,6 +224,18 @@ header.masthead .post-heading .meta a {
         font-size: 30px;
     }
 }
+.post-preview {
+    font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(230, 230, 230);
+    border-image: initial;
+    border-radius: 5px;
+    box-shadow: rgb(230, 230, 230) 0px 1px 4px;
+    padding: 23px 14px;
+    margin: 10px auto 24px auto;
+    background-color: rgba(255, 255, 255, 1)
+}
 .post-preview > a {
     color: #212529;
 }
@@ -242,14 +254,14 @@ header.masthead .post-heading .meta a {
     margin: 0 0 10px;
 }
 .post-preview > .post-meta {
-    font-size: 18px;
-    font-style: italic;
+    font-size: 16px;
     margin-top: 0;
     color: #868e96;
 }
 .post-preview > .post-meta > a {
     text-decoration: none;
     color: #212529;
+    font-size: 16px;
 }
 .post-preview > .post-meta > a:focus,
 .post-preview > .post-meta > a:hover {
@@ -261,6 +273,34 @@ header.masthead .post-heading .meta a {
         font-size: 36px;
     }
 }
+
+.post_title{
+    margin-bottom: -0.28em;
+    font-size: 25px;
+    letter-spacing: -0.022em;
+    font-weight: 600;
+}
+
+.post_subtitle > p{
+    margin-top: 1.11em;
+    font-size: 20px;
+    margin-bottom: -0.46em;
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    letter-spacing: -0.003em;
+    line-height: 28px;
+    word-break: break-word;
+    font-weight: 400;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.posted-by{
+    font-style: normal;
+}
+
 .floating-label-form-group {
     font-size: 14px;
     position: relative;
