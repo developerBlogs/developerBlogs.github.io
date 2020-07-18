@@ -17,12 +17,9 @@ A project can have many versions like this with continous changes to it. So, we 
 
 Git is one of many version control system and the most preferable one by many people.
 
-####  1. Easy Distribution of your Project.<br/>
+####  1. Easy Distribution of your Project
 
-        Chong: Hey man what's you doing?
-        Cheech: I am creating a zip file for my latest code and sharing it to my friends.
-        Chong: What? Why? Dont you know about version control system such as Git?
-        Cheech: No, whats that?
+<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git01.png">
 
 Thats right, if you dont know anything about Version Control System this might be how you are sharing or distributing the latest version of your project with your friends or team members. 
 
@@ -37,12 +34,9 @@ You dont have to go through all the hassle and trouble like zipping your project
 You just need to type some few easy commands and you have pushed/uploaded your latest version of the project into Github or Bitbucket.
 Simillarly your teammates also just need to write a git command to pull/download this latest version to their local sytem.
 
-### 2. Resolve conflicts.<br/>
+### 2. Resolve conflicts
 
-    Chong: Hey man whats wrong?
-    Cheech: One of my team just changed the same file I was working on and now
-             we dont know which one should we keep and which one to delete.
-    Chong: See, I told you to use Git. There would have been no any such problems.
+<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git02.png">
 
 If you have a team working on a same project, then there can come many cases where more than one person are editing the same file.
 
@@ -52,22 +46,13 @@ Using Git will resolves such issues. It gives you features where you can keep th
 
 ### 3. You can revert and go back to older version of your code.
 
-    Cheech: Hey man, can you help me ?
-    Chong: Sure, man what's the problem?
-    Cheech: We have been working on this project and the latest version was unnecessary now we want to go
-            back to the old version of the project. So I have to find and delete every unnecessary
-            changes now.Is there any easy way? 
-    Chong: Yes, Git is the easy way. Git is goooood.
+<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git003.png">
 
 Indeed, Git is good. It lets you jump to any version of your project easily with out any problems at all.
 
 ### 4. Branches for your features. 
 
-    Cheech: Hey man, can you help me ?
-    Chong: Sure, man what's the problem?
-    Cheech: I want to add this new feature on the project but i dont want to keep the copy of my present 
-            project somewhere safe.
-    Chong: Dude are you saying me you are still not using Git? Whats wrong with you?
+<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git04.png">
 
 No matter how big or small the changes is you just dont want to mess up the present stable code. So with Git you can just create a new feature branch and start working in it without changing your old code which lies in master branch.
 
