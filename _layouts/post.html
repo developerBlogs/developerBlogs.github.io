@@ -1,6 +1,6 @@
 {%- include head.html -%}
-<link rel="stylesheet" href="{{ "/assets/css/bootstrap.css" | prepend: site.baseurl }}">
-<link rel="stylesheet" href="{{ "/assets/css/clean-blog.min.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href={% link /assets/css/bootstrap.css %}>
+<link rel="stylesheet" href={% link /assets/css/clean-blog.min.css %}>
 <style>
   p {
     line-height: 1.5;
@@ -19,6 +19,17 @@
 
   .foot {
     padding: 20px;
+  }
+
+  .section-nav {
+    margin: 5px 0;
+    padding: 10px 0px;
+    color: white;
+    text-decoration: underline;
+  }
+  blockquote{
+    color: rgba(117, 117, 117, 1);
+    font-style: normal;
   }
 
   @media only screen and (max-width: 768px) {
@@ -42,7 +53,7 @@
       margin-top: 1em;
       padding-top: 10px;
       line-height: 1.25;
-      color: #495057;
+      color: #212529;
       font-size: 22px;
       font-weight: 600;
     }
@@ -72,7 +83,8 @@
           <h2 class="subheading" style="color: whitesmoke;">{{page.subtitle}}</h2>
           <span class="meta">
             <p class="post-meta">Posted by
-              <a href={{site.url}}>Sajan Basnet</a>&nbsp;{{ page.date | date_to_string }}</p></span>
+              <a href={{site.url}}>Sajan Basnet</a>&nbsp;{{ page.date | date_to_string }}</p>
+          </span>
         </div>
       </div>
     </div>
@@ -84,7 +96,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-          {{ content }}
+        <div class="" aria-label="Table of Contents">
+          {{ content | toc_only }}
+        </div>
+        {{ content }}
       </div>
     </div>
     <hr>
@@ -114,7 +129,7 @@
   </div>
 </article>
 <footer class="footer foot">
-  <span class="foot-text">Made with <span class="love"><i class="fa fa-heart"
-        aria-hidden="true"></i></span>by <a href="https://developerblogs.github.io">Sajan Basnet</a></span>
+  <span class="foot-text">Made with <span class="love"><i class="fa fa-heart" aria-hidden="true"></i></span> by <a
+      href="https://developerblogs.github.io">Sajan Basnet</a></span>
 </footer>
 {% include google-analytics.html %}

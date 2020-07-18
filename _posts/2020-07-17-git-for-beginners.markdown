@@ -4,7 +4,8 @@ title:  "Getting Started With Git"
 subtitle: "Chapter One"
 excerpt_separator: <!--more-->
 date: '2020-07-17'
-categories: git chapter 1 
+categories: git chapter 1
+summary: In this chapter we will learn what is a version control system, what the heck is Git and why we should use it in our projects.
 ---
 
 # What is Git and Why Use it?
@@ -56,8 +57,10 @@ Indeed, Git is good. It lets you jump to any version of your project easily with
 
 No matter how big or small the changes is you just dont want to mess up the present stable code. So with Git you can just create a new feature branch and start working in it without changing your old code which lies in master branch.
 
+Its just like creating a copy of you project and editing on that copied version without touching or editing the original project.
+
 ### 5. You will end up needing Git eventually.
 
 There might be no any software companies out their who will not be using any version control system. So, its better to learn git before being hired to a company and have more chance to get hired.
 
-Next section is ***comming soon*** where you can learn **"How To Use Git?"**.
+Head out to the next section where you can learn **"How To Use Git?"**.

@@ -188,7 +188,7 @@
   pre {
     margin-top: 0;
     margin-bottom: 1rem;
-    overflow: auto;
+    overflow: hidden;
   }
   
   figure {
@@ -530,7 +530,7 @@
   
   pre {
     display: block;
-    font-size: 87.5%;
+    font-size: 70.5%;
     color: #212529;
   }
   

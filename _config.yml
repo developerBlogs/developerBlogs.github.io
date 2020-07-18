@@ -25,13 +25,19 @@ baseurl: ""
 
 paginate: 6
 paginate_path: "/blogs/page/:num/"
-# pagination:
-#   enabled: true
-#   per_page: 6
-#   permalink: "/page/:num/"
+
 
 markdown: kramdown
+kramdown:
+  parse_block_html: true
+  input: GFM
+  html_to_native: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+syntax_highlighter_opts:
+  css_class: 'codehilite'  
 plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-debug
+  - jekyll-toc
