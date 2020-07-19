@@ -55,7 +55,7 @@ Initialized empty Git repository in /home/sajan/Desktop/LearningGit/.git/
 
 Great job !!! You just made your first local git repository.
 
-### 2. Make Your First Change
+### 3. Make Your First Change
 
 Open your text editor and create a file **index.html** inside your project folder
 Write some code in **index.html**
