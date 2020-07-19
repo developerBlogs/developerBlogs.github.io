@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Getting Started With Git
-subtitle:  Chapter Two
+title: Getting Started With Git - Chapter One
 date: 2020-07-18 17:51
 categories: git chapter 02
 author: Sajan Basnet
