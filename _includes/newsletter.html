@@ -1,0 +1,59 @@
+{%- include head.html -%}
+<link rel="stylesheet" href={% link /assets/css/bootstrap.css %}>
+<link rel="stylesheet" href={% link /assets/css/clean-blog.min.css %}>
+<!-- <form style="border:1px solid #ccc;padding:3px;text-align:center;"
+  action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow"
+  onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=github/ZhPr', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+  <p>Enter your email address:</p>
+  <p><input type="text" style="width:140px" name="email" /></p>
+  <input type="hidden" value="github/ZhPr" name="uri" /><input type="hidden" name="loc" value="en_US" />
+  <input type="submit" value="Subscribe" />
+</form> -->
+
+
+<!-- <form class="d-flex flex-row form-group" action="https://feedburner.google.com/fb/a/mailverify" method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=github/ZhPr', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+    <div class="p-2"><label for="Subscription" class="text-info small font-italic m-1 p-1"> Subscribe</label></div>
+    <div class="p-2"><input type="text" class="form-control" name="email" id="" aria-describedby="emailHelpId"
+      placeholder="Your email address"></div>
+    <input type="hidden" value="github/ZhPr" name="uri" /><input type="hidden" name="loc" value="en_US" />
+    <input type="hidden" name="loc" value="en_US" />
+    <div class=""><input type="submit" class="btn btn-success rounded" style="height: auto" value="Subscribe" /></div>
+</form> -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success rounded btn-block text-center" data-toggle="modal" data-target="#modelId">
+  :v: Subscribe To My Newsletter :v:
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="p-3 border">
+        <img class="card-img-top" src="https://image.freepik.com/free-vector/email-campaign-concept-illustration_114360-1633.jpg" alt="">
+        <form class="text-center" action="https://feedburner.google.com/fb/a/mailverify" method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=github/ZhPr', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+          <div class="p-1 m-1">
+            <input type="text" class="form-control input-group text-center" style="height: 50px;" name="email"
+              placeholder="Enter Your Email Address" />
+          </div>
+          <div class="p-1 m-1">
+            <input type="hidden" value="github/ZhPr" name="uri" />
+            <input type="hidden" name="loc" value="en_US" />
+            <input type="submit" class="btn btn-outline-success btn-block rounded p-3" value="Subscribe" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('#exampleModal').on('show.bs.modal', event => {
+    var button = $(event.relatedTarget);
+    var modal = $(this);
+  });
+</script>

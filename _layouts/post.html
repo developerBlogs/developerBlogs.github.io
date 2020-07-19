@@ -21,17 +21,18 @@
     padding: 20px;
   }
 
-  blockquote{
+  blockquote {
     color: rgba(117, 117, 117, 1);
     font-style: normal;
   }
 
-  .toc > ul {
+  .toc>ul {
     padding-left: 4px;
     color: white;
     text-decoration: underline;
   }
-  .toc{
+
+  .toc {
     border-radius: 4px;
   }
 
@@ -100,11 +101,16 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         {% if page.toc == true %}
-          <div class="toc border p-2 pt-4">
-            {% include toc.html html=content %}
-          </div>
+        <div class="toc border p-2 pt-4">
+          {% include toc.html html=content %}
+        </div>
         {% endif %}
         {{ content }}
+      </div>
+    </div>
+    <div class="row mt-4 mb-1" style="background-color: #fdfdf9">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% include newsletter.html %}
       </div>
     </div>
     <hr>
