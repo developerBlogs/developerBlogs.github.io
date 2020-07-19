@@ -254,7 +254,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-debug
-  jekyll-feed
   jekyll-paginate
   jemoji
 

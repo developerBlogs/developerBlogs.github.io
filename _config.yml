@@ -41,4 +41,3 @@ plugins:
   - jekyll-gist
   - jekyll-debug
   - jemoji
-  - jekyll-feed
