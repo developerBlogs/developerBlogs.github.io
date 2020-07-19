@@ -40,4 +40,3 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-debug
-  - jekyll-toc

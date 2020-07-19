@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started With Git - Chapter One
+title: Getting Started With Git - Chapter Two
 date: 2020-07-18 17:51
 categories: git chapter 02
 author: Sajan Basnet
@@ -14,7 +14,7 @@ In this chapter you will learn step by step how to use git in your project also 
 ### 1. Install Git 
 
 The first and the foremost step is to install git in our local system.
-If you think you already have git install in your system then you can confirm it by going to your terminal or command prompt and type `git --version`
+If you think you already have git install in your system then you can confirm it by going to your terminal or command prompt and user `git --version`
 
 ``` ruby
 $ git --version
@@ -46,7 +46,7 @@ Lets create a folder, I named mine as **LearningGit** .
 $ mkdir LearningGit
 $ cd LearningGit
 ``` 
-Here I am in the **LearningGit** directory. Now in order to initialize git in this project  type  we need to type **`git init`**
+Here I am in the **LearningGit** directory. Now in order to initialize git in this project we need to use **`git init`**
 
 ```ruby
 $ git init
@@ -73,7 +73,7 @@ You just made your first change. Lets see how we can use git to track this chang
 
 ### 4. Add Your Changes Using `git add`
 
-Lets goto to our terminal  and type **git status** to check the current status of our project
+Lets goto to our terminal and use **git status** to check the current status of our project
 
 ``` ruby
 $ git status
@@ -89,7 +89,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-So, what the above response is trying  to say is that we have some untracked files or some changes. So lets add this untracked files to the staging area by typing  **git add index.html** .
+So, what the above response is trying  to say is that we have some untracked files or some changes. So lets add this untracked files to the staging area by using **git add index.html** .
 
 ``` ruby
 $ git add index.html 
@@ -113,7 +113,7 @@ So now we will get a response that there are no any untracked files.
 
 > By using **git add index.html**  what we basically did  is that we were sure about the changes we made in the project so we got it ready for the second step or  got it ready to be committed.
 
-> If we have more that one file that has been changed and we want to add it all at once we can do **git add .**
+> If we have more that one file that have been changed and we want to add it all at once we can do **git add .**
 
 ``` ruby
 $ git add .
@@ -121,7 +121,7 @@ $ git add .
 
 ### 5. Commit Your Changes Using `git commit`
 
-Now we just need to commit the changes that was sent to the staging area so lets do that by typing **git commit -m**
+Now we just need to commit the changes that was sent to the staging area so lets do that by using **git commit**
 
 ``` ruby
 $ git commit
