@@ -11,7 +11,7 @@ toc: false
 
 You have just started to work on a project, integrated an awesome feature to it and then released it. So, what you have now is a initial version of your project (Version 1.0). Lets say you added a new feature to it, now you have a new version for it (Version 1.1). <!--more--> 
 
-A project can have many versions like this with continous changes to it. So, we will need a system or tools to track the changes made in our project, a sytem which can help us to go back and forth to the different versions of the project. Basically what we need is a sytem that can control many versions of our project and Git is basically that, a **Version Control System**.
+A project can have many versions like this with continous changes to it. And also for a project with many teammates several members of the team can work on the same source code. So, we will need a system or tools to track the changes made in our project, a sytem which can help us to go back and forth to the different versions of the project. What we need is a sytem for managing different versions of the same code base and Git is basically that, a **Version Control System**.
 
 ## Why Use Git? 
 
@@ -62,4 +62,7 @@ Its just like creating a copy of you project and editing on that copied version 
 
 There might be no any software companies out their who will not be using any version control system. So, its better to learn git before being hired to a company and have more chance to get hired.
 
-Head out to the next section where you can learn **"How To Use Git?"**.
+<br>
+*Head out to the next section where you can learn **[How to Use Git?]({% link _posts/2020-07-18-git-for-beginners-02.markdown %})***
+
+Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:

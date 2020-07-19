@@ -255,6 +255,7 @@ DEPENDENCIES
   github-pages
   jekyll-debug
   jekyll-paginate
+  jemoji
 
 BUNDLED WITH
    2.1.4
