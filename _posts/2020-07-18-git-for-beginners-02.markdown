@@ -240,9 +240,9 @@ README.md
 ## I am learning git
 ```
 
-After doing this if we need to check our project status using `git status` , it shows that two files are changed. The **index.html** and the new **README.md** file. 
+After doing this we need to check our project status using `git status` , it shows that two files are changed. The **index.html** and the new **README.md** file. 
 
-In order to know what changes were made we can use the command **`git diff`** which will show you the co
+In order to know what changes were made we can use the command **`git diff`** 
 
 We are sure about the changes so we will add and commit them like we did above by using **git add** and **git commit** command. 
 
@@ -250,20 +250,46 @@ I hope you added and committed the changes. If we run this **index.html** we wil
 
 Lets switch to the master branch  **`git checkout master`**. Now if we reload the browser we will not be seeing that header text **"I am adding an awesome feature to this project"**. This is because we had added this feature to our **develop** branch and right now we are in the **master** branch.
 
-## 8. Merging Feature Branch With Master
+## 8. Open a Pull Request For Review And Discussion 
 
-Let's say we are releasing our project and want every features to be included in it. In order to do this what we need to do now is merge all our feature branches into a single branch which is our master branch.
+If you are opening a Pull Request(PR) for your work then what it basically means is that you have added some awesome feature, changes to this project or solved a bug and you are notifying all the involved team members, reviewer about the changes before merging it to the master branch.
 
-For merging different branches there are two process **[git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)** and **[git merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)**. We will be using **git merge** .
+So, by opening a pull request it initiates discussion about the commits. The person reviewing the PR can raise questions and comments about the code you have wrote and tell you to improve it.
 
-Since we are the owner of this repo  and  we are the one creating the feature branches we can just merge the feature branch to the master branch by switching to the master branch ( i.e the branch where we want to merge the feature branches ) and using
+Once whole team is satisfied with the pull request you opened the reviewer or owner of the project can merge this feature to the master branch.
 
- `git merge develop `
+Push the develop branch to the remote repository.
+
+`**git push origin develop**`
+
+```ruby
+$ git push origin develop
+Username for 'https://github.com': your_github_name
+Password for 'https://github_name@github.com': 
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/your_github_name/StartingGit/pull/new/develop
+remote: 
+To https://github.com/your_github_name/StartingGit.git
+ * [new branch]      develop -> develop
+```
+Goto to the link given in the console and create a Pull Request to master branch.
+
+## 9. Merging Branches
+
+If you are a reviewer and merging a Pull Request it can be done easily by the click of a button in Githhub or Bitbucket.
+
+But if you want to merge two branches together we can do this by two ways **[git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)** and **[git merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)**. We will be using **git merge** .
+
+Lets say we want to merge a branch **feature/new_feature** to **develop** branch. Then we can do this by switching to the develop branch (i.e destination branch) and using 
+
+`git merge source_branch_name`
 
 ``` ruby
-$ git checkout master
-Already on 'master'
-sajan@Sajans-Machine $ git merge develop
+$ git checkout develop
+Already on 'develop'
+$ git merge feature/new_feature
 
 Updating 125ae10..77d3f5a
 Fast-forward
@@ -273,10 +299,10 @@ Fast-forward
  create mode 100644 README.md
 ```
 
-There can come many cases and errors during the merging process, which i will cover in the next chapter  **Git Help Me !!! What Should I Do?**
+There can come many cases and errors during the merging process, which I will cover in the next chapter  **Git Help Me !!! What Should I Do?**
 
-## 9 Pushing Your Changes to Github
-We can easily push our changes up to the remote i.e Github server using **`git push`** 
+## 10. Pushing and Pulling in Github
+We can easily push our changes up to the remote repository which is in Github server using **`git push`** 
 
 ``` 
 $ git push origin master
@@ -285,9 +311,15 @@ Password for 'https:// github_username@github.com':
 ......
 ```
 
-If you want to push another branch lets say develop to the remote repo just change the branch name like this  **`git push origin develop`**.
+If we want to push another branch lets say develop to the remote repo we can just change the branch name like this  **`git push origin develop`**.
 
-## 10. Cloning a Repository Using `git clone`
+And for **pulling** the latest changes from the remote repo to our local server we can do 
+
+`**git pull origin branch_name**` 
+
+Or simply `*git pull*` by switching to the branch we want to pull
+
+## 11. Cloning a Repository Using `git clone`
 
 We can easily clone (copy) a remote repository available in the github site into our local sytem by using the command 
 
@@ -301,13 +333,12 @@ $ git clone https://github.com/ruby/ruby.git
 
 This will clone the repository to your local system. If you want to get all the branches also you can do **`get fetch`**.
 
-## 11. Open Source Contribution with Pull Request
 
-In **step 8**  we merged the develop feature to our master  by just using **git merge develop** and pushed it to the remote. This was possible cause we were the owner of that repo. 
+## 12. Open Source Contribution
 
-What if we have cloned some some one else repository and created a branch **`feature/added_awesome_feature`** . Now we are hoping that this feature gets merged in the master branch of the repository and is publicly available to people to use it. Since this time we are not the owner of the repository we cannot just merge and push the changed like we did in **step 8 & step 9**. 
+What if we have cloned some some one else repository and created a branch **`feature/awesome_feature`** . Now we are hoping that this feature gets merged in the master branch of the repository and is publicly available to people to use it. Since this time we are not the owner of the repository we cannot just merge and push the changed like we did in **step 8 & step 9**. 
 
-So, how can we do this? We can do this by **sending a pull request** to the owner of the repo for the feature you have created. Sending a  Pull Request(PR) basically means that you had added some awesome feature to this project or solved a bug and asking the owner of the repo to merge it.
+So, how can we do this? We can do this by **sending a pull request** to the owner of the repo for the feature you have created. 
 
 Before sending a PR we need to first fork the repo to our github.
 
@@ -317,7 +348,7 @@ You can fork my [**repository**](https://github.com/DevloperBlogger/LearnGit) fo
 
 Then clone this repository to our local sytem like in **Step 10**
 
-Now let's create a branch **feature/added_awesome_feature** and change the  **index.html** file and save it.
+Now let's create a branch **feature/awesome_feature** and change the  **index.html** file and save it.
 
 ``` ruby
 $ git checkout -b feature/awesome_feature
@@ -365,6 +396,15 @@ Congratulations you just lean how to make a **Open Source Contribution**
 
 
 Kudos :clap: :tada:,  You have come to the end of this chapter. I hope this helped you to get the base knowledge of using Git in your project.
+
+**More Learning Sources**
+
+[Git Atlassian](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+
+[A successfull git  branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+
+[Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)
+
 
 <br>
 *Next section **[Git Help Me !!! What Should I Do?]({% link _posts/2020-07-18-git-for-beginners-02.markdown %})** is comming soon* 
