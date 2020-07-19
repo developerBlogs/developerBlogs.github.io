@@ -3,7 +3,7 @@ layout: post
 title: Getting Started With Git
 subtitle:  Chapter Two
 date: 2020-07-18 17:51
-category: git chapter 02
+categories: git chapter 02
 author: Sajan Basnet
 tags: [git]
 toc: true
