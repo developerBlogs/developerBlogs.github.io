@@ -1,6 +1,6 @@
 # Site settings
-title: SajanBasnet Blogs
-description: Blog from Sajan Basnet
+title: Developer Blogs
+# description: Blog from Sajan Basnet
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 url: "https://developerblogs.github.io/"
 disqus_shortname: developerblogs
