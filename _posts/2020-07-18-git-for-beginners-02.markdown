@@ -4,7 +4,7 @@ title: Getting Started With Git - Chapter Two
 date: 2020-07-18 17:51
 categories: git chapter 02
 author: Sajan Basnet
-tags: [git]
+tags: git tech programming
 toc: true
 summary: In this chapter we will learn a step by step approach to know how to initialize Git in our project, use different git commands and how to push the our project into the Github.
 ---
