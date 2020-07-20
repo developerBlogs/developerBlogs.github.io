@@ -60,7 +60,7 @@ Its just like creating a copy of you project and editing on that copied version 
 
 ### 5. You will end up needing Git eventually.
 
-There might be no any software companies out their who will not be using any version control system. So, its better to learn git before being hired to a company and have more chance to get hired.
+There might be no any software companies out there who will not be using any version control system. So, its better to learn git before being hired to a company and have more chance to get hired.
 
 <br>
 *Head out to the next section where you can learn **[How to Use Git?]({% link _posts/2020-07-18-git-for-beginners-02.markdown %})***

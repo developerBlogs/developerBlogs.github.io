@@ -258,29 +258,45 @@ So, by opening a pull request it initiates discussion about the commits. The per
 
 Once whole team is satisfied with the pull request you opened the reviewer or owner of the project can merge this feature to the master branch.
 
-Push the develop branch to the remote repository.
+Before creating PR we need to push the feature branch up to the remote repo. Lets push our develop branch to the remote repository.
 
 `**git push origin develop**`
 
+
 ```ruby
 $ git push origin develop
-Username for 'https://github.com': your_github_name
-Password for 'https://github_name@github.com': 
-Total 3 (delta 0), reused 0 (delta 0)
+
+Username for 'https://github.com': your_github_username
+Password for 'https:// your_github_username@github.com': 
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.08 KiB | 551.00 KiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
 remote: 
 remote: Create a pull request for 'develop' on GitHub by visiting:
-remote:      https://github.com/your_github_name/StartingGit/pull/new/develop
+remote:      https://github.com/your_github_username/Repo-name/pull/new/develop
 remote: 
-To https://github.com/your_github_name/StartingGit.git
+To https://github.com/your_github_username/Repo-name.git
  * [new branch]      develop -> develop
 ```
-Goto to the link given in the console and create a Pull Request to master branch.
+Goto to the link given in the console, this will open github and create a Pull Request to master branch.
+
+<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/request_pr.png">
+
+Good job :clap:, you just created a PR now you and your teammates can discuss on this before merging it to master.
 
 ## 9. Merging Branches
 
-If you are a reviewer and merging a Pull Request it can be done easily by the click of a button in Githhub or Bitbucket.
+If you are a reviewer and merging a Pull Request it can be done easily by the click of a button in Githhub or Bitbucket. Just goto github and the pull-request tab and merge the request to master.
+
+<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/merging.png">
 
 But if you want to merge two branches together we can do this by two ways **[git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)** and **[git merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)**. We will be using **git merge** .
+
+You can skip this part if you dont want to merge anything for now.
 
 Lets say we want to merge a branch **feature/new_feature** to **develop** branch. Then we can do this by switching to the develop branch (i.e destination branch) and using 
 
@@ -301,25 +317,68 @@ Fast-forward
 
 There can come many cases and errors during the merging process, which I will cover in the next chapter  **Git Help Me !!! What Should I Do?**
 
-## 10. Pushing and Pulling in Github
-We can easily push our changes up to the remote repository which is in Github server using **`git push`** 
+## 10. Pulling the latest changes from remote repository.
 
-``` 
-$ git push origin master
-Username for 'https://github.com':  github_username
-Password for 'https:// github_username@github.com': 
-......
-```
-
-If we want to push another branch lets say develop to the remote repo we can just change the branch name like this  **`git push origin develop`**.
-
-And for **pulling** the latest changes from the remote repo to our local server we can do 
+After the PR have been merged we will not have the lates changes to our master branch so we need to pull the latest changes from the remote to our local by using
 
 `**git pull origin branch_name**` 
 
 Or simply `*git pull*` by switching to the branch we want to pull
 
-## 11. Cloning a Repository Using `git clone`
+
+*Congratulations :tada: :tada::clap:  ​you just finished the all the steps of starting with git. I hope you learned how to work with git on your project. The above steps all just explain one of the simple and general  **git flow** out there.*
+
+## Some Important Notes
+
+### Note 1: Check if you have latest changes in local repo.
+
+Before pushing the feature branch to remote or before creating a pull request. Its better to check if we have the all the latest changes in the branch where we want to merge our feature branch. Here in our case is **master** and so to check this 
+1. Switch to master branch.
+2. Pull the latest changes using `git pull`
+
+```ruby
+$ git pull origin master
+```
+
+3. Then switch to the feature branch lets say **develop** for now.
+4. Merge the **master** branch to  the  **develop**.
+
+```ruby
+$ git merge master
+```
+
+5. And finally push this **develop** branch to remote and create a PR against **master** branch 
+
+### Note 2: Its good to create separate develop branch.
+
+Its even good practice if you create a separate branch from **master** like **develop** branch and push this develop branch to the remote repository. Now in your local system switch to the **develop** branch  and create new branches from it for adding new feature. Lets say i added a feature branch as **feature/Login**. Now we will open the pull request of this feature branch against the **develop** branch and not the **master** branch. And the PR can be merged into the develop branch.
+
+This is good way to follow because now you can deploy your **develop** branch and perform testing on it. If everything seems OK! then you can send a PR of this **develop**  to the **master**. Finally after merging **develop** to the **master** you can deploy your master to production.
+
+### Note 3: Creating HotFix 
+
+What if even after all testing and QA session you found a bug in the production. In this case you can 
+
+1. Switch to the master branch 
+2. Create a **hotfix** branch   to fix or solve the bug 
+3. After finishing just send a PR directly against the master branch. 
+4. Merge the **hotfix** to the master and deploy to production.  
+
+### Note 4: Tags
+
+Its better to tag your repository after every release to the production by using `git tag`
+
+1. After releasing your master branch to production switch to master branch
+2. Create a tag with version 
+   ```ruby
+   $ git tag v1.0.0
+   ```
+3. Push the tags to remote 
+   ```ruby
+   $ git push --tags 
+   ```
+
+## Cloning a Repository Using `git clone`
 
 We can easily clone (copy) a remote repository available in the github site into our local sytem by using the command 
 
@@ -334,7 +393,7 @@ $ git clone https://github.com/ruby/ruby.git
 This will clone the repository to your local system. If you want to get all the branches also you can do **`get fetch`**.
 
 
-## 12. Open Source Contribution
+## Open Source Contribution
 
 What if we have cloned some some one else repository and created a branch **`feature/awesome_feature`** . Now we are hoping that this feature gets merged in the master branch of the repository and is publicly available to people to use it. Since this time we are not the owner of the repository we cannot just merge and push the changed like we did in **step 8 & step 9**. 
 
