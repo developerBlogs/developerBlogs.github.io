@@ -12,6 +12,15 @@
     font-size: 24px;
   }
 
+  .badge-font {
+    font-size: 18px;
+    padding: 0px 11px;
+  }
+
+  .badge-font>.icons {
+    font-size: 22px;
+  }
+
   h1,
   h2,
   h3,
@@ -39,6 +48,15 @@
   @media only screen and (max-width: 768px) {
     p {
       font-size: 15px;
+    }
+
+    .badge-font {
+      font-size: 15px;
+      padding: 0px 0px;
+    }
+
+    .badge-font>.icons {
+      font-size: 18px;
     }
 
     .foot-text {
@@ -73,8 +91,10 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
-        <div class="site-heading" style="">
-          <h2 style="color: snow; margin: 0px; padding: 10px;">DevBlogs</h2>
+        <div class="site-heading">
+          <a href={{ '/blogs' | prepend: site.baseurl }}>
+            <h2 style="color: snow; margin: 0px; padding: 10px;">DevBlogs</h2>
+          </a>
         </div>
       </div>
     </div>
@@ -83,8 +103,24 @@
 
 <!-- Main Content -->
 <div class="container" style="margin-bottom: 100px;">
+  <div class="row m-lg-3 p-3">
+    <div class="col-lg-12 col-md-12 mx-auto">
+      {% for tag in site.tags %}
+      <a href={{tag[0] | prepend: site.tag_url }} class="m-2 p-2 badge badge-light badge-pill">
+        {% if tag[0] == "git" %}
+        <p class="badge-font"><i class="devicon-git-plain colored icons"></i> {{ tag[0] }}</p>
+        {% else %}
+        <p class="badge-font">{{ tag[0] }}</p>
+        {% endif %}
+      </a>
+      {% endfor %}
+      <a href={{"" | prepend: site.tag_url }} class="m-2 p-2 badge badge-light badge-pill">
+        <p class="badge-font">:ledger: all</p>
+      </a>
+    </div>
+  </div>
   <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
+    <div class="col-lg-10 col-md-10 mx-auto">
       {% assign psize = site.posts | size %}
       {% if psize == 0 %}
       <div class="text-center">
@@ -95,21 +131,7 @@
         <h5 class="">Sorry!!! No Post available yet</h5>
       </div>
       {% else %}
-      {% for post in paginator.posts %}
-      <div class="post-preview">
-        <a href="{{ post.url }}">
-          <span class="post_title blog-links">
-            {{ post.title }}
-          </span>
-          <span class="post_subtitle blog-links">
-            <p> {{ post.summary }} </p>
-          </span>
-        </a>
-        <p class="post-meta posted-by">
-          <a href={{site.url}} class="text-muted">Sajan Basnet,</a>
-          {{ post.date | date_to_string }}</p>
-      </div>
-      {% endfor %}
+      {{content}}
       {% include pagination.html %}
       {% endif %}
     </div>

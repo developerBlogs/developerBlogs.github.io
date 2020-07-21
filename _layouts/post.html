@@ -35,7 +35,7 @@
   .toc {
     border-radius: 4px;
   }
-
+  
   @media only screen and (max-width: 768px) {
     p {
       font-size: 18px !important;
@@ -50,34 +50,33 @@
       padding: 15px;
     }
 
-    /* h1{
+    h1{
       font-size: 30px !important;
       font-weight: 900 !important;
-    } */
+    }
 
-    h2{
+    h2 {
       font-size: 25px !important;
       font-weight: 800 !important;
     }
 
-    h3{
+    h3 {
       font-size: 20px !important;
       font-weight: 600 !important;
     }
 
-    h4{
+    h4 {
       font-size: 18px !important;
       font-weight: 500 !important;
     }
 
-    h5{
+    h5 {
       font-size: 17px !important;
       font-weight: 500 !important;
     }
 
     .post-font {
       font-size: 17px !important;
-      ;
       color: #212529;
       font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
     }
@@ -122,6 +121,13 @@
         {{ content }}
       </div>
     </div>
+    <div class="row mt-1 mb-1" style="background-color: #fdfdf9">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% for tag in page.tags %}
+        <a href="#" class="mr-2 p-2 badge badge-light">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
     <div class="row mt-4 mb-1" style="background-color: #fdfdf9">
       <div class="col-lg-8 col-md-10 mx-auto">
         {% include newsletter.html %}
@@ -158,3 +164,8 @@
       href="https://developerblogs.github.io">Sajan Basnet</a></span>
 </footer>
 {% include google-analytics.html %}
+
+<a href="#" class="float" id="menu-share">
+  <i class="fa fa-arrow-up my-float"></i>
+</a>
+
