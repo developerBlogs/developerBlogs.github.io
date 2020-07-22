@@ -1,6 +1,9 @@
 {%- include head.html -%}
 <link rel="stylesheet" href={% link /assets/css/bootstrap.css %}>
 <link rel="stylesheet" href={% link /assets/css/clean-blog.min.css %}>
+
+<script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+
 <style>
   p {
     line-height: 1.5;
@@ -35,7 +38,7 @@
   .toc {
     border-radius: 4px;
   }
-  
+
   @media only screen and (max-width: 768px) {
     p {
       font-size: 18px !important;
@@ -50,7 +53,7 @@
       padding: 15px;
     }
 
-    h1{
+    h1 {
       font-size: 30px !important;
       font-weight: 900 !important;
     }
@@ -90,14 +93,22 @@
 </nav>
 
 <!-- Page Header -->
-<header class="masthead" style="background-color: #1a222c; padding-bottom: 45px;">
+<header class="masthead" style="background-color: #1a222c; padding-bottom: 45px;" id="top">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 col-md-10 mx-auto">
         <div class="post-heading">
           <h1 style="color: snow;">{{ page.title }}</h1>
           <!-- <h2 class="subheading" style="color: whitesmoke;">{{page.subtitle}}</h2>s -->
+          <div class="row mt-3 ">
+            <div class="col-lg-12 col-md-12 mx-auto">
+              {% for tag in page.tags %}
+              {% assign tag_url = tag | prepend: "/blogs/" %}
+              <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light">{{ tag }}</a>
+              {% endfor %}
+            </div>
+          </div>
           <span class="meta">
             <p class="post-meta">Posted by
               <a href={{site.url}}>Sajan Basnet</a>&nbsp;{{ page.date | date_to_string }}</p>
@@ -112,7 +123,7 @@
 <article class="post-font">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 col-md-10 mx-auto">
         {% if page.toc == true %}
         <div class="toc border p-2 pt-4">
           {% include toc.html html=content %}
@@ -122,7 +133,7 @@
       </div>
     </div>
     <div class="row mt-1 mb-1" style="background-color: #fdfdf9">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 col-md-10 mx-auto">
         {% for tag in page.tags %}
         {% assign tag_url = tag | prepend: "/blogs/" %}
         <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
@@ -130,13 +141,13 @@
       </div>
     </div>
     <div class="row mt-4 mb-1" style="background-color: #fdfdf9">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 col-md-10 mx-auto">
         {% include newsletter.html %}
       </div>
     </div>
     <hr>
     <div class="row" style="background-color: #fdfdf9">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 col-md-10 mx-auto">
         {% if page.comments != false %}
         <div class="disqus-comments" style="margin-top: 30px">
           <div id="disqus_thread"></div>
@@ -166,7 +177,6 @@
 </footer>
 {% include google-analytics.html %}
 
-<a href="#" class="float" id="menu-share">
+<a href="#top"  class="float up" data-scroll>
   <i class="fa fa-arrow-up my-float"></i>
 </a>
-

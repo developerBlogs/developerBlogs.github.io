@@ -385,6 +385,12 @@ Its better to tag your repository after every release to the production by using
    ```ruby
    $ git push --tags 
    ```
+   
+### Note 5: .gitignore
+
+There will be files and folders that we may not want to push to the remote repo or that we dont want the git to keep track of its changes. In such case we can put them in the 
+.gitignore file.
+
 
 ## Cloning a Repository Using `git clone`
 
@@ -476,4 +482,4 @@ Kudos :clap: :tada:,  You have come to the end of this chapter. I hope this help
 <br>
 *Next section **[Git Help Me !!! What Should I Do?]({% link _posts/2020-07-18-git-for-beginners-02.markdown %})** is comming soon* 
 
-Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
+*Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
