@@ -7,7 +7,7 @@ author: Sajan Basnet
 tags: rails react
 toc: true
 permalink: '/blogs/rails/01'
-summary: In this topic we will learn how to quicky setup our reactjs on rails 6 application and use react components to print Hello World in out rails app.
+summary: In this topic we will learn how to quicky setup our reactjs on rails 6 application and use react components to print Hello World in our rails app.
 ---
 
 # React On Ruby On Rails 6
