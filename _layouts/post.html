@@ -124,7 +124,8 @@
     <div class="row mt-1 mb-1" style="background-color: #fdfdf9">
       <div class="col-lg-8 col-md-10 mx-auto">
         {% for tag in page.tags %}
-        <a href={{"" | prepend site.tag_url}} class="mr-2 p-2 badge badge-light">{{ tag }}</a>
+        {% assign tag_url = tag | prepend: "/blogs/" %}
+        <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
         {% endfor %}
       </div>
     </div>

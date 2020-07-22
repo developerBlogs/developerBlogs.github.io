@@ -4,7 +4,7 @@ title: Developer Blogs
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 url: "https://developerblogs.github.io/"
 disqus_shortname: developerblogs
-tag_url: 'https://localhost:4000/blogs'
+tag_url: 'https://developerblogs.github.io/blogs/'
 
 
 # User settings

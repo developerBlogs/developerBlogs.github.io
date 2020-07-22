@@ -18,7 +18,8 @@ layout: blog-list
   </p>
   <div class="pt-3">
     {% for tag in post.tags %}
-      <a href={{tag | prepend: site.tag_url }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
+    {% assign tag_url = tag | prepend: "/blogs/" %}
+    <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
     {% endfor %}
   </div>
 </div>
