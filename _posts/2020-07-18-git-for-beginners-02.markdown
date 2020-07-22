@@ -39,7 +39,14 @@ $ sudo apt install git-all
 
 ## 2. Create A Project and Initialize Git In It
 
-Lets create a folder, I named mine as **LearningGit** .
+Before using git lets configure it first 
+
+```ruby
+$ git config --global user.name "Your Name"
+$ git config --global user.email you@example.com
+```
+
+Done, lets create a folder. I named mine as **LearningGit** .
 
 ```ruby 
 $ mkdir LearningGit
