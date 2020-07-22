@@ -4,7 +4,7 @@ title: Quick React On Rails 6 SetUp
 date: 2020-07-22
 categories: rails react
 author: Sajan Basnet
-tags: rails react
+tags: rails react programming
 toc: true
 permalink: '/blogs/rails/01'
 summary: In this topic we will learn how to quicky setup our reactjs on rails 6 application and use react components to print Hello World in our rails app.
