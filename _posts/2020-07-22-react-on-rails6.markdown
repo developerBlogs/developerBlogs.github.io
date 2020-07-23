@@ -18,7 +18,7 @@ summary: In this topic we will learn how to quicky setup our reactjs on rails 6 
 
 ## 1. Creating New Rails Application
 
-The ruby version we will be  using here is **2.7.1** and  **rails 6.0.3.2**. Check yours by using `ruby -v` and `rails-v`. Lets create a new rails application.
+The ruby version we will be  using here is **2.7.1** and  **rails 6.0.3.2**. Check yours by using `ruby -v` and `rails -v`. Lets create a new rails application.
 
 ```ruby 
 $ rails new react-rails-crud-app --database postgresql --skip-test --webpack=react
@@ -105,7 +105,7 @@ Running via Spring preloader in process 2564
 
 ## 5. Hello World
 
-Since we have setup our **react on rails app**, lets go ahead and ceate our first component that prints Hello World in our rails app.
+Since we have setup our **react on rails app**, lets go ahead and create our first component that prints `Hello World` in our rails app.
 
 **First lets create our "homepage" controller**
 
@@ -124,12 +124,12 @@ end
 
 ```
 
-Now if we start server  with **rails s** we will see webpacker compiling in the console and in  and go to **localhost:3000**  in the browser we will see this 
+Now if we start our server with **rails s** we will see webpacker compiling in the console and if we goto **localhost:3000**  in the browser we will see this 
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/react-home.png">
 
 
-Lets create a directory as components inside the javaScript folder of our project and add an **App.js** file. And inside the App.js file lets add our react code.
+Lets create a directory as **components** inside the javaScript folder of our project and add an **App.js** file. And inside the App.js file lets add our react code.
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/path-js.png">
 
@@ -149,7 +149,7 @@ class App extends Component{
 export default App;
 ```
 
-In the hello_react.jsx  lets edit the default code 
+In the hello_react.jsx  lets edit the default code and paste this 
 
 ```javascript 
 hello_react.jsx
