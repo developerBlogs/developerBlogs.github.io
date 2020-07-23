@@ -24,19 +24,12 @@
     padding: 20px;
   }
 
-  blockquote {
-    color: rgba(117, 117, 117, 1);
-    font-style: normal;
-  }
-
-  .toc>ul {
-    padding-left: 4px;
-    color: white;
-    text-decoration: underline;
-  }
-
-  .toc {
-    border-radius: 4px;
+  .float-toc{
+    position: fixed !important;
+    left: -13px;
+    width: 22%;
+    font-size: 18px;
+    visibility: hidden;
   }
 
   @media only screen and (max-width: 768px) {
@@ -122,14 +115,26 @@
 <!-- Post Content -->
 <article class="post-font">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-md-10 mx-auto">
+    <div>
+      <div class="float-toc mb-5 p-4 d-sm-none d-md-none d-none d-lg-block">
         {% if page.toc == true %}
-        <div class="toc border p-2 pt-4">
+        <div class="toc border p-3" id="lg-float">
+          <h4 class="text-center border-bottom rounded-circle mb-3"><a class="text-primary" href={{ '/blogs' | prepend: site.baseurl }}>DevBlogs</a></h4>
           {% include toc.html html=content %}
         </div>
         {% endif %}
-        {{ content }}
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-md-10 mx-auto d-lg-none">
+          {% if page.toc == true %}
+          <div class="toc border p-2 pt-4">
+            {% include toc.html html=content %}
+          </div>
+          {% endif %}
+        </div>
+        <div class="col-lg-10 col-md-10 mx-auto">
+          {{ content }}
+        </div>
       </div>
     </div>
     <div class="row mt-1 mb-1" style="background-color: #fdfdf9">
@@ -177,6 +182,21 @@
 </footer>
 {% include google-analytics.html %}
 
-<a href="#top"  class="float up" data-scroll>
+<a href="#top" class="float up" data-scroll>
   <i class="fa fa-arrow-up my-float"></i>
 </a>
+
+<script type="text/javascript">
+  $(window).scroll(function(){ 
+  var a = 828;
+  var pos = $(window).scrollTop();
+  console.log(pos);
+  if(pos < a) {
+    $('#lg-float').hide();
+  }
+  else {
+    $('.float-toc').css({"top": "1px", "visibility": 'visible'});
+    $('#lg-float').slideDown();
+  }
+  });
+</script>

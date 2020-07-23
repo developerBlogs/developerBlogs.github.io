@@ -35,7 +35,11 @@ blockquote {
 .toc>ul {
   padding-left: 4px;
   color: white;
-  text-decoration: underline;
+}
+
+.toc>ul>li{
+  border-bottom: 1px solid lightgray;
+  padding: 4px;
 }
 
 .toc {
@@ -82,4 +86,8 @@ blockquote {
     font-size: 12px;
     margin-top: 10px;
   }  
+  .toc>ul>li{
+    border-bottom: 1px solid lightgray;
+    padding: 2px;
+  }
 }

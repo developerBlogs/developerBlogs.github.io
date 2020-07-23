@@ -3884,8 +3884,11 @@ blockquote {
 
 .toc > ul {
   padding-left: 4px;
-  color: white;
-  text-decoration: underline; }
+  color: white; }
+
+.toc > ul > li {
+  border-bottom: 1px solid lightgray;
+  padding: 4px; }
 
 .toc {
   border-radius: 4px; }
@@ -3921,7 +3924,11 @@ blockquote {
 
   .my-float {
     font-size: 12px;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .toc > ul > li {
+    border-bottom: 1px solid lightgray;
+    padding: 2px; } }
 /* Adjusted to give override background and text colour */
 .highlight pre, pre, .highlight .hll {
   background-color: #49483E;

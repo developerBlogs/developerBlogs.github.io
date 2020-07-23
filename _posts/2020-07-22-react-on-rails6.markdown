@@ -10,8 +10,6 @@ permalink: '/blogs/rails/01'
 summary: In this topic we will learn how to quicky setup our reactjs on rails 6 application and use react components to print Hello World in out rails app.
 ---
 
-# React On Ruby On Rails 6
-
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/ronronr.jpeg">
 
 **Prerequisites** 
