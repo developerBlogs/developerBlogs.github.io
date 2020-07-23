@@ -119,7 +119,7 @@ Now lets go to our text-editor and edit the **routes.rb** file to set the root p
 routes.rb 
 
 Rails.application.routes.draw do
-  root to: 'phomepage#index'
+  root to: 'homepage#index'
 end
 
 ```
