@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Oauth 2.0 and OpenId Connect
-date: 2020-07-27 11:25
+date: 2020-07-26 11:25
 category: programming security
 author: Sajan Basnet
 tags: programming rails security
