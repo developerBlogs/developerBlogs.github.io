@@ -115,6 +115,8 @@
         <p class="badge-font"><i class="devicon-rails-plain colored"></i> {{ tag[0] }}</p>
         {% elsif tag[0] == "react" %}
         <p class="badge-font"><i class="devicon-react-original colored"></i> {{ tag[0] }}</p>
+        {% elsif tag[0] == "security" %}
+        <p class="badge-font">:closed_lock_with_key:{{ tag[0] }}</p>
         {% else %}
         <p class="badge-font">{{ tag[0] }}</p>
         {% endif %}
