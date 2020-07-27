@@ -147,7 +147,7 @@ https://accounts.google.com/oauth2/v2/auth
 &nonce=8x5baw1b31o
 ```
 
-OAuth 2.0 adds another token known as **id token** along with the authorization code. This **id token** is in encoded JWT (JSON Web Token) format. We can decode this Id token <a href="https://jwt.io/" target="_blank">**here** </a> and get the basic information about the users.  
+OAuth 2.0 adds another token known as **id token** along with the authorization code in the response. This **id token** is in encoded JWT (JSON Web Token) format. We can decode this Id token <a href="https://jwt.io/" target="_blank">**here** </a> and get the basic information about the users.  
 
 *Great :tada: :tada: we have come to the end of this topic. I hope this helped you to understand the concept of OAuth 2.0, how its used to solve the delegation problem and how OpenId Connect can handle the authentication part separately.* 
 
