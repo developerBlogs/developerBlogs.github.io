@@ -145,6 +145,7 @@ https://accounts.google.com/oauth2/v2/auth
 &response_mode=form_post
 &state=sometext
 &nonce=
+```
 
 OAuth 2.0 adds another token known as **id token** along with the authorization code. This **id token** is in encoded JWT (JSON Web Token) format. We can decode this Id token <a href="https://jwt.io/" target="_blank">**here** </a> and get the basic information about the users.  
 
