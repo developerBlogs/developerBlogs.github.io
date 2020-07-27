@@ -10,6 +10,8 @@ author: Sajan Basnet
 permalink: '/blogs/git/01'
 ---
 
+<img class= "img-fluid img-thumbnail" src="https://media3.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif?cid=ecf05e47p9fwcgvdtdow0xw4s0jd4e1po7q4bcphye7h17ox&rid=giphy.gif">
+
 # What is Git and Why Use it?
 
 You have just started to work on a project, integrated an awesome feature to it and then released it. So, what you have now is a initial version of your project (Version 1.0). Lets say you added a new feature to it, now you have a new version for it (Version 1.1). <!--more--> 
