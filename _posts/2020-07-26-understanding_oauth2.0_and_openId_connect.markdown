@@ -134,7 +134,19 @@ Access tokens have limited lifetimes. If our application needs access to this ca
 
 OAuth 2.0 APIs can be used for both authentication and authorization. For the authentication part we can use the <a href="https://openid.net/connect/" target="_blank">**OpenID Connect** </a> which is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of the resource owner to obtain basic profile information about them before the whole authorization process. 
 
-For this to work OAuth 2.0 adds another token known as **id token** along with the authorization code. This **id token** is in encoded JWT (JSON Web Token) format. We can decode this Id token <a href="https://jwt.io/" target="_blank">**here** </a> and get the basic information about the users.  
+For this to work we need to add an additional scope as 'openid' in the request.
+
+```ruby
+https://accounts.google.com/oauth2/v2/auth
+?client_id=asd1234yrasdgj12346saSDfadh1234u6rtjfdsfadjbhklkbhg4568986tyfgfg
+&redirect_uri=https://myapp.com/redirect
+&scope=openid read write
+&response_type=code
+&response_mode=form_post
+&state=sometext
+&nonce=
+
+OAuth 2.0 adds another token known as **id token** along with the authorization code. This **id token** is in encoded JWT (JSON Web Token) format. We can decode this Id token <a href="https://jwt.io/" target="_blank">**here** </a> and get the basic information about the users.  
 
 *Great :tada: :tada: we have come to the end of this topic. I hope this helped you to understand the concept of OAuth 2.0, how its used to solve the delegation problem and how OpenId Connect can handle the authentication part separately.* 
 
