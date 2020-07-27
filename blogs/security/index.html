@@ -1,0 +1,26 @@
+---
+layout: blog-list
+---
+
+{% for post in site.tags.security %}
+<div class="post-preview">
+  <a href="{{ post.url }}">
+    <span class="post_title blog-links">
+      {{ post.title }}
+    </span>
+    <span class="post_subtitle blog-links">
+      <p> {{ post.summary }} </p>
+    </span>
+  </a>
+  <p class="post-meta posted-by">
+    <a href={{site.url}} class="text-muted">Sajan Basnet,</a>
+    {{ post.date | date_to_string }}
+  </p>
+  <div class="pt-3">
+    {% for tag in post.tags %}
+    {% assign tag_url = tag | prepend: "/blogs/" %}
+    <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
