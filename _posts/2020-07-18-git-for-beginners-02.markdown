@@ -12,7 +12,7 @@ summary: In this chapter we will learn a step by step approach to know how to in
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/workflow.jpg">
 
-In this chapter you will learn step by step how to use git in your project also known as repository. So, if you are new to git, please follow these steps so that you will be able to control your project, handle the changes in your code base, create branches, open a pull request (PR) of your branch, pushing your project to Github and more.
+In this chapter we will learn step by step, how to use git in our repository(project). So, if you are new to git, please follow these steps so that you will be able to manage the many versions of your project, handle the changes in your code base, create branches for new features, open a pull request (PR) of your branch, push your project to Github and more.
 
 ## 1. Install Git 
 The first and the foremost step is to install git in our local system.

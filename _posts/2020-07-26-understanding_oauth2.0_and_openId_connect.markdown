@@ -152,7 +152,7 @@ OAuth 2.0 adds another token known as **id token** along with the authorization 
 *Great :tada: :tada: we have come to the end of this topic. I hope this helped you to understand the concept of OAuth 2.0, how its used to solve the delegation problem and how OpenId Connect can handle the authentication part separately.* 
 
 **More Resources:**
-- **[Oauth2.0 and OpenID Connect in Plain Englis](https://www.youtube.com/watch?v=996OiexHze0&t=1300s)**
+- **[Oauth2.0 and OpenID Connect in Plain English](https://www.youtube.com/watch?v=996OiexHze0&t=1300s)**
 - **[Using OAuth to access Google Api's](https://developers.google.com/identity/protocols/oauth2)**
 - **[AuthO Docs](https://auth0.com/docs/)**
 
