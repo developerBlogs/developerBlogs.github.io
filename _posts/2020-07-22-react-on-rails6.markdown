@@ -103,7 +103,28 @@ Running via Spring preloader in process 2564
 
 ***Great :tada: :clap: :tada:  we are done with creating our React on Rails 6 app.***
 
-## 5. Hello World
+## 5. Adding Bootstrap
+
+If we need to add bootstrap in our application we can now install it as a dependency so that we can use it in both the .erb files and react components as well.
+
+```ruby
+yarn add bootstrap jquery popper.js
+```
+
+Lets open our app/javascript/packs/application.js and require bootstrap too. 
+
+```ruby
+application.js
+
+require("@rails/ujs").start()
+require("turbolinks").start()
+require("@rails/activestorage").start()
+require("channels")
+require('bootstrap')
+import 'bootstrap/dist/css/bootstrap'
+```
+
+## 6. Hello World
 
 Since we have setup our **react on rails app**, lets go ahead and create our first component that prints `Hello World` in our rails app.
 
