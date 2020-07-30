@@ -35,7 +35,7 @@ Then you can share the link of your project to your friends or team so they can 
 
 Sounds somewhat similar, yes? Just like you uploading your zipped project into Google Drive and sharing the sharable link. But trust me its not the same.
 
-You dont have to go through all the hassle and trouble like zipping your project everytime and getting the sharable link every f**ing time.
+You dont have to go through all the hassle and trouble like zipping your project everytime and getting the sharable link everytime.
 You just need to type some few easy commands and you have pushed/uploaded your latest version of the project into Github or Bitbucket.
 Simillarly your teammates also just need to write a git command to pull/download this latest version to their local sytem.
 
