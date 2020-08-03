@@ -14,8 +14,11 @@ p {
 }
 
 .post-font {
-  font-size: 24px;
-  color: #212529;
+  letter-spacing: -0.003em;
+  word-break: break-word;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
   font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
