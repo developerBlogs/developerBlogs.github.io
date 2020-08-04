@@ -5,7 +5,6 @@
 <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
 
 <style>
-
   .foot-text {
     font-size: 18px;
   }
@@ -14,24 +13,28 @@
     padding: 20px;
   }
 
-  .float-toc{
+  .float-toc {
     position: fixed !important;
     left: -13px;
     width: 22%;
     font-size: 15px;
     visibility: hidden;
   }
-  li{
+
+  li {
     margin: 10px 0px;
   }
-  h3>a{
+
+  h3>a {
     text-decoration: underline;
   }
 
   @media only screen and (max-width: 768px) {
-    p {
-      font-size: 17px !important;
-      margin: 16px 0px !important;
+
+    p,
+    li {
+      font-size: 16px !important;
+      margin: 18px 0px !important;
       line-height: 30px !important;
     }
 
@@ -117,7 +120,8 @@
       <div class="float-toc mb-5 p-4 d-sm-none d-md-none d-none d-lg-block">
         {% if page.toc == true %}
         <div class="toc border p-3" id="lg-float">
-          <h4 class="text-center border-bottom rounded-circle mb-3"><a class="text-primary" href={{ '/blogs' | prepend: site.baseurl }}>DevBlogs</a></h4>
+          <h4 class="text-center border-bottom rounded-circle mb-3"><a class="text-primary"
+              href={{ '/blogs' | prepend: site.baseurl }}>DevBlogs</a></h4>
           {% include toc.html html=content %}
         </div>
         {% endif %}
@@ -185,15 +189,15 @@
 </a>
 
 <script type="text/javascript">
-  $(window).scroll(function(){ 
-  var a = 900;
-  var pos = $(window).scrollTop();
-  if(pos < a) {
-    $('#lg-float').hide();
-  }
-  else {
-    $('.float-toc').css({"top": "1px", "visibility": 'visible'});
-    $('#lg-float').slideDown();
-  }
+  $(window).scroll(function () {
+    var a = 900;
+    var pos = $(window).scrollTop();
+    if (pos < a) {
+      $('#lg-float').hide();
+    }
+    else {
+      $('.float-toc').css({ "top": "1px", "visibility": 'visible' });
+      $('#lg-float').slideDown();
+    }
   });
 </script>
