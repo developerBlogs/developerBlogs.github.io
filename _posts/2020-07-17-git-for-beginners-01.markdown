@@ -22,7 +22,7 @@ A project can have many versions like this with continous changes to it. And als
 
 Git is one of many version control system and the most preferable one by many people.
 
-####  1. Easy Distribution of your Project
+###  1. Easy Distribution of your Project
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git01.png">
 
