@@ -3,17 +3,27 @@ layout: blog-list
 ---
 
 {% for post in paginator.posts %}
-<div class="post-preview">
-  <a href="{{ post.url }}">
-    <span class="post_title blog-links">
-      {{ post.title }}
-    </span>
-    <span class="post_subtitle blog-links">
-      <p> {{ post.summary }} </p>
-    </span>
-  </a>
-  <p class="post-meta posted-by">
-    <a href={{site.url}} class="text-muted">Sajan Basnet,</a>
+<div  class="post-preview">
+<div class="d-flex justify-content-between" id="accordion">
+  <div class="small">
+    <a href="{{ post.url }}">
+      <span class="post_title blog-links">
+        {{ post.title }}
+      </span>
+    </a>
+  </div>
+  <div>
+    <button class='btn btn-outline-secondary btn-collapse' data-toggle="collapse" aria-expanded="true" data-target={{post.uniq_heading_id}} >
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>
+<div id={{post.uniq_body_id}} class="collapse hide " data-parent="#accordion">
+  <span class="post_subtitle blog-links">
+    <p> {{ post.summary }} </p>
+  </span>
+  <p class="post-meta posted-by text-muted">
+    <a href={{site.url}} class="text-muted posted-by">Sajan Basnet,</a>
     {{ post.date | date_to_string }}
   </p>
   <div class="pt-3">
@@ -22,5 +32,6 @@ layout: blog-list
     <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
     {% endfor %}
   </div>
+</div>
 </div>
 {% endfor %}

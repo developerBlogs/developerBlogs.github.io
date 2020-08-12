@@ -8,6 +8,8 @@ toc: false
 tags: git programming
 author: Sajan Basnet
 permalink: '/blogs/git/01'
+uniq_heading_id: '#post1'
+uniq_body_id: 'post1'
 ---
 
 <img class= "img-fluid img-thumbnail" src="https://media3.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif?cid=ecf05e47p9fwcgvdtdow0xw4s0jd4e1po7q4bcphye7h17ox&rid=giphy.gif">

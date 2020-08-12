@@ -8,6 +8,8 @@ tags: rails react programming
 toc: true
 permalink: '/blogs/rails/01'
 summary: In this topic we will learn how to quicky setup our reactjs on rails 6 application and use react components to print Hello World in our rails app.
+uniq_heading_id: '#post3'
+uniq_body_id: 'post3'
 ---
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/ronronr.jpeg">

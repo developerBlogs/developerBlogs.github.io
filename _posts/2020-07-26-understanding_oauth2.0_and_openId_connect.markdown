@@ -8,6 +8,8 @@ tags: programming rails security
 permalink: '/blogs/security/01'
 summary: This topic covers how third party login sevice such as "Login in with Google" uses the Oauth 2.0 protocol.
 toc: true
+uniq_heading_id: '#post4'
+uniq_body_id: 'post4'
 ---
 ## Authentication and Authorization
 

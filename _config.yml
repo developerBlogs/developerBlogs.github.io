@@ -24,7 +24,7 @@ exclude: ['package.json', 'src' , 'node_modules']
 
 baseurl: ""
 
-paginate: 6
+paginate: 10
 paginate_path: "/blogs/page/:num/"
 
 markdown: kramdown
