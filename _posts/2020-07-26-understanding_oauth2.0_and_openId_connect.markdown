@@ -17,7 +17,7 @@ Before talking about Oauth 2.0, first lets grab a basic concept about what is **
 
 **Authentication** is simply a process of verifying who the user is and what they claims to be. Lets say you claim to be 20 years old then you can show your personal id to authenticate about your age, or while reaching to your workplace you show your id card or finger print to a scanning device to mark your attendance. 
 
-**Authorization** is the process of verifying what a user have access to or if the user are authorize to do something. Like, you have a driving license for a motorbike then you are authorized to ride bike in the highway but if you go on riding a car with the same license you are going to get in trouble cause you are not authorized to do so.Another example can be an customers of an e-commerce website are not authorized to view the admin portal. 
+**Authorization** is the process of verifying what a user have access to or if the user are authorize to do something. Like, if you have a driving license for a motorbike then you are authorized to ride the bike but if you go on riding a car with the same license you are going to get in trouble cause you are not authorized to do so. Another example can be an customers of an e-commerce website are not authorized to view the admin portal. 
 
 Authentication usually occurs before Authorization and if users can't authenticate themself then they are not authorized to access the resources. 
 
@@ -29,13 +29,13 @@ Lets say we have an application known as **Glootie app** and this application ha
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/delprob.png">
 
-You are going to see this two character **Glootie** (the red alien) and **Jerry** from the epic show (**Rick and Morty**- **S4: E2**) most of the time in this post. I hope its makes you easy to understand. 
+We will be seeing this two character **Glootie** (the red alien) and **Jerry** from the epic show (**Rick and Morty**- **S4: E2**) most of the time in this post. I thought this might help the readers to easily understand the topic. 
 
-First of all, don't be Jerry and provide any application with such access. The above picture depicts a delegation problem where you authorize a an application to have entire access to your other application such as gmail or google drive. What if you want to let the application to only access the contacts or certain information. This is why OAuth protocol was built to solve this problem. 
+First of all, never be like Jerry and provide any application with such access. The above picture depicts a delegation problem where we need to authorize an application to have entire access to our other application such as gmail or google drive in order to use some service of that application. What if we want to let the application to only access the contacts or certain information. This is why OAuth protocol was built to solve this problem. 
 
 ## OAuth 2.0 as Authorization
 
-Glootie app just integrated a **Sign In With Google** feature which uses OAuth 2.0 protocol. Lets look at the first step of how it works.
+Lets say, Glootie app just integrated a **Sign In With Google** feature which uses OAuth 2.0 protocol. Lets look at the first step that occurs whrn a user tries to sign in with google.
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/auth1.png">
 
@@ -55,13 +55,18 @@ In order to get access to the contacts of **resource owner** (Jerry) the app nee
 ## OAuth 2.0 Terminology
 
 * **Client**: The application that wants to have access to the resource. In our case Glootie app wants to have access to the resource.
+
 * **Resource owner**:  The owner of the resource that the other application want to have access to. In our case **Jerry** is the resource owner.
+
 * **Authorization Server**: The server that provides the grant type such as authorization code to the client after the resource owner allows to do so. In our case **accounts.google.com**.
 * **Resource Server**: The resource server holds the data or resource that client wants to have access to. 
+
 * **Authorization Grant**: When resource owner provides the client access to the *resource server* then the client is provided with authorization grant. In our case the grant is provided with a *authorization code* which can be used by the client to exchange access_code but there can be other grant type too where the access token can be directly provided to user.
 Click <a href="https://oauth.net/2/grant-types/" target="_blank">**here** </a> to know about other grant types.
+
 * **Redirect URI**: When asking a authorization grant to the authorization server it needs to have a property which tells the authorization server to redirect to somewhere back to the client after the authorization is provided. This property is known as redirect_uri.   
 * **Access Token**:  To have access to the resource server the client needs to have an *access token*.
+
 * **Scope**: Scope is a mechanism in OAuth 2.0 to limit an application's access to a user's account. There can be a list of scopes available in the authorization server. Client while asking for authorization grant can send the scope property along with  the resource type to get access to only those particular scope. For example lets say a read or delete scope. And according to the scope provided the resource owner are also notified by the authorization server that the client is asking for access of these scopes in the **consent** screen.  The access token issued to the client will be limited to the scopes granted.
 
 We just learn the basic work-flow and terminology of **OAuth 2.0**. Lets see a quick example how our application should make request to the authorization server and all other following process if it wants to use a **Google Login** feature.
@@ -70,7 +75,7 @@ We just learn the basic work-flow and terminology of **OAuth 2.0**. Lets see a q
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/oauth.png">
 
-First, the our app need to have  OAuth 2.0 credentials such as a **client ID** and **client secret** that are known to both Google and our application. We can visit the <a href="https://console.developers.google.com/" target="_blank">**Google API Console** </a>to obtain it.
+First, our app need to have  OAuth 2.0 credentials such as a **client ID** and **client secret** that are known to both Google and our application. We can visit the <a href="https://console.developers.google.com/" target="_blank">**Google API Console** </a>to obtain it.
 
 **Lets try to get the authorization code from Google for our app.**
 
