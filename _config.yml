@@ -35,7 +35,7 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
 syntax_highlighter_opts:
-  css_class: 'codehilite'  
+  css_class: 'codehilite'
 plugins:
   - jekyll-paginate
   - jekyll-gist

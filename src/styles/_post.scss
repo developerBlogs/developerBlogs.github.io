@@ -47,6 +47,33 @@ blockquote {
 
 .toc {
   border-radius: 4px;
+  min-width: 20vh;
+  max-height: 50vh;
+  overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+background: #f3f3f1; 
+  border:1px solid #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+background: #9b9595; 
+  border:1px solid #eee;
+  height:50px;
+  border-radius:4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: grey; 
 }
 
 .float {

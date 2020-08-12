@@ -17,7 +17,7 @@ Before talking about Oauth 2.0, first lets grab a basic concept about what is **
 
 **Authentication** is simply a process of verifying who the user is and what they claims to be. Lets say you claim to be 20 years old then you can show your personal id to authenticate about your age, or while reaching to your workplace you show your id card or finger print to a scanning device to mark your attendance. 
 
-**Authorization** is the process of verifying what a user have access to or if the user are authorize to do something. Like, you have a driving license for a motorbike then you are authorized to ride bike in the highway but if you go on riding a car with the same license you are going to get in trouble cause you are not authorized to do so.
+**Authorization** is the process of verifying what a user have access to or if the user are authorize to do something. Like, you have a driving license for a motorbike then you are authorized to ride bike in the highway but if you go on riding a car with the same license you are going to get in trouble cause you are not authorized to do so.Another example can be an customers of an e-commerce website are not authorized to view the admin portal. 
 
 Authentication usually occurs before Authorization and if users can't authenticate themself then they are not authorized to access the resources. 
 
