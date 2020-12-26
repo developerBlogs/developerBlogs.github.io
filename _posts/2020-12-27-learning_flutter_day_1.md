@@ -12,8 +12,6 @@ uniq_heading_id: '#post5'
 uniq_body_id: 'post5'
 ---
 
-## LEARNING FLUTTER (DAY 1)
-
 Yes, after so much laziness and procrastination I have finally decided to learn Flutter. This blog is just a note of my journey of learning Flutter from Day 1
 
 
@@ -30,9 +28,12 @@ Like most programming languages out there **Dart** is also one of them and it wa
 I guess that all the details I need for now about Dart.
 
 
-#### I was curious why did flutter use Dart anyway?
+### I was curious why did flutter use Dart anyway?
 
-And the first reason I found was **Dart supports multi-platform (ios, android, and web)**. Besides this **Dart supports Just in Time(JIT) compiling which allows hot-reload making Flutter apps faster.****
+And the first reason I found was 
+**Dart supports multi-platform (ios, android, and web)**. 
+
+Besides this **Dart supports Just in Time(JIT) compiling which allows hot-reload making Flutter apps faster.****
 
 **For more curiosity :**
 
@@ -41,13 +42,15 @@ And the first reason I found was **Dart supports multi-platform (ios, android, a
 [Why flutter uses Dart? (youtube)](https://www.youtube.com/watch?v=5F-6n_2XWR8&feature=emb_logo)
 
 
+
+
 ### Getting Started With Dart.
 
-#### Installing Dart
+**Installing Dart**
 
-According to official docs of [Dart](https://dart.dev/get-dart), we don't need to install Dart Sdk if we install the **Flutter SDK**. 
+According to official docs of [Dart](https://dart.dev/get-dart), we don't need to install Dart SDK if we install the **Flutter SDK**. 
 
-I use Linux and I installed it using  using snapd in the terminal.
+In my linux I installed it using  using snapd.
 
 ```ruby
 $ sudo apt-get update
@@ -58,14 +61,10 @@ $ flutter sdk-path
 [For other OS ](https://flutter.dev/docs/get-started/install)
 
 
-
 ```ruby
 $ flutter --version
 ```
-
-![version](/home/sajan/Pictures/Screenshot from 2020-12-26 23-03-38.png)
-
-
+<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/flutter_version.png">
 
 In order to get dart command working anywhere in the terminal
 
@@ -76,11 +75,11 @@ Dart SDK version: 2.10.4 (stable) (Wed Nov 11 13:35:58 2020 +0100) on "linux_x64
 ```
 
 
-#### HELLO WORLD !!!
+### HELLO WORLD !!!
 
-Yes I started with the classic hello world program with Dart as well 
+Yes I started with the classic hello world program with Dart as well. 
 
-In my vs code text editor created a file as `hello_world.dart` 
+In my vs code text editor I created a file as `hello_world.dart` 
 
 ```dart
 void main(){
@@ -88,11 +87,12 @@ void main(){
 }
 ```
 
-And in terminal 
+And in the terminal 
 
 ```ruby
 $ dart run hello_world.dart
 HELLO, WORLD!!!
+```
 
 <hr>
 *Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
