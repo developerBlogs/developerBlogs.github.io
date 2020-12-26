@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LEARNING FLUTTER (DAY 1)
+title: Learning Flutter (Day 1)
 date: 2020-12-27 11:25
 category: flutter
 author: Sajan Basnet
@@ -27,6 +27,7 @@ Like most programming languages out there **Dart** is also one of them and it wa
 
 I guess that all the details I need for now about Dart.
 
+<br>
 
 ### I was curious why did flutter use Dart anyway?
 
@@ -43,7 +44,7 @@ Besides this **Dart supports Just in Time(JIT) compiling which allows hot-reload
 
 
 
-
+<hr>
 ### Getting Started With Dart.
 
 **Installing Dart**
