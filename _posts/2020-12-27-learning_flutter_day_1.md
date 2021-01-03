@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning Flutter (Day 1)
-date: 2020-12-27 11:25
+date: 2020-12-30 11:25
 category: flutter
 author: Sajan Basnet
 tags: flutter
@@ -21,20 +21,22 @@ Yes, after so much laziness and procrastination I have finally decided to learn 
 ### DART PROGRAMMING LANGUAGE
 
 Before directly diving into Flutter I wanted to start from the basic. Since Dart is what Flutter uses it’s obviously better to learn it first.
-Like most programming languages out there **Dart** is also one of them and it was owned and maintained by Google. It’s easy to learn Dart if you have experience working with Java, JavaScript, Ruby, or Python. 
+Like most programming languages out there **Dart** is also one of them and it is owned and maintained by Google. It’s easy to learn Dart if you have experience working with Java, JavaScript, Ruby, or Python. 
 
 *In a nutshell, Dart is an object-oriented, class defined, single inheritance language using a C-style syntax that transcompiles optionally into JavaScript. It supports interfaces, mixins, abstract classes, reified generics, optional typing, and a sound type system.* [*Source*](https://flutterbyexample.com/lesson/about-dart#why-does-flutter-use-dart)
 
-I guess that all the details I need for now about Dart.
-
+I guess that's all the details I need for now about Dart.
 <br>
 
 ### I was curious why did flutter use Dart anyway?
 
-And the first reason I found was 
-**Dart supports multi-platform (ios, android, and web)**. 
+And the first reason I found was
 
-Besides this **Dart supports Just in Time(JIT) compiling which allows hot-reload making Flutter apps faster.****
+ > **Dart supports multi-platform (ios, android, and web)**.
+
+Besides this 
+
+> **Dart supports Just in Time(JIT) compiling which allows hot-reload making Flutter apps faster.**
 
 **For more curiosity :**
 
