@@ -27,6 +27,7 @@ Like most programming languages out there **Dart** is also one of them and it is
 
 I guess that's all the details I need for now about Dart.
 <br>
+<br>
 
 ### I was curious why did flutter use Dart anyway?
 
@@ -45,6 +46,7 @@ Besides this
 [Why flutter uses Dart? (youtube)](https://www.youtube.com/watch?v=5F-6n_2XWR8&feature=emb_logo)
 
 
+<br>
 
 <hr>
 ### Getting Started With Dart.
@@ -76,6 +78,8 @@ $ export PATH="$PATH:path_to_flutter/bin/cache/dart-sdk/bin/"
 $dart --version
 Dart SDK version: 2.10.4 (stable) (Wed Nov 11 13:35:58 2020 +0100) on "linux_x64"
 ```
+<br>
+<br>
 
 
 ### HELLO WORLD !!!

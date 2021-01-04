@@ -66,7 +66,7 @@ void main() {
 
 Above function **greetUser** has a ***required positional parameters*** as `(String name, int dob) `. So while calling the function its should be called in the same order i.e. `greetUser('James', 1996)`. If we called it like  `greetUser(1996, 'James')`it will raise an error.
 
-
+<br>
 ### Named Parameters
 
 **Defining the function:** 
@@ -95,6 +95,8 @@ const Scrollbar({Key key, @required Widget child}){
 }
 ```
 
+<br>
+<br>
 
 ### Optional positional parameters
 
@@ -115,6 +117,8 @@ greetUser('James', 1996, 60);
 
 ```
 
+<br>
+<br>
 
 ### Default Parameter values
 
