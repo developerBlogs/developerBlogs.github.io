@@ -6,12 +6,11 @@ category: flutter
 author: Sajan Basnet
 tags: flutter
 permalink: '/blogs/flutter/day3'
-summary: Journey of learning Flutter.
+summary: All about functions and parameters in Dart.
 toc: false
 uniq_heading_id: '#post7'
 uniq_body_id: 'post7'
 ---
-## Day 3
 
 ### All about Functions and Parameters
 

@@ -6,13 +6,13 @@ category: flutter
 author: Sajan Basnet
 tags: flutter
 permalink: '/blogs/flutter/day2'
-summary: Journey of learning Flutter.
+summary: Basic of Dart and its fundamentals.
 toc: false
 uniq_heading_id: '#post6'
 uniq_body_id: 'post6'
 ---
 
-## Day 2
+<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/2021.png">
 
 ### A Basic Program in Dart 
 

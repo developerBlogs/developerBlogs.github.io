@@ -6,7 +6,7 @@ category: flutter
 author: Sajan Basnet
 tags: flutter
 permalink: '/blogs/flutter/day1'
-summary: Journey of learning Flutter.
+summary: Starting the journey with Dart.
 toc: false
 uniq_heading_id: '#post5'
 uniq_body_id: 'post5'
