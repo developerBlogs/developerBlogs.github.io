@@ -25,8 +25,6 @@ class Employee {
   String position;
 }
 ```
-
-<br>
 <br>
 
 Now let’s say among all employees we have an employee whose name is James, age 25 and has the job position as a software engineer.
@@ -54,7 +52,6 @@ void main() {
 ```
 
 <br>
-</br>
 
 ### Constructors
 
