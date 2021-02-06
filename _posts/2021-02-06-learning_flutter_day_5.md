@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Learning Flutter (Day 5)
-date: 
+date: 2021-01-10 01:25
 category: flutter
 author: Sajan Basnet
 tags: flutter
