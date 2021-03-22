@@ -398,8 +398,9 @@ Its better to tag your repository after every release to the production by using
    Since this is our first release we named our tag as v1.0.0. 
 
    But next time if we did some major changes or we added a heavy feature to our software and released it, then our tag will be v2.0.0. 
-   
-   Also, let's say our version 2.0.0 had a bug. So, we created a patch/fix for it and pushed it to production then this time our tag version will be v2.0.1
+
+   Also, let's say our version 2.0.0 had a bug. So, we created a patch/fix for it and pushed it to production then this time our tag version will be v2.0.1 
+
 ### Note 5: .gitignore
 
 There will be files and folders that we may not want to push to the remote repo or that we dont want the git to keep track of its changes. In such case we can put them in the 
