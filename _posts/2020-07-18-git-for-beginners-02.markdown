@@ -294,7 +294,7 @@ remote:
 To https://github.com/your_github_username/Repo-name.git
  * [new branch]      develop -> develop
 ```
-Goto to the link given in the console, this will open github and create a Pull Request to master branch.
+Goto to the link given in the console, this will open github and create a Pull Request to master branch.Don't forgot to add some reviewers if there are any.
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/request_pr.png">
 
@@ -326,8 +326,6 @@ Fast-forward
  2 files changed, 3 insertions(+)
  create mode 100644 README.md
 ```
-
-There can come many cases and errors during the merging process, which I will cover in the next chapter  **Git Help Me !!! What Should I Do?**
 
 ## 10. Pulling the latest changes from remote repository.
 
@@ -389,7 +387,15 @@ Its better to tag your repository after every release to the production by using
    ```ruby
    $ git push --tags 
    ```
-   
+4. Best practice for Naming Tags
+  When developing a software product there can be many tags. So, its better to name the tags in a proper way. Usually I use the semantic versioning where tag version are increased according to the types of changes which can be "major", "minor" and "patch/bug fix".
+
+  ```ruby
+  v[major].[minor].[patch]
+  ```
+  Since this is our first release we named our tag as v1.0.0.
+  But next time if we did some major changes or we added a heavy feature to our software and released it, then our tag will be v2.0.0.
+  Also, let's say our version 2.0.0 had a bug. So, we created a patch/fix for it and pushed it to production then this time our tag version will be v2.0.1
 ### Note 5: .gitignore
 
 There will be files and folders that we may not want to push to the remote repo or that we dont want the git to keep track of its changes. In such case we can put them in the 
@@ -484,6 +490,5 @@ Kudos :clap: :tada:,  You have come to the end of this chapter. I hope this help
 
 
 <br>
-*Next section **[Git Help Me !!! What Should I Do?]({% link _posts/2020-07-18-git-for-beginners-02.markdown %})** is comming soon* 
 
 *Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
