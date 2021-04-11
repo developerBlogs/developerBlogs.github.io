@@ -1,6 +1,6 @@
 ---
 layout: post
-title: All about Functions and Parameters
+title: All about Functions and Parameters in Dart
 date: 2021-04-07 01:25
 category: flutter
 author: Sajan Basnet

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: All about Classes and Objects
+title: All about Classes and Objects in Dart
 date: 2021-04-08 01:25
 category: flutter
 author: Sajan Basnet
