@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Learning Flutter (Day 2)
-date: 2021-01-03 01:25
+title:  A Basic Program in Dart
+date: 2021-04-06 01:25
 category: flutter
 author: Sajan Basnet
 tags: flutter
@@ -13,8 +13,7 @@ uniq_body_id: 'post6'
 ---
 
 <img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/2021.png">
-
-### A Basic Program in Dart 
+ 
 
 Let's write a program to sort numbers in ascending orders. 
 

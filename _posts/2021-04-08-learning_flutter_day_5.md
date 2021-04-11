@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Learning Flutter (Day 5)
-date: 2021-01-10 01:25
+title: Instance and Class/Static methods in Dart
+date: 2021-04-08 01:25
 category: flutter
 author: Sajan Basnet
 tags: flutter
@@ -11,7 +11,6 @@ toc: false
 uniq_heading_id: '#post9'
 uniq_body_id: 'post9'
 ---
-### Instance and Class/Static methods in Dart
 
 
 ### Methods

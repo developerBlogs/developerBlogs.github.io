@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Learning Flutter (Day 4)
-date: 2021-01-07 01:25
+title: All about Classes and Objects
+date: 2021-04-09 01:25
 category: flutter
 author: Sajan Basnet
 tags: flutter
@@ -11,7 +11,6 @@ toc: false
 uniq_heading_id: '#post8'
 uniq_body_id: 'post8'
 ---
-### All about Classes and Objects
 
 
 Suppose, there's a company with more than 40 employees. Each employee will have their own properties like their name, job position, age, and so on. 

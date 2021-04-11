@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Learning Flutter (Day 3)
-date: 2021-01-04 01:25
+title: All about Functions and Parameters
+date: 2021-04-07 01:25
 category: flutter
 author: Sajan Basnet
 tags: flutter
@@ -11,9 +11,6 @@ toc: false
 uniq_heading_id: '#post7'
 uniq_body_id: 'post7'
 ---
-
-### All about Functions and Parameters
-
 
 Let's write a program that takes in the user name as an input and greets the user with their age.
 
