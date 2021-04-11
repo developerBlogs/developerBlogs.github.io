@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DART PROGRAMMING LANGUAGE
+title: Dart Programming Language
 date: 2021-04-05 11:25
 category: flutter
 author: Sajan Basnet
