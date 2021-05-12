@@ -12,7 +12,7 @@ uniq_heading_id: '#post3'
 uniq_body_id: 'post3'
 ---
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/ronronr.jpeg">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/ronronr.jpeg">
 
 **Prerequisites** 
 - Basic knowledge of Ruby on Rails and React Js.
@@ -149,12 +149,12 @@ end
 
 Now if we start our server with **rails s** we will see webpacker compiling in the console and if we goto **localhost:3000**  in the browser we will see this 
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/react-home.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/react-home.png">
 
 
 Lets create a directory as **components** inside the javaScript folder of our project and add an **App.js** file. And inside the App.js file lets add our react code.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/path-js.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/path-js.png">
 
 ```javascript
 App.js 
@@ -208,7 +208,7 @@ home.html.erb
 
 Now, if we go to the browser and reload the page we will see **Hello World** there .
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/react-hello.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/react-hello.png">
 
 ***Greate job!!! :tada: :tada:, we just created a react on rails 6 application.***
 

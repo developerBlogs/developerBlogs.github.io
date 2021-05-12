@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=KoHo:wght@200&family=Open+Sans+Condensed:wght@300&family=Signika:wght@300&display=swap');
 p {
-    line-height: 32px;
+    line-height: 37px;
     margin: 28px 0;
     letter-spacing: -0.003em;
     word-break: break-word;
     font-weight: 400;
     font-size: 22px;
-    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: 'Abel', sans-serif;
 }
 p a {
     text-decoration: underline;
@@ -15,14 +16,6 @@ h1,
 h2,
 h3,
 h4,
-stong {
-    margin-top: 1em;
-    padding-top: 0.4em;
-    line-height: 1.25;
-    color: #333;
-    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial,
-        sans-serif;
-}
 h1 {
     font-weight: 800;
     font-size: 2.5rem;
@@ -89,6 +82,11 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
+
+.img-space {
+  margin: 20px 0px;
+}
+
 #mainNav {
     position: absolute;
     border-bottom: 1px solid #e9ecef;

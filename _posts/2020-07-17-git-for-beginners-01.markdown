@@ -12,7 +12,7 @@ uniq_heading_id: '#post1'
 uniq_body_id: 'post1'
 ---
 
-<img class= "img-fluid img-thumbnail" src="https://media3.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif?cid=ecf05e47p9fwcgvdtdow0xw4s0jd4e1po7q4bcphye7h17ox&rid=giphy.gif">
+<img class= "img-fluid img-thumbnail img-space" src="https://media3.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif?cid=ecf05e47p9fwcgvdtdow0xw4s0jd4e1po7q4bcphye7h17ox&rid=giphy.gif">
 
 # What is Git and Why Use it?
 
@@ -26,7 +26,7 @@ Git is one of many version control system and the most preferable one by many pe
 
 ###  1. Easy Distribution of your Project
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git01.png">
+<img class= "img-fluid img-thumbnail img-space img-space" src="{{site.baseurl}}/assets/img/git01.png">
 
 Thats right, if you dont know anything about Version Control System this might be how you are sharing or distributing the latest version of your project with your friends or team members. 
 
@@ -43,7 +43,7 @@ Simillarly your teammates also just need to write a git command to pull/download
 
 ### 2. Resolve conflicts
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git02.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/git02.png">
 
 If you have a team working on a same project, then there can come many cases where more than one person are editing the same file.
 
@@ -53,13 +53,13 @@ Using Git will resolves such issues. It gives you features where you can keep th
 
 ### 3. You can revert and go back to older version of your code.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git003.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/git003.png">
 
 Indeed, Git is good. It lets you jump to any version of your project easily with out any problems at all.
 
 ### 4. Branches for your features. 
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/git04.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/git04.png">
 
 No matter how big or small the changes is you just dont want to mess up the present stable code. So with Git you can just create a new feature branch and start working in it without changing your old code which lies in master branch.
 

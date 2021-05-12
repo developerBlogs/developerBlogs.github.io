@@ -12,7 +12,7 @@ uniq_heading_id: '#post6'
 uniq_body_id: 'post6'
 ---
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/2021.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/2021.png">
  
 
 Let's write a program to sort numbers in ascending orders. 

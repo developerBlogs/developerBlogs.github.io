@@ -12,7 +12,7 @@ uniq_heading_id: '#post2'
 uniq_body_id: 'post2'
 ---
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/workflow.jpg">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/workflow.jpg">
 
 In this chapter we will learn step by step, how to use git in our repository(project). So, if you are new to git, please follow these steps so that you will be able to manage the many versions of your project, handle the changes in your code base, create branches for new features, open a pull request (PR) of your branch, push your project to Github and more.
 
@@ -163,7 +163,7 @@ Goto  **[Github](https://www.github.com)** and create a repository from your Git
 Create a Repository and name it. Since we are importing the existing local repo to github 
 lets not create a Readme file and skip it.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/github.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/github.png">
 
 After successfully creating a repo in the Github you will see some instructions about what to do now. Again since we are importing our local repo to github we will follow the second instruction. Add the remote url to your local repo as origin
 
@@ -296,7 +296,7 @@ To https://github.com/your_github_username/Repo-name.git
 ```
 Goto to the link given in the console, this will open github and create a Pull Request to master branch.Don't forgot to add some reviewers if there are any.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/request_pr.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/request_pr.png">
 
 Good job :clap:, you just created a PR now you and your teammates can discuss on this before merging it to master.
 
@@ -304,7 +304,7 @@ Good job :clap:, you just created a PR now you and your teammates can discuss on
 
 If you are a reviewer and merging a Pull Request it can be done easily by the click of a button in Githhub or Bitbucket. Just goto github and the pull-request tab and merge the request to master.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/merging.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/merging.png">
 
 But if you want to merge two branches together we can do this by two ways **[git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)** and **[git merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)**. We will be using **git merge** .
 
@@ -432,7 +432,7 @@ Before sending a PR we need to first fork the repo to our github.
 
 You can fork my [**repository**](https://github.com/DevloperBlogger/LearnGit) for this.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/fork.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/fork.png">
 
 Then clone this repository to our local sytem like in **Step 10**
 
@@ -472,11 +472,11 @@ Enumerating objects: 5, done.
 ```
 Once you push the changes to your remote repo, you will see a **Compare & pull request** button for feature/awesome_feature branch  GitHub site.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/compare.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/compare.png">
 
 Click the button and you will be send to the page where you can create a **PR**.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/pr.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/pr.png">
 
 All you need to do now is create a pull request by clicking the Create Pull Request button. Once the PR is created the owner of the repo will be able yo view your changes and merge if its really awesome or declined it.
 

@@ -13,7 +13,7 @@ uniq_body_id: 'post4'
 ---
 ## Authentication and Authorization
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/authenticate_vs_authorize.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/authenticate_vs_authorize.png">
 
 Before talking about Oauth 2.0, first lets grab a basic concept about what is **Authentication** and **Authorization**. We can all find this both terms generally used in the information security topic and they both have fundamentally different functions. 
 
@@ -29,7 +29,7 @@ Now, In case of web or mobile application a login form is a simple authenticatio
 
 Lets say we have an application known as **Glootie app** and this application has a feature to send pictures or files to all the gmail contacts of its users. Lets see how they would have handle this task before the OAuth 2.0 was invented.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/delprob.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/delprob.png">
 
 We will be seeing this two character **Glootie** (the red alien) and **Jerry** from the epic show (**Rick and Morty**- **S4: E2**) most of the time in this post. I thought this might help the readers to easily understand the topic. 
 
@@ -39,18 +39,18 @@ First of all, never be like Jerry and provide any application with such access. 
 
 Lets say, Glootie app just integrated a **Sign In With Google** feature which uses OAuth 2.0 protocol. Lets look at the first step that occurs whrn a user tries to sign in with google.
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/auth1.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/auth1.png">
 
 At first when we click the **Sign in With Google** button in the web application then we will be redirected to **Google domain** page or **authorization server** where we need to login with our Google email and password if not already logged in. After logging in we get a prompt with a consent page saying *"Glootie app is trying to access this from your account. Do you want to authorize the application?"*.
 
 If we click **yes/allow** then we will be redirected back to the "**redirect_uri**" of the Glootie application with an **authorization code** .
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/auth2.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/auth2.png">
 
 The **client** ( Glootie App ) actually wants an **access token** to access the contacts of Jerry. So, the app goes back to the authorization server to get the **access token** by providing the **authorization code** to the server. If the authorization code provided by the client is not expired or is still valid then the client is provided with the **access token**.
 
 Since the Glootie app now has got the **access token** it can go and ask for the access to Jerry's contacts.
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/auth3.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/auth3.png">
 
 In order to get access to the contacts of **resource owner** (Jerry) the app needs to provide the access token to the **resource server**. Then the server checks the token and what kind of resource it has access to and provide the resource to the app. In case if Glootie app tries to make the request of resource they dont have access to *for eg: delete all the contacts* then they are declined by the **resource server**.
 
@@ -75,7 +75,7 @@ We just learn the basic work-flow and terminology of **OAuth 2.0**. Lets see a q
 
 ## OAuth 2.0 Workflow in an Web Server Application
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/oauth.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/oauth.png">
 
 First, our app need to have  OAuth 2.0 credentials such as a **client ID** and **client secret** that are known to both Google and our application. We can visit the <a href="https://console.developers.google.com/" target="_blank">**Google API Console** </a>to obtain it.
 

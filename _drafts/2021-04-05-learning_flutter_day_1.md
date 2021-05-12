@@ -15,7 +15,7 @@ uniq_body_id: 'post5'
 Yes, after so much laziness and procrastination I have finally decided to learn Flutter. This blog is just a note of my journey of learning Flutter from Day 1
 
 
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/programming.jpeg">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programming.jpeg">
 
 
 ### DART PROGRAMMING LANGUAGE
@@ -69,7 +69,7 @@ $ flutter sdk-path
 ```ruby
 $ flutter --version
 ```
-<img class= "img-fluid img-thumbnail" src="{{site.baseurl}}/assets/img/flutter_version.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/flutter_version.png">
 
 In order to get dart command working anywhere in the terminal
 

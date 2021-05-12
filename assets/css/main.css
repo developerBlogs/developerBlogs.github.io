@@ -187,8 +187,6 @@ audio:not([controls]) {
 /**
  * Remove the border on images inside links in IE 10-.
  */
-img {
-  border-style: none; }
 
 /**
  * Hide the overflow in IE.
@@ -3885,18 +3883,21 @@ sub {
   margin-left: -50px;
   width: 100px;
   height: 100px; }
-
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=KoHo:wght@200&family=Open+Sans+Condensed:wght@300&family=Signika:wght@300&display=swap');
 p {
   line-height: 1.5;
   margin: 30px 0; }
 
 .post-font {
+  line-height: 37px;
+  margin: 28px 0;
   letter-spacing: -0.003em;
   word-break: break-word;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
-  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif; }
+  font-family: 'Abel', sans-serif;
+ }
 
 .foot-text {
   font-size: 18px; }
