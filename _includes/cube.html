@@ -1,0 +1,99 @@
+<script src="https://threejs.org/build/three.js"></script>
+<script>
+  // scene is like a container that holds all the 3d object, camera and lights 
+  const scene = new THREE.Scene();
+
+  // to view the scene we need a camera and
+  // most used camera out of many in 3js is PerspectiveCamera(field of view, aspect ratio, view frustum) which
+  // mimics what human see through their eyball
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+
+  // we now need a render to render out the actual graphics to the scene
+  // render needs to know which dom elements to use
+  const renderer = new THREE.WebGLRenderer({
+    canvas: document.querySelector('#bg'),
+    alpha: true
+  })
+
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+  camera.position.setZ(30);
+
+  // adding object
+  // adding geometry first
+  // const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
+  const geometry = new THREE.SphereGeometry(2, 32, 32)
+  
+  // texture in the geometry object
+  const moonTexture = new THREE.TextureLoader().load('../assets/moon.jpg')
+  // more awesome texture
+  const normalTexture = new THREE.TextureLoader().load('../assets/normal.jpg')
+
+  //now define a material for giving color, shader for the geometry
+  const material = new THREE.MeshStandardMaterial({
+    map: moonTexture,
+    normalMap: normalTexture
+  });
+
+  // create a mesh to combine geometry with material
+  const moon = new THREE.Mesh(geometry, material)
+
+  scene.add(moon)
+
+  // adding lighting 
+  // pointLight is used among many like a light bulb
+  // 0X is a hexadecimal literal 
+  const pointLight = new THREE.PointLight(0xffffff)
+  pointLight.position.set(3,3,3)
+
+  // using ambident light to light up entire scene
+  const ambientLight = new THREE.AmbientLight(0xffffff)
+
+  scene.add(pointLight, ambientLight)
+
+  // lets add some helper
+  const gridHelper = new THREE.GridHelper(200, 50)
+  const lightHelper = new THREE.PointLightHelper(pointLight)
+  // scene.add(gridHelper, lightHelper)
+
+  // game loop
+  const animate = function () {
+    requestAnimationFrame(animate);
+
+    moon.rotation.x += 0.005;
+    moon.rotation.y += 0.003;
+    // moon.rotation.z += 0.01;
+    renderer.render(scene, camera); //draw
+  };
+
+  animate();
+</script>
+
+
+
+
+<!-- 
+// const scene = new THREE.Scene();
+// const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+// const renderer = new THREE.WebGLRenderer();
+// renderer.setSize( window.innerWidth, window.innerHeight );
+// document.body.appendChild( renderer.domElement );
+
+// const geometry = new THREE.BoxGeometry();
+// const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+// const cube = new THREE.Mesh( geometry, material );
+// scene.add( cube );
+
+// camera.position.z = 5;
+
+// const animate = function () {
+// requestAnimationFrame( animate );
+
+// cube.rotation.x += 0.01;
+// cube.rotation.y += 0.01;
+
+// renderer.render( scene, camera );
+// };
+
+// animate(); -->

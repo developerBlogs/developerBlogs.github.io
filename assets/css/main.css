@@ -3657,6 +3657,19 @@ sub {
     width: 100% !important;
     height: 100vh !important; }
 
+#bg{
+  position: fixed;
+  top: -338px;
+  left: 380px;
+}
+
+@media (max-width: 800px) {
+  .d-small-none {
+    display: none !important;
+  }
+}
+
+
 .header {
   z-index: 1;
   text-align: center;
