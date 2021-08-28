@@ -14,9 +14,8 @@ uniq_body_id: 'post6'
 
 ## Creating our first API endpoint 
 
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpeg">
-
-Let's create our first API endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how organizes its codebase. If not go ahead and check [this](https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj) out first. 
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpg">
+Let's create our first API endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how organizes its codebase. If not go ahead and check <a href="https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj" target="_blank">**this** </a> out first. 
 
 ### API versioning
 
@@ -132,9 +131,7 @@ end
 ```
 
 Let's run the test cases and check if its pass or fails. In the terminal enter `rspec spec/models`
-
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/fail.png">
-
 Of course, this test will fail as we haven't added any active record validation in the user model so lets add that
 
 Our `user.rb` model will look something like this now
@@ -147,7 +144,6 @@ end
 ```
 
 Let's check the test again with `rspec spec/models`
-
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/pass.png">
 
 Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
