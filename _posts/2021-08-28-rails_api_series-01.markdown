@@ -21,7 +21,7 @@ Hi there, welcome to the first part of the series of building API in rails. Let'
 1. Setting up our Ruby on Rails API only application with all necessary gems and stuff.
 2. Adding Rspec for the TDD approach.
 3. Building a login/session API
-4. integrating Google Oauth
+4. Integrating Google Oauth
 5. and many more .....
 
 
@@ -60,6 +60,6 @@ Before moving forward to creating an API lets first do the following
 
 
 
-Great 🎉 🎉 we are done with the setup. Let's run `rails s` in the terminal and visit [here](http://localhost:3000/).
+Great 🎉 🎉 we are done with the setup. Let's run `rails s` in the terminal and visit <a href="http://localhost:3000/" target="_blank">**here** </a>.
 
 Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
