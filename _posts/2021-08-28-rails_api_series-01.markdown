@@ -14,7 +14,7 @@ uniq_body_id: 'post5'
 
 ## Getting it ready 
 
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/api.jpeg>
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/api.jpeg">
 
 Hi there, welcome to the first part of the series of building API in rails. Let's just start with what this series will cover 
 
@@ -30,28 +30,18 @@ Hi there, welcome to the first part of the series of building API in rails. Let'
 It's quite easy to set up a ROR application and since ROR is a battery included framework we don't have to worry about any configuration stuff. 
 
 Make sure that you have
-
 1. Ruby installed
-
 2. For this, we can install first [RVM (Ruby Version Manager)](https://rvm.io/rvm/install) then install the required ruby version. We will be using the latest ruby version which is 3.0.2 as of now. 
-
 3. Node js, npm, and Yarn installed
-
    Although we might not need this since it's API only application but it might come in handy later so it's better to install it. Refer [to this](https://classic.yarnpkg.com/en/docs/install#windows-stable) for installing Yarn. 
-
 4. For node, we can install it with [nvm](https://github.com/nvm-sh/nvm#installing-and-updating). I love using [**n**](https://github.com/tj/n) as node version manager. 
-
 5. Rails installed.
-
    Open the terminal and enter gem install rails 
-
 6. Check your rails version with the `rails version` command. For this series, we will be using the **Rails version 6.1.4**
 
 
 Now since we have everything needed let us go ahead and set up our application.
-
 Go to terminal and enter
-
 ```ruby
 rails new api_app --api -d postgresql --skip-system-test --skip-test
 ```
