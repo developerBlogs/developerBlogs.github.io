@@ -14,7 +14,8 @@ uniq_body_id: 'post6'
 
 ## Creating our first API endpoint 
 
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpg">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpg"> 
+
 Let's create our first API endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how organizes its codebase. If not go ahead and check <a href="https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj" target="_blank">**this** </a> out first. 
 
 ### API versioning
@@ -38,12 +39,10 @@ rails g model User fullname:string email:string encrypted_password:string gender
 ```
 
 This will create all the necessary files such as the migration file, user model file, and test cases files.
-
-IMAGE
-
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/migration.png"> 
 Let's do `rails db:migrate` in the terminal. 
 
-I also like to install a gem called [annotate](https://github.com/ctran/annotate_models) which is quite useful for reading the Active Record schema.
+I also like to install a gem called <a href="https://github.com/ctran/annotate_models" target="_blank">**annotate** </a> which is quite useful for reading the Active Record schema.
 
 In the Gemfile add `gem annotate` inside the group development and test and then `bundle install` in the terminal. Now in the terminal, we can do 
 
@@ -67,7 +66,6 @@ module Api
     end
   end
 end
-
 ```
 
 Now again inside the folder `api/v1` let's create a User's controller which will inherit from the Base controller.
@@ -98,12 +96,11 @@ module Api
     end
   end
 end
-
 ```
 
 ### Writing Test Cases for User model
 
-Let's write some test cases for the user model first also known as **unit test**. I like using the [shoulda_matchers](https://github.com/thoughtbot/shoulda-matchers) gem which provides the common test functionality.
+Let's write some test cases for the user model first also known as **unit test**. I like using the <a href="https://github.com/thoughtbot/shoulda-matchers" target="_blank">**shoulda_matchers** </a> gem which provides the common test functionality.
 
 In the Gemfile add `gem 'shoulda-matchers', '~> 5.0'`inside test group and hit bundle install, and in the `rails_helpers.rb` add this at the end.
 
@@ -114,7 +111,6 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
-
 ```
 
 And in the `user_spec.rb` let's write some test cases
@@ -127,7 +123,6 @@ RSpec.describe User, type: :model do
   it { should validate_presence_of(:full_name) }
   it { should validate_presence_of(:encrypted_password) }
 end
-
 ```
 
 Let's run the test cases and check if its pass or fails. In the terminal enter `rspec spec/models`
@@ -140,7 +135,6 @@ Our `user.rb` model will look something like this now
 class User < ApplicationRecord
   validates :email, :fullname, :encrypted_password, presence: true
 end
-
 ```
 
 Let's check the test again with `rspec spec/models`
