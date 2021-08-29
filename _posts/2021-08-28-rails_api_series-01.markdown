@@ -21,9 +21,11 @@ Hi there, welcome to the first part of the series of building API in rails. Let'
 
 1. Setting up our Ruby on Rails API only application with all necessary gems and stuff.
 2. Adding Rspec for the TDD approach.
-3. Building a login/session API
-4. Integrating Google Oauth
-5. and many more .....
+3. Building a CRUD RESTful APIs
+4. Active model serializers
+5. Integrating Fast JSON api, JSON API specification
+6. Integration SWAGGER for api documentation
+7. and many more....
 </div>
 </div>
 
