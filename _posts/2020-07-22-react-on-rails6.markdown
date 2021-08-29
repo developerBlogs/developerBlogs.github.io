@@ -110,6 +110,12 @@ gem 'factory_bot_rails'
 
 Here FactoryBot gem helps us to create our own test data. 
 
+Also we configure the FactoryBot to be used with Rspec by default, for this just go to `rails_helper.rb` file and inside `RSpec.configure do |config|` add this
+
+```ruby
+config.include FactoryBot::Syntax::Methods
+```
+
 Lets hit **bundle install** and then **`rails generate rspec:install`** to create configurations files for rspec setup.
 
 ```bash
