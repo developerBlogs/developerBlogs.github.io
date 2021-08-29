@@ -13,7 +13,7 @@ uniq_body_id: 'post4'
 ---
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Authentication and Authorization
 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/authenticate_vs_authorize.png">
@@ -31,7 +31,7 @@ Now, In case of web or mobile application a login form is a simple authenticatio
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Delegation Problem
 
 Lets say we have an application known as **Glootie app** and this application has a feature to send pictures or files to all the gmail contacts of its users. Lets see how they would have handle this task before the OAuth 2.0 was invented.
@@ -45,7 +45,7 @@ First of all, never be like Jerry and provide any application with such access. 
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## OAuth 2.0 as Authorization
 
 Lets say, Glootie app just integrated a **Sign In With Google** feature which uses OAuth 2.0 protocol. Lets look at the first step that occurs whrn a user tries to sign in with google.
@@ -68,7 +68,7 @@ In order to get access to the contacts of **resource owner** (Jerry) the app nee
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## OAuth 2.0 Terminology
 
 * **Client**: The application that wants to have access to the resource. In our case Glootie app wants to have access to the resource.
@@ -92,7 +92,7 @@ We just learn the basic work-flow and terminology of **OAuth 2.0**. Lets see a q
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## OAuth 2.0 Workflow in an Web Server Application
 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/oauth.png">
@@ -160,7 +160,7 @@ Access tokens have limited lifetimes. If our application needs access to this ca
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## OpenID Connect as Authentication.
 
 OAuth 2.0 APIs can be used for both authentication and authorization. For the authentication part we can use the <a href="https://openid.net/connect/" target="_blank">**OpenID Connect** </a> which is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of the resource owner to obtain basic profile information about them before the whole authorization process. 
@@ -192,7 +192,7 @@ OAuth 2.0 adds another token known as **id token** along with the authorization 
 </div>
 
 <div class="row article-container">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 *Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
 
 

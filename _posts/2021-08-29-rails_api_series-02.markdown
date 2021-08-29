@@ -13,7 +13,7 @@ uniq_body_id: 'post6'
 ---
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Creating our first API endpoint 
 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpg"> 
@@ -23,7 +23,7 @@ Let's create our first <a href="https://www.altexsoft.com/blog/rest-api-design/"
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## API versioning
 
 Initially, the version of our API maybe let's say 'V1' and as our application grows it will have many versions for the API as well(v1, v2, v3....). The clients that use our API may not only use the latest version, what I mean by that is there may be some clients which may only use certain versions of the API let's say v1 even though our latest version is v3. So we must keep in mind the versioning of our API.
@@ -39,7 +39,7 @@ So all the API we create will be inside this folder.
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Creating User model
 
 Let's say our **user** consists of attributes like **fullname**, **email**, **gender** and **encrypted_password**. Go to the terminal and type this to create a user model.
@@ -65,7 +65,7 @@ If we go to the `user.rb` model we can see the schema information on the top.
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Creating the Users Controller
 
 Before creating any API's controller let's create a controller a `base_controller.rb` first inside the `api/v1` folder which will be inherited from the Application controller. So all the rules or code added in the base controller will apply to all our API's controllers globally.
@@ -110,7 +110,7 @@ end
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Setting up Routes
 
 Let's edit the generated `route.rb` file to something like this
@@ -133,7 +133,7 @@ Now if we go to our terminal and hit `rails route` we can see our endpoints url 
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Writing Test Cases for User model
 
 Let's write some test cases for the user model first also known as **unit test**. I like using the <a href="https://github.com/thoughtbot/shoulda-matchers" target="_blank">**shoulda_matchers** </a> gem which provides the common test functionality.
@@ -180,7 +180,7 @@ Let's check the test again with `rspec spec/models`
 </div>
 
 <div class="row article-container">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
 
 </div>

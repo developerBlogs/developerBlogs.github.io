@@ -13,7 +13,7 @@ uniq_body_id: 'post5'
 ---
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Getting it ready 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/api.jpeg">
 
@@ -28,7 +28,7 @@ Hi there, welcome to the first part of the series of building API in rails. Let'
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Setting up our Ruby on Rails API only application with all necessary gems and stuff
 
 It's quite easy to set up a ROR application and since ROR is a battery included framework we don't have to worry about any configuration stuff. 
@@ -47,7 +47,7 @@ Make sure that you have
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 Now since we have everything needed let us go ahead and set up our application.
 Go to terminal and enter
 ```ruby
@@ -60,7 +60,7 @@ So, you might have noticed the database we will be using which is Postgresql, an
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 Before moving forward to creating an API lets first do the following
 1. <a href="https://developerblogs.github.io/blogs/rails/01#3-setup-database" target="_blank">**Setup Database** </a>
 2. <a href="https://developerblogs.github.io/blogs/rails/01#2-setup-robocop-gem">**Setup Rubocop Gem** </a>
@@ -73,7 +73,7 @@ Great 🎉 🎉 we are done with the setup. Let's run `rails s` in the terminal 
 </div>
 
 <div class="row article-container">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
 </div>
 </div>

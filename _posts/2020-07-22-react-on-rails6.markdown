@@ -12,7 +12,7 @@ uniq_heading_id: '#post3'
 uniq_body_id: 'post3'
 ---
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/ronronr.jpeg">
 
 **Prerequisites** 
@@ -22,7 +22,7 @@ uniq_body_id: 'post3'
 </div>
 </div>
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 1. Creating New Rails Application
 
 The ruby version we will be  using here is **2.7.1** and  **rails 6.0.3.2**. Check yours by using `ruby -v` and `rails -v`. Lets create a new rails application.
@@ -42,7 +42,7 @@ By creating a rails application using above method we will have all the required
 </div>
 </div>
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 2. Setup Robocop gem
 
 As a linter lets use the well known **rubocop**. 
@@ -62,7 +62,7 @@ You can add the available rubocop extensions in your code editor as well.
 </div>
 </div>
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 3. Setup Database
 
 Before setting up our database lets add the `gem 'dotenv-rails'` in the gemfile and do bundle install.  Then create a **.env** file in our root folder and add  this into our **.gitignore.** Now lets write our postgresql database URL in the .env file.
@@ -98,7 +98,7 @@ Finally, let's create the database using  **`rake db:create`**
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 4. Setup Rspec for testing 
 
 Initially we skipped the default test of rails but its always better to follow **TDD** approach. So, lets go ahead and install the **rspec-rails** gem. 
@@ -127,7 +127,7 @@ Running via Spring preloader in process 2564
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 5. Adding Bootstrap
 
 If we need to add bootstrap in our application we can now install it as a dependency so that we can use it in both the .erb files and react components as well.
@@ -153,7 +153,7 @@ import 'bootstrap/dist/css/bootstrap'
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 6. Hello World
 
 Since we have setup our **react on rails app**, lets go ahead and create our first component that prints `Hello World` in our rails app.
@@ -243,7 +243,7 @@ Now, if we go to the browser and reload the page we will see **Hello World** the
 </div>
 </div>
 <div class="row article-container">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 *Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
 </div>
 </div>

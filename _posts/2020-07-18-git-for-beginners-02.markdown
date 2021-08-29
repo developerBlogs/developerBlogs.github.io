@@ -13,7 +13,7 @@ uniq_body_id: 'post2'
 ---
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/workflow.jpg">
 
 In this chapter we will learn step by step, how to use git in our repository(project). So, if you are new to git, please follow these steps so that you will be able to manage the many versions of your project, handle the changes in your code base, create branches for new features, open a pull request (PR) of your branch, push your project to Github and more.
@@ -21,7 +21,7 @@ In this chapter we will learn step by step, how to use git in our repository(pro
 </div>
 </div>
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 1. Install Git 
 The first and the foremost step is to install git in our local system.
 If you think you already have git install in your system then you can confirm it by going to your terminal or command prompt and using the command 
@@ -50,7 +50,7 @@ $ sudo apt install git-all
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 2. Create A Project and Initialize Git In It
 
 Before using git lets configure it first 
@@ -79,7 +79,7 @@ Great job !!! You just made your first local git repository.
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 3. Make Your First Change
 
 Open your text editor and create a file **index.html** inside your project folder
@@ -99,7 +99,7 @@ You just made your first change. Lets see how we can use git to track this chang
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 4. Add Your Changes Using `git add`
 
 Before adding our changes anywhere lets first check the status of the project using command **git status**.
@@ -151,7 +151,7 @@ $ git add .
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 5. Commit Your Changes Using `git commit`
 
 Now we just need to commit the changes that was sent to the staging area so lets do that by using **git commit**
@@ -179,7 +179,7 @@ nothing to commit, working tree clean
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 6. Import The Repository To Github
 
 Lets push our repository to the **[Github](https://www.github.com)**. 
@@ -220,7 +220,7 @@ Congratulations, you just pushed your repo to github.
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 7. Creating A New Branch Using `git branch`
 
 Lets say we want to add something new to our project or repo but without affecting the current code or lets say we want to copy the current project and make change to the copied version without affecting the original one.
@@ -297,7 +297,7 @@ Lets switch to the master branch  **`git checkout master`**. Now if we reload th
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 8. Open a Pull Request For Review And Discussion 
 
 If you are opening a Pull Request(PR) for your work then what it basically means is that you have added some awesome feature, changes to this project or solved a bug and you are notifying all the involved team members, reviewer about the changes before merging it to the master branch.
@@ -339,7 +339,7 @@ Good job :clap:, you just created a PR now you and your teammates can discuss on
 </div>
 </div>
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 9. Merging Branches
 
 If you are a reviewer and merging a Pull Request it can be done easily by the click of a button in Githhub or Bitbucket. Just goto github and the pull-request tab and merge the request to master.
@@ -370,7 +370,7 @@ Fast-forward
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## 10. Pulling the latest changes from remote repository.
 
 After the PR have been merged we will not have the lates changes to our master branch so we need to pull the latest changes from the remote to our local by using
@@ -386,7 +386,7 @@ Or simply `*git pull*` by switching to the branch we want to pull
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Some Important Notes
 
 ### Note 1: Check if you have latest changes in local repo.
@@ -460,7 +460,7 @@ There will be files and folders that we may not want to push to the remote repo 
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Cloning a Repository Using `git clone`
 
 We can easily clone (copy) a remote repository available in the github site into our local sytem by using the command 
@@ -479,7 +479,7 @@ This will clone the repository to your local system. If you want to get all the 
 </div>
 
 <div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Open Source Contribution
 
 What if we have cloned some some one else repository and created a branch **`feature/awesome_feature`** . Now we are hoping that this feature gets merged in the master branch of the repository and is publicly available to people to use it. Since this time we are not the owner of the repository we cannot just merge and push the changed like we did in **step 8 & step 9**. 
@@ -555,6 +555,6 @@ Kudos :clap: :tada:,  You have come to the end of this chapter. I hope this help
 </div>
 </div>
 <div class="row article-container">
-<div class="col-lg-9 col-md-9 mx-auto pt-2">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 
 *Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
