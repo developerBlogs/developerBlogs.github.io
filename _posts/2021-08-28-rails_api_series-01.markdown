@@ -66,7 +66,7 @@ So, you might have noticed the database we will be using which is Postgresql, an
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 Before moving forward to creating an API lets first do the following
 1. <a href="https://developerblogs.github.io/blogs/rails/01#setup-database" target="_blank">**Setup Database** </a>
-2. <a href="https://developerblogs.github.io/blogs/rails/01#setup-robocop-gem">**Setup Rubocop Gem** </a>
+2. <a href="https://developerblogs.github.io/blogs/rails/01#setup-robocop-gem" target="_blank">**Setup Rubocop Gem** </a>
 3. <a href="https://developerblogs.github.io/blogs/rails/01#setup-rspec-for-testing" target="_blank">**Setup Rspec** </a>
 
 
