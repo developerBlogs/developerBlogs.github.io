@@ -11,13 +11,18 @@ summary: In this topic we will learn how to quicky setup our reactjs on rails 6 
 uniq_heading_id: '#post3'
 uniq_body_id: 'post3'
 ---
-
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/ronronr.jpeg">
 
 **Prerequisites** 
 - Basic knowledge of Ruby on Rails and React Js.
 - Have install `ruby`, `rails` , `node.js` , `yarn` , `npm`,  `postgresql` in their system.
 
+</div>
+</div>
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## 1. Creating New Rails Application
 
 The ruby version we will be  using here is **2.7.1** and  **rails 6.0.3.2**. Check yours by using `ruby -v` and `rails -v`. Lets create a new rails application.
@@ -34,6 +39,10 @@ $ rails new react-rails-crud-app --database postgresql --skip-test --webpack=rea
 
 By creating a rails application using above method we will have all the required dependencies installed. If we now go to our text editor and look at the project folder , and inside app javascript/packs we can find two files **application.js**  and **hello_react.jxs**. 
 
+</div>
+</div>
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## 2. Setup Robocop gem
 
 As a linter lets use the well known **rubocop**. 
@@ -50,6 +59,10 @@ $ bundle exec rubocop --auto-correct
 
 You can add the available rubocop extensions in your code editor as well.  
 
+</div>
+</div>
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## 3. Setup Database
 
 Before setting up our database lets add the `gem 'dotenv-rails'` in the gemfile and do bundle install.  Then create a **.env** file in our root folder and add  this into our **.gitignore.** Now lets write our postgresql database URL in the .env file.
@@ -81,6 +94,11 @@ test:
 
 Finally, let's create the database using  **`rake db:create`**
 
+</div>
+</div>
+
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## 4. Setup Rspec for testing 
 
 Initially we skipped the default test of rails but its always better to follow **TDD** approach. So, lets go ahead and install the **rspec-rails** gem. 
@@ -105,6 +123,11 @@ Running via Spring preloader in process 2564
 
 ***Great :tada: :clap: :tada:  we are done with creating our React on Rails 6 app.***
 
+</div>
+</div>
+
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## 5. Adding Bootstrap
 
 If we need to add bootstrap in our application we can now install it as a dependency so that we can use it in both the .erb files and react components as well.
@@ -126,6 +149,11 @@ require('bootstrap')
 import 'bootstrap/dist/css/bootstrap'
 ```
 
+</div>
+</div>
+
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## 6. Hello World
 
 Since we have setup our **react on rails app**, lets go ahead and create our first component that prints `Hello World` in our rails app.
@@ -212,4 +240,10 @@ Now, if we go to the browser and reload the page we will see **Hello World** the
 
 ***Greate job!!! :tada: :tada:, we just created a react on rails 6 application.***
 
+</div>
+</div>
+<div class="row article-container">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 *Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
+</div>
+</div>

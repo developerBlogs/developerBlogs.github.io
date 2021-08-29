@@ -11,6 +11,9 @@ toc: true
 uniq_heading_id: '#post4'
 uniq_body_id: 'post4'
 ---
+
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## Authentication and Authorization
 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/authenticate_vs_authorize.png">
@@ -24,7 +27,11 @@ Before talking about Oauth 2.0, first lets grab a basic concept about what is **
 Authentication usually occurs before Authorization and if users can't authenticate themself then they are not authorized to access the resources. 
 
 Now, In case of web or mobile application a login form is a simple authentication system and after we are logged in successfully the resource that will be accessible to us are only the resource that are authorized to us. Besides a simple login form now most of the website have a third party login such as Facebook or Google login. All this third parties they generally follow the same protocol which is **OAuth 2.0** for the authorization and **OpenID connect** for authentication.
+</div>
+</div>
 
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## Delegation Problem
 
 Lets say we have an application known as **Glootie app** and this application has a feature to send pictures or files to all the gmail contacts of its users. Lets see how they would have handle this task before the OAuth 2.0 was invented.
@@ -34,7 +41,11 @@ Lets say we have an application known as **Glootie app** and this application ha
 We will be seeing this two character **Glootie** (the red alien) and **Jerry** from the epic show (**Rick and Morty**- **S4: E2**) most of the time in this post. I thought this might help the readers to easily understand the topic. 
 
 First of all, never be like Jerry and provide any application with such access. The above picture depicts a delegation problem where we need to authorize an application to have entire access to our other application such as gmail or google drive in order to use some service of that application. What if we want to let the application to only access the contacts or certain information. This is why OAuth protocol was built to solve this problem. 
+</div>
+</div>
 
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## OAuth 2.0 as Authorization
 
 Lets say, Glootie app just integrated a **Sign In With Google** feature which uses OAuth 2.0 protocol. Lets look at the first step that occurs whrn a user tries to sign in with google.
@@ -53,7 +64,11 @@ Since the Glootie app now has got the **access token** it can go and ask for the
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/auth3.png">
 
 In order to get access to the contacts of **resource owner** (Jerry) the app needs to provide the access token to the **resource server**. Then the server checks the token and what kind of resource it has access to and provide the resource to the app. In case if Glootie app tries to make the request of resource they dont have access to *for eg: delete all the contacts* then they are declined by the **resource server**.
+</div>
+</div>
 
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## OAuth 2.0 Terminology
 
 * **Client**: The application that wants to have access to the resource. In our case Glootie app wants to have access to the resource.
@@ -73,6 +88,11 @@ Click <a href="https://oauth.net/2/grant-types/" target="_blank">**here** </a> t
 
 We just learn the basic work-flow and terminology of **OAuth 2.0**. Lets see a quick example how our application should make request to the authorization server and all other following process if it wants to use a **Google Login** feature.
 
+</div>
+</div>
+
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## OAuth 2.0 Workflow in an Web Server Application
 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/oauth.png">
@@ -136,7 +156,11 @@ Authorization: Bearer asdOasd1asdKADdf1233tgdad00df
 After the access token  is successfully  validated by the api, the application is now allowed to read and write to users calender. 
 
 Access tokens have limited lifetimes. If our application needs access to this calender api beyond the lifetime, it can obtain a refresh token. A refresh token allows our application to obtain new access tokens without prompting the user for authorization grant.
+</div>
+</div>
 
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## OpenID Connect as Authentication.
 
 OAuth 2.0 APIs can be used for both authentication and authorization. For the authentication part we can use the <a href="https://openid.net/connect/" target="_blank">**OpenID Connect** </a> which is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of the resource owner to obtain basic profile information about them before the whole authorization process. 
@@ -163,7 +187,14 @@ OAuth 2.0 adds another token known as **id token** along with the authorization 
 - **[Using OAuth to access Google Api's](https://developers.google.com/identity/protocols/oauth2)**
 - **[AuthO Docs](https://auth0.com/docs/)**
 
-<hr>
+
+</div>
+</div>
+
+<div class="row article-container">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 *Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
 
 
+</div>
+</div>

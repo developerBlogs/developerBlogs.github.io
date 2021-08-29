@@ -12,6 +12,8 @@ uniq_heading_id: '#post1'
 uniq_body_id: 'post1'
 ---
 
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 <img class= "img-fluid img-thumbnail img-space" src="https://media3.giphy.com/media/kH6CqYiquZawmU1HI6/giphy.gif?cid=ecf05e47p9fwcgvdtdow0xw4s0jd4e1po7q4bcphye7h17ox&rid=giphy.gif">
 
 # What is Git and Why Use it?
@@ -20,6 +22,10 @@ You have just started to work on a project, integrated an awesome feature to it 
 
 A project can have many versions like this with continous changes to it. And also for a project with many teammates several members of the team can work on the same source code. So, we will need a system or tools to track the changes made in our project, a sytem which can help us to go back and forth to the different versions of the project. What we need is a sytem for managing different versions of the same code base and Git is basically that, a **Version Control System**.
 
+</div>
+</div>
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 ## Why Use Git? 
 
 Git is one of many version control system and the most preferable one by many people.
@@ -68,8 +74,14 @@ Its just like creating a copy of you project and editing on that copied version 
 ### 5. You will end up needing Git eventually.
 
 There might be no any software companies out there who will not be using any version control system. So, its better to learn git before being hired to a company and have more chance to get hired.
+</div>
+</div>
 
-<br>
+<div class="row article-container">
+<div class="col-lg-9 col-md-9 mx-auto pt-2">
 *Head out to the next section where you can learn **[How to Use Git?]({% link _posts/2020-07-18-git-for-beginners-02.markdown %})***
 
 Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
+
+</div>
+</div>

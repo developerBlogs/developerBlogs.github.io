@@ -91,7 +91,7 @@
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-9 col-md-9 mx-auto">
+      <div class="col-lg-9 col-md-9 mx-auto pt-2">
         <div class="post-heading">
           <h1 style="color: snow;">{{ page.title }}</h1>
           <!-- <h2 class="subheading" style="color: whitesmoke;">{{page.subtitle}}</h2>s -->
@@ -116,7 +116,7 @@
 <!-- Post Content -->
 <article class="post-font">
   <div class="container">
-    <div class="article-container">
+    <div class="">
       <div class="float-toc mb-5 p-4 d-sm-none d-md-none d-none d-lg-block">
         {% if page.toc == true %}
         <div class="toc border p-3" id="lg-float">
@@ -126,35 +126,32 @@
         </div>
         {% endif %}
       </div>
-      <div class="row">
-        <div class="col-lg-9 col-md-9 mx-auto d-lg-none">
-          {% if page.toc == true %}
+      {% if page.toc == true %}
+      <div class="row article-container mb-2 p-2 d-lg-none">
+        <div class="col-lg-9 col-md-9 mx-auto ">
           <div class="toc border p-2 pt-4">
             {% include toc.html html=content %}
           </div>
-          {% endif %}
-        </div>
-        <div class="col-lg-9 col-md-9 mx-auto">
-          {{ content }}
         </div>
       </div>
-      <div class="row mt-1 mb-1">
-        <div class="col-lg-9 col-md-9 mx-auto">
-          {% for tag in page.tags %}
-          {% assign tag_url = tag | prepend: "/blogs/" %}
-          <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="row mt-4 mb-1">
-        <div class="col-lg-9 col-md-9 mx-auto">
-          {% include newsletter.html %}
-        </div>
+      {% endif %}
+      {{ content }}
+    </div>
+    <div class="row" style="background-color: #fdfdf9">
+      <div class="col-lg-9 col-md-9 mx-auto mb-4">
+        {% for tag in page.tags %}
+        {% assign tag_url = tag | prepend: "/blogs/" %}
+        <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
+        {% endfor %}
       </div>
     </div>
-    <hr>
-    <div class="row" style="background-color: #ffffff">
-      <div class="col-lg-9 col-md-9 mx-auto">
+    <div class="row mt-4 mb-4">
+      <div class="col-lg-9 col-md-9 mx-auto pt-2">
+        {% include newsletter.html %}
+      </div>
+    </div>
+    <div class="row" style="background-color: #fdfdf9">
+      <div class="col-lg-9 col-md-9 mx-auto pt-2">
         {% if page.comments != false %}
         <div class="disqus-comments" style="margin-top: 30px">
           <div id="disqus_thread"></div>
