@@ -24,7 +24,7 @@ Hi there, welcome to the first part of the series of building API in rails. Let'
 4. Integrating Google Oauth
 5. and many more .....
 
-### Setting up our Ruby on Rails API only application with all necessary gems and stuff
+## Setting up our Ruby on Rails API only application with all necessary gems and stuff
 
 It's quite easy to set up a ROR application and since ROR is a battery included framework we don't have to worry about any configuration stuff. 
 

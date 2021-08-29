@@ -18,7 +18,7 @@ uniq_body_id: 'post6'
 
 Let's create our first <a href="https://www.altexsoft.com/blog/rest-api-design/" target="_blank">RESTful API</a> endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how Rails organizes its codebase. If not go ahead and check <a href="https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj" target="_blank">**this** </a> out first. 
 
-### API versioning
+## API versioning
 
 Initially, the version of our API maybe let's say 'V1' and as our application grows it will have many versions for the API as well(v1, v2, v3....). The clients that use our API may not only use the latest version, what I mean by that is there may be some clients which may only use certain versions of the API let's say v1 even though our latest version is v3. So we must keep in mind the versioning of our API.
 
@@ -30,7 +30,7 @@ app/controllers/api/v1
 
 So all the API we create will be inside this folder.
 
-### Creating User model
+## Creating User model
 
 Let's say our **user** consists of attributes like **fullname**, **email**, **gender** and **encrypted_password**. Go to the terminal and type this to create a user model.
 
@@ -52,7 +52,7 @@ annotate --models --exclude tests,factories
 
 If we go to the `user.rb` model we can see the schema information on the top.
 
-### Creating the Users Controller
+## Creating the Users Controller
 
 Before creating any API's controller let's create a controller a `base_controller.rb` first inside the `api/v1` folder which will be inherited from the Application controller. So all the rules or code added in the base controller will apply to all our API's controllers globally.
 
@@ -92,7 +92,7 @@ module Api
   end
 end
 ```
-### Setting up Routes
+## Setting up Routes
 
 Let's edit the generated `route.rb` file to something like this
 
@@ -110,7 +110,7 @@ end
 Now if we go to our terminal and hit `rails route` we can see our endpoints url for users. 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/routes.png">
 
-### Writing Test Cases for User model
+## Writing Test Cases for User model
 
 Let's write some test cases for the user model first also known as **unit test**. I like using the <a href="https://github.com/thoughtbot/shoulda-matchers" target="_blank">**shoulda_matchers** </a> gem which provides the common test functionality.
 
