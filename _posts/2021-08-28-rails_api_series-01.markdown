@@ -24,8 +24,9 @@ Hi there, welcome to the first part of the series of building API in rails. Let'
 3. Building a CRUD RESTful APIs
 4. Active model serializers
 5. Integrating Fast JSON api, JSON API specification
-6. Integration SWAGGER for api documentation
-7. and many more....
+6. Securing our API with JWT
+7. Integration SWAGGER for api documentation
+8. and many more....
 </div>
 </div>
 
@@ -64,9 +65,9 @@ So, you might have noticed the database we will be using which is Postgresql, an
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 Before moving forward to creating an API lets first do the following
-1. <a href="https://developerblogs.github.io/blogs/rails/01#3-setup-database" target="_blank">**Setup Database** </a>
-2. <a href="https://developerblogs.github.io/blogs/rails/01#2-setup-robocop-gem">**Setup Rubocop Gem** </a>
-3. <a href="https://developerblogs.github.io/blogs/rails/01#4-setup-rspec-for-testing" target="_blank">**Setup Rspec** </a>
+1. <a href="https://developerblogs.github.io/blogs/rails/01#setup-database" target="_blank">**Setup Database** </a>
+2. <a href="https://developerblogs.github.io/blogs/rails/01#setup-robocop-gem">**Setup Rubocop Gem** </a>
+3. <a href="https://developerblogs.github.io/blogs/rails/01#setup-rspec-for-testing" target="_blank">**Setup Rspec** </a>
 
 
 Great 🎉 🎉 we are done with the setup. Let's run `rails s` in the terminal and visit <a href="http://localhost:3000/" target="_blank">**here** </a>.
