@@ -16,11 +16,11 @@ uniq_body_id: 'post6'
 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpg"> 
 
-Let's create our first API endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how organizes its codebase. If not go ahead and check <a href="https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj" target="_blank">**this** </a> out first. 
+Let's create our first <a href="https://www.altexsoft.com/blog/rest-api-design/" target="_blank">RESTful API</a> endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how Rails organizes its codebase. If not go ahead and check <a href="https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj" target="_blank">**this** </a> out first. 
 
 ### API versioning
 
-Initially, the version of our API maybe let's say 'V1' and as our application grows it will have many versions for the API as well(v1, v2, v3....). And the clients that use our API may not only use the latest version, what I mean by that is there may be some clients which may only use certain versions of the API let's say v1 even though our latest version is v3. So we must keep in mind the versioning of our API.
+Initially, the version of our API maybe let's say 'V1' and as our application grows it will have many versions for the API as well(v1, v2, v3....). The clients that use our API may not only use the latest version, what I mean by that is there may be some clients which may only use certain versions of the API let's say v1 even though our latest version is v3. So we must keep in mind the versioning of our API.
 
 Inside the controller folder of our app let's make a new folder as `api` and inside the api folder let's create another folder as `v1`. Now our folder structure looks something like this 
 
@@ -62,7 +62,6 @@ Before creating any API's controller let's create a controller a `base_controlle
 module Api
   module V1
     class BaseController < ApplicationController
-      
     end
   end
 end
@@ -85,18 +84,31 @@ module Api
   module V1
     class UsersController < ApplicationController
       def index; end
-
       def show; end
-
       def create; end
-
       def update; end
-
       def delete; end
     end
   end
 end
 ```
+### Setting up Routes
+
+Let's edit the generated `route.rb` file to something like this
+
+```ruby
+Rails.application.routes.draw do
+  namespace :api do
+    namespace :v1 do
+      resources :users
+    end
+  end
+end
+
+```
+
+Now if we go to our terminal and hit `rails route` we can see our endpoints url for users. 
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/routes.png">
 
 ### Writing Test Cases for User model
 
