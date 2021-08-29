@@ -24,19 +24,18 @@ Hi there, welcome to the first part of the series of building API in rails. Let'
 4. Integrating Google Oauth
 5. and many more .....
 
-
 ### Setting up our Ruby on Rails API only application with all necessary gems and stuff
 
 It's quite easy to set up a ROR application and since ROR is a battery included framework we don't have to worry about any configuration stuff. 
 
 Make sure that you have
 1. Ruby installed
-2. For this, we can install first [RVM (Ruby Version Manager)](https://rvm.io/rvm/install) then install the required ruby version. We will be using the latest ruby version which is 3.0.2 as of now. 
+2. For this, we can install first <a href="https://rvm.io/rvm/install" target="_blank">**RVM (Ruby Version Manager)** </a>then install the required ruby version. We will be using the latest ruby version which is 3.0.2 as of now. 
 3. Node js, npm, and Yarn installed
-   Although we might not need this since it's API only application but it might come in handy later so it's better to install it. Refer [to this](https://classic.yarnpkg.com/en/docs/install#windows-stable) for installing Yarn. 
-4. For node, we can install it with [nvm](https://github.com/nvm-sh/nvm#installing-and-updating). I love using [**n**](https://github.com/tj/n) as node version manager. 
+   Although we might not need this since it's API only application but it might come in handy later so it's better to install it. Refer to  <a href="https://classic.yarnpkg.com/en/docs/install#windows-stable" target="_blank">**this** </a> for installing Yarn. 
+4. For node, we can install it with <a href="https://github.com/tj/n" target="_blank">**nvm** </a>. I love using <a href="https://github.com/tj/n" target="_blank">**n** </a> as node version manager. 
 5. Rails installed.
-   Open the terminal and enter gem install rails 
+   Open the terminal and enter `gem install rails`
 6. Check your rails version with the `rails version` command. For this series, we will be using the **Rails version 6.1.4**
 
 
@@ -51,13 +50,9 @@ So, you might have noticed the database we will be using which is Postgresql, an
 
 
 Before moving forward to creating an API lets first do the following
-
-**1.** [**Setup Database**](https://developerblogs.github.io/blogs/rails/01#3-setup-database) 
-
-**2.** [**Setup Rubocop Gem**](https://developerblogs.github.io/blogs/rails/01#2-setup-robocop-gem)
-
-**3.** [**Setup Rspec**](https://developerblogs.github.io/blogs/rails/01#4-setup-rspec-for-testing)
-
+1. <a href="https://developerblogs.github.io/blogs/rails/01#3-setup-database" target="_blank">**Setup Database** </a>
+2. <a href="https://developerblogs.github.io/blogs/rails/01#2-setup-robocop-gem">**Setup Rubocop Gem** </a>
+3. <a href="https://developerblogs.github.io/blogs/rails/01#4-setup-rspec-for-testing" target="_blank">**Setup Rspec** </a>
 
 
 Great 🎉 🎉 we are done with the setup. Let's run `rails s` in the terminal and visit <a href="http://localhost:3000/" target="_blank">**here** </a>.
