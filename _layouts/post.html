@@ -16,7 +16,7 @@
   .float-toc {
     position: fixed !important;
     left: -13px;
-    width: 22%;
+    width: 20%;
     font-size: 15px;
     visibility: hidden;
   }
@@ -116,7 +116,7 @@
 <!-- Post Content -->
 <article class="post-font">
   <div class="container">
-    <div>
+    <div class="article-container">
       <div class="float-toc mb-5 p-4 d-sm-none d-md-none d-none d-lg-block">
         {% if page.toc == true %}
         <div class="toc border p-3" id="lg-float">
@@ -138,22 +138,22 @@
           {{ content }}
         </div>
       </div>
-    </div>
-    <div class="row mt-1 mb-1" style="background-color: #fdfdf9">
-      <div class="col-lg-9 col-md-9 mx-auto">
-        {% for tag in page.tags %}
-        {% assign tag_url = tag | prepend: "/blogs/" %}
-        <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
-        {% endfor %}
+      <div class="row mt-1 mb-1">
+        <div class="col-lg-9 col-md-9 mx-auto">
+          {% for tag in page.tags %}
+          {% assign tag_url = tag | prepend: "/blogs/" %}
+          <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-secondary">{{ tag }}</a>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-    <div class="row mt-4 mb-1" style="background-color: #fdfdf9">
-      <div class="col-lg-9 col-md-9 mx-auto">
-        {% include newsletter.html %}
+      <div class="row mt-4 mb-1">
+        <div class="col-lg-9 col-md-9 mx-auto">
+          {% include newsletter.html %}
+        </div>
       </div>
     </div>
     <hr>
-    <div class="row" style="background-color: #fdfdf9">
+    <div class="row" style="background-color: #ffffff">
       <div class="col-lg-9 col-md-9 mx-auto">
         {% if page.comments != false %}
         <div class="disqus-comments" style="margin-top: 30px">

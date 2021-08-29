@@ -3899,6 +3899,11 @@ p {
   font-family: 'Abel', sans-serif;
  }
 
+.article-container {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
 .foot-text {
   font-size: 18px; }
 
@@ -3921,7 +3926,9 @@ blockquote {
   border-radius: 4px;
   min-width: 20vh;
   max-height: 50vh;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  background: #ffffff;
+}
 
 ::-webkit-scrollbar {
   -webkit-appearance: none; }
