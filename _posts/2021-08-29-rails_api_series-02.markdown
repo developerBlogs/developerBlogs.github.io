@@ -157,8 +157,9 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   it { should validate_presence_of(:email) }
-  it { should validate_presence_of(:full_name) }
+  it { should validate_presence_of(:fullname) }
   it { should validate_presence_of(:encrypted_password) }
+  it {should validate_uniqueness_of(:email)}
 end
 ```
 
@@ -171,6 +172,7 @@ Our `user.rb` model will look something like this now
 ```ruby
 class User < ApplicationRecord
   validates :email, :fullname, :encrypted_password, presence: true
+  validates_uniqueness_of :email
 end
 ```
 
@@ -231,7 +233,81 @@ end
 ```
 Here we are sending all the available users in our system as a JSON response. Now let's check the test case again if its passes or fails.
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/pass2.png">  
-Noice, our test has passed. 
+Noice, our test has passed and we have got our first api :tada: :tada:
+</div>
+</div>
+
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
+Let's write a test case for the API that creates a new user which will be a **POST** method i.e `def create`
+
+This API is supposed to take the user information as request body params then according to it create a new user and finally give a response with an HTTP code status as **201**. Also if we try to create a user with an existing email in the system then the API should respond with an error message.
+
+So, considering this our test case will look something like
+
+```ruby
+RSpec.describe 'Api::V1::Users', type: :request do
+  describe 'GET api/v1/users/:id' do
+    it 'returns a user' do
+      user = create(:user)
+      expected_response = { 'email' => user.email }
+      get api_v1_user_path(id: user.id)
+      expect(response).to have_http_status(200)
+      expect(JSON.parse(response.body)).to include(expected_response)
+    end
+  end
+
+  describe 'POST /api/v1/users/' do
+    it 'creates a new user' do
+      total_users = User.all.count
+      request_body = {
+        user: {
+          fullname: 'New User',
+          email: 'new@gmail.com',
+          encrypted_password: 'asdasd12ad'
+        }
+      }
+      post api_v1_users_path, params: request_body
+      expect(response).to have_http_status(201)
+      expect(User.all.count).to eq(total_users + 1)
+    end
+  end
+end
+```
+
+Our test case like before will obviously fail since we have not added anything to the `def create` method yet. In-order to pass this test case our method now will look something like this
+
+```ruby
+def create
+    user = User.new(user_params)
+    if user.save
+        render json: user, status: :created, code: '201'
+    else
+        render json: user.errors, status: :unprocessable_entity, code: '422'
+    end
+end
+
+private
+
+def user_params
+    params.require(:user).permit(:fullname, :email, :encrypted_password, :gender)
+end
+```
+
+Above I have made use of **super params** and now if we run our test it will pass. We can add other examples in the test case as well like if the password is empty, fullname is empty, and so on.
+
+Great 🎉 🎉 we have now another API and we can follow the similar process above to create all the required APIs.
+</div>
+</div>
+
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
+
+
+Thanks for reading till the end we have come to the end of **part 2** of the **Building API with Rails series**. In the upcoming parts, we will be adding **active model serializers**, **SWAGGER** for API documentation, and others. 
+
+The code base is available [here](https://github.com/sajanbasnet75/rails_api_series). :beers:
+
 </div>
 </div>
 
