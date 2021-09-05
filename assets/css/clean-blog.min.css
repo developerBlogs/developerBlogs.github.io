@@ -307,7 +307,7 @@ header.masthead .post-heading .meta a {
 
 .post_title_in_list {
     margin-bottom: -0.28em;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 900;
     color: #333;
     letter-spacing: -0.003em;
@@ -323,7 +323,7 @@ header.masthead .post-heading .meta a {
     margin-top: 1.11em;
     font-size: 20px;
     margin-bottom: -0.46em;
-    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: 'Abel', sans-serif;
     letter-spacing: -0.003em;
     line-height: 28px;
     word-break: break-word;
@@ -341,7 +341,7 @@ header.masthead .post-heading .meta a {
         margin-top: 1.11em;
         font-size: 15px;
         margin-bottom: -0.46em;
-        font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+        font-family: 'Abel', sans-serif;
         letter-spacing: -0.003em;
         line-height: 28px;
         word-break: break-word;
@@ -353,16 +353,23 @@ header.masthead .post-heading .meta a {
         margin-inline-end: 0px;
         color: #495057;
     }
-    .post_title {
+    .post_title_in_list {
         margin-bottom: -0.28em;
-        font-size: 17px;
+        font-size: 20px;
         letter-spacing: -0.022em;
         font-weight: 900;
     }
     .btn-collapse {
       border-radius: 100% !important;
       padding: 5px 8px !important;
-  }
+    }
+    .posted-by {
+        font-style: normal;
+        font-size: 13px;
+        text-decoration: none;
+        color: #0085a1;
+        font-family: 'Abel', sans-serif;
+    }
 }
 
 .posted-by {
@@ -370,6 +377,7 @@ header.masthead .post-heading .meta a {
     font-size: 18px;
     text-decoration: none;
     color: #0085a1;
+    font-family: 'Abel', sans-serif;
 }
 
 .floating-label-form-group {
