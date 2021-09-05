@@ -336,10 +336,18 @@ header.masthead .post-heading .meta a {
     color: #495057;
 }
 
+.posted-by {
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+    color: #0085a1;
+    font-family: 'Abel', sans-serif;
+}
+
 @media only screen and (max-width: 768px) {
     .post_subtitle > p {
         margin-top: 1.11em;
-        font-size: 15px;
+        font-size: 18px;
         margin-bottom: -0.46em;
         font-family: 'Abel', sans-serif;
         letter-spacing: -0.003em;
@@ -355,7 +363,7 @@ header.masthead .post-heading .meta a {
     }
     .post_title_in_list {
         margin-bottom: -0.28em;
-        font-size: 20px;
+        font-size: 22px;
         letter-spacing: -0.022em;
         font-weight: 900;
     }
@@ -365,19 +373,11 @@ header.masthead .post-heading .meta a {
     }
     .posted-by {
         font-style: normal;
-        font-size: 13px;
+        font-size: 15px;
         text-decoration: none;
         color: #0085a1;
         font-family: 'Abel', sans-serif;
     }
-}
-
-.posted-by {
-    font-style: normal;
-    font-size: 18px;
-    text-decoration: none;
-    color: #0085a1;
-    font-family: 'Abel', sans-serif;
 }
 
 .floating-label-form-group {
