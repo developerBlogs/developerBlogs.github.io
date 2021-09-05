@@ -6,7 +6,7 @@ layout: blog-list
 <div class="d-flex justify-content-between" id="accordion">
   <div class="small">
     <a href="{{ post.url }}">
-      <span class="post_title blog-links">
+      <span class="post_title_in_list blog-links">
         {{ post.title }}
       </span>
     </a>
@@ -17,12 +17,12 @@ layout: blog-list
     </button>
   </div>
 </div>
-<div id={{post.uniq_body_id}} class="collapse hide " data-parent="#accordion">
+<div id={{post.uniq_body_id}} class="collapse show" data-parent="#accordion">
   <span class="post_subtitle blog-links">
     <p> {{ post.summary }} </p>
   </span>
-  <p class="post-meta posted-by text-muted">
-    <a href={{site.url}} class="text-muted posted-by">Sajan Basnet,</a>
+  <p class="post-meta posted-by ">
+    <a href={{site.url}} class=" posted-by">Sajan Basnet,</a>
     {{ post.date | date_to_string }}
   </p>
   <div class="pt-3">
