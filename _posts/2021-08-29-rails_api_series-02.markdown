@@ -69,7 +69,7 @@ If we go to the `user.rb` model we can see the schema information on the top.
 
 ## Creating Users Controller
 
-Before creating any API's controller let's create a controller a `base_controller.rb` first inside the `api/v1` folder which will be inherited from the Application controller. So all the rules or code added in the base controller will apply to all our API's controllers globally.
+Before creating any API's controller let's create a controller a `base_controller.rb` first inside the `api/v1` folder which will be inherited from the Application controller.
 
 ```ruby
 # frozen_string_literal: true
@@ -84,6 +84,8 @@ end
 
 Now again inside the folder `api/v1` let's create a User's controller which will inherit from the Base controller.
 
+So all the rules or code added in the base controller will apply to all our API's controllers globally.
+ 
 In the terminal enter this 
 
 ```bash
@@ -97,7 +99,7 @@ Our `users_controller.rb` will look like this
 
 module Api
   module V1
-    class UsersController < ApplicationController
+    class UsersController < BaseController
       def index; end
       def show; end
       def create; end

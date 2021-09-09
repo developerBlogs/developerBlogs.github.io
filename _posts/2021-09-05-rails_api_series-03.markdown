@@ -165,7 +165,7 @@ Finally, in the users controller let's change all the existing API's and we will
 
 module Api
   module V1
-    class UsersController < ApplicationController
+    class UsersController < BaseController
       def index
         render jsonapi: User.all
       end
