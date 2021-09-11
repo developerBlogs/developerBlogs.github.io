@@ -18,7 +18,7 @@ uniq_body_id: 'post6'
 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpg"> 
 
-Let's create our first <a href="https://www.altexsoft.com/blog/rest-api-design/" target="_blank">RESTful API</a> endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how Rails organizes its codebase. If not go ahead and check <a href="https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj" target="_blank">**this** </a> out first. 
+Let's create our first <a href="https://www.altexsoft.com/blog/rest-api-design/" rel="noreferrer" target="_blank">RESTful API</a> endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how Rails organizes its codebase. If not go ahead and check <a href="https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj" rel="noreferrer" target="_blank">**this** </a> out first. 
 </div>
 </div>
 
@@ -52,7 +52,7 @@ This will create all the necessary files such as the migration file, user model 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/migration.png"> 
 Let's do `rails db:migrate` in the terminal. 
 
-I also like to install a gem called <a href="https://github.com/ctran/annotate_models" target="_blank">**annotate** </a> which is quite useful for reading the Active Record schema.
+I also like to install a gem called <a href="https://github.com/ctran/annotate_models" rel="noreferrer" target="_blank">**annotate** </a> which is quite useful for reading the Active Record schema.
 
 In the Gemfile add `gem annotate` inside the group development and test and then `bundle install` in the terminal. Now in the terminal, we can do 
 
@@ -139,7 +139,7 @@ Now if we go to our terminal and hit `rails route` we can see our endpoints url 
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Writing Test Cases for User model
 
-Let's write some test cases for the user model first also known as **unit test**. I like using the <a href="https://github.com/thoughtbot/shoulda-matchers" target="_blank">**shoulda_matchers** </a> gem which provides the common test functionality.
+Let's write some test cases for the user model first also known as **unit test**. I like using the <a href="https://github.com/thoughtbot/shoulda-matchers" rel="noreferrer" target="_blank">**shoulda_matchers** </a> gem which provides the common test functionality.
 
 In the Gemfile add `gem 'shoulda-matchers', '~> 5.0'`inside test group and hit bundle install, and in the `rails_helpers.rb` add this at the end.
 
@@ -315,12 +315,12 @@ The code base is available [here](https://github.com/sajanbasnet75/rails_api_ser
 
 <div class="row article-container">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
-Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
+Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
 
 <div>
 <strong>Related Topic</strong>
 
-  <a href="https://developerblogs.github.io/blogs/rails_api_series/03" target="_blank">**Building API in Rails Part 3** </a> 
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/03" rel="noreferrer" target="_blank">**Building API in Rails Part 3** </a> 
 </div>
 </div>
 </div>

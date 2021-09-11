@@ -13,13 +13,13 @@ The first process of integrating a third party SignIn such as Google SignIn is  
 
 ## Creating an application on Google 
 
-### Step 1: Go to  <a href="https://console.developers.google.com/apis/dashboard" target="_blank">**Google Api Console** </a>
+### Step 1: Go to  <a href="https://console.developers.google.com/apis/dashboard" rel="noreferrer" target="_blank">**Google Api Console** </a>
 
 ### Step 2: Create a Project
 
 <img class= "img-fluid img-thumbnail img-space rounded mx-auto d-block m-3" src="{{site.baseurl}}/assets/img/goath1.png">
 
-### Step 3: Go to <a href="https://console.developers.google.com/apis/credentials/consent" target="_blank">**Oauth Consent Screen** </a>
+### Step 3: Go to <a href="https://console.developers.google.com/apis/credentials/consent" rel="noreferrer" target="_blank">**Oauth Consent Screen** </a>
 
 Before generating our credentials such as Client Id and Client Secrets we need to configure the consent screen first. So, lets create that
 <img class= "img-fluid img-thumbnail img-space rounded mx-auto d-block m-3" src="{{site.baseurl}}/assets/img/goauth1.png">
@@ -48,7 +48,7 @@ After Step 3 process we will be provided with a **Client Id** and **Client Secre
 
 ## Creating an application on Facebook
 
-### Step 1: Go To <a href="https://developers.facebook.com/apps/" target="_blank">**Facebook for Developers** </a>
+### Step 1: Go To <a href="https://developers.facebook.com/apps/" rel="noreferrer" target="_blank">**Facebook for Developers** </a>
 
 Register for developer account if you haven't. 
 
@@ -72,4 +72,4 @@ Note down the **App Secret** and **App ID**.
 
 <hr>
 
-*Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px; "></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px; " aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
+*Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px; "></i></a> or  <a aria-label="My LinkedIn" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px; " aria-hidden="true"></i></a>. Have a great time :smiley_cat:*

@@ -79,7 +79,7 @@ In order to get access to the contacts of **resource owner** (Jerry) the app nee
 * **Resource Server**: The resource server holds the data or resource that client wants to have access to. 
 
 * **Authorization Grant**: When resource owner provides the client access to the *resource server* then the client is provided with authorization grant. In our case the grant is provided with a *authorization code* which can be used by the client to exchange access_code but there can be other grant type too where the access token can be directly provided to user.
-Click <a href="https://oauth.net/2/grant-types/" target="_blank">**here** </a> to know about other grant types.
+Click <a href="https://oauth.net/2/grant-types/" rel="noreferrer" target="_blank">**here** </a> to know about other grant types.
 
 * **Redirect URI**: When asking a authorization grant to the authorization server it needs to have a property which tells the authorization server to redirect to somewhere back to the client after the authorization is provided. This property is known as redirect_uri.   
 * **Access Token**:  To have access to the resource server the client needs to have an *access token*.
@@ -97,7 +97,7 @@ We just learn the basic work-flow and terminology of **OAuth 2.0**. Lets see a q
 
 <img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/oauth.png">
 
-First, our app need to have  OAuth 2.0 credentials such as a **client ID** and **client secret** that are known to both Google and our application. We can visit the <a href="https://console.developers.google.com/" target="_blank">**Google API Console** </a>to obtain it.
+First, our app need to have  OAuth 2.0 credentials such as a **client ID** and **client secret** that are known to both Google and our application. We can visit the <a href="https://console.developers.google.com/" rel="noreferrer" target="_blank">**Google API Console** </a>to obtain it.
 
 **Lets try to get the authorization code from Google for our app.**
 
@@ -163,7 +163,7 @@ Access tokens have limited lifetimes. If our application needs access to this ca
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## OpenID Connect as Authentication.
 
-OAuth 2.0 APIs can be used for both authentication and authorization. For the authentication part we can use the <a href="https://openid.net/connect/" target="_blank">**OpenID Connect** </a> which is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of the resource owner to obtain basic profile information about them before the whole authorization process. 
+OAuth 2.0 APIs can be used for both authentication and authorization. For the authentication part we can use the <a href="https://openid.net/connect/" rel="noreferrer" target="_blank">**OpenID Connect** </a> which is a simple identity layer on top of the OAuth 2.0 protocol. It allows Clients to verify the identity of the resource owner to obtain basic profile information about them before the whole authorization process. 
 
 For this to work we need to add an additional scope as 'openid' in the request.
 
@@ -178,7 +178,7 @@ https://accounts.google.com/oauth2/v2/auth
 &nonce=8x5baw1b31o
 ```
 
-OAuth 2.0 adds another token known as **id token** along with the authorization code in the response. This **id token** is in encoded JWT (JSON Web Token) format. We can decode this Id token <a href="https://jwt.io/" target="_blank">**here** </a> and get the basic information about the users.  
+OAuth 2.0 adds another token known as **id token** along with the authorization code in the response. This **id token** is in encoded JWT (JSON Web Token) format. We can decode this Id token <a href="https://jwt.io/" rel="noreferrer" target="_blank">**here** </a> and get the basic information about the users.  
 
 *Great :tada: :tada: we have come to the end of this topic. I hope this helped you to understand the concept of OAuth 2.0, how its used to solve the delegation problem and how OpenId Connect can handle the authentication part separately.* 
 
@@ -193,7 +193,7 @@ OAuth 2.0 adds another token known as **id token** along with the authorization 
 
 <div class="row article-container">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
-*Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
+*Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:*
 
 
 </div>

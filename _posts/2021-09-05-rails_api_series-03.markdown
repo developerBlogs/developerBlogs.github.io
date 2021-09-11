@@ -28,12 +28,12 @@ Since we are building API's we will mostly deal with how the ruby objects can be
 
 
 In Ruby on Rails there are different available gems that we can use as a JSON serializer such as
-1. <a href="https://github.com/rails/jbuilder" target="_blank">Jbuilder</a>
-2. <a href="https://github.com/rails-api/active_model_serializers" target="_blank">Active Model Serializers (AMS)</a>
-3. <a href="http://jsonapi-rb.org/" target="_blank">JSONAPI-RB</a>
-4. <a href="https://github.com/jsonapi-serializer/jsonapi-serializer" target="_blank">jsonapi-serizlizer</a>
+1. <a href="https://github.com/rails/jbuilder" rel="noreferrer" target="_blank">Jbuilder</a>
+2. <a href="https://github.com/rails-api/active_model_serializers" rel="noreferrer" target="_blank">Active Model Serializers (AMS)</a>
+3. <a href="http://jsonapi-rb.org/" rel="noreferrer" target="_blank">JSONAPI-RB</a>
+4. <a href="https://github.com/jsonapi-serializer/jsonapi-serializer" rel="noreferrer" target="_blank">jsonapi-serizlizer</a>
 
-I will be using the **jsonapi-serializer** which is forked from **Fast JSON API**. I am using this particular serializer because its fast and follows the <a href="https://jsonapi.org" target="_blank">JSON:API</a> specifications.
+I will be using the **jsonapi-serializer** which is forked from **Fast JSON API**. I am using this particular serializer because its fast and follows the <a href="https://jsonapi.org" rel="noreferrer" target="_blank">JSON:API</a> specifications.
 </div>
 </div>
 
@@ -50,7 +50,7 @@ In short, if we have to modify the API response into a complex format such as **
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Integrating jsonapi-serializer (FAST JSON API) 
 
-The first thing we need to do is add the required <a href="https://github.com/jsonapi-serializer/jsonapi-serializer" target="_blank">jsonapi-serializer</a> gem in our Gemfile and run bundle install.
+The first thing we need to do is add the required <a href="https://github.com/jsonapi-serializer/jsonapi-serializer" rel="noreferrer" target="_blank">jsonapi-serializer</a> gem in our Gemfile and run bundle install.
 
 ```ruby
 gem 'jsonapi-serializer'
@@ -146,7 +146,7 @@ end
 
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
-Another thing I also like to do is install another gem known as <a href="https://github.com/stas/jsonapi.rb" target="_blank">jsonapi.rb</a> which works pretty well with the jsonapi-serializer. Let's add it and do bundle install.
+Another thing I also like to do is install another gem known as <a href="https://github.com/stas/jsonapi.rb" rel="noreferrer" target="_blank">jsonapi.rb</a> which works pretty well with the jsonapi-serializer. Let's add it and do bundle install.
 
 ```ruby
 gem 'jsonapi.rb'
@@ -234,14 +234,14 @@ The code base is available [here](https://github.com/sajanbasnet75/rails_api_ser
 
 <div class="row article-container">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
-Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
+Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
 
 <div>
 <strong>Related Topic</strong>
 
-  <a href="https://developerblogs.github.io/blogs/rails_api_series/01" target="_blank">**Building API in Rails Part 1** </a>
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/01" rel="noreferrer" target="_blank">**Building API in Rails Part 1** </a>
 
-  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" target="_blank">**Building API in Rails Part 2** </a> 
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" rel="noreferrer" target="_blank">**Building API in Rails Part 2** </a> 
 </div>
 </div>
 </div>
