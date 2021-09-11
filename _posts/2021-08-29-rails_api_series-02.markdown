@@ -319,6 +319,7 @@ Please feel free to give your feedback on the comment section below or ping me a
 
 <div>
 <strong>Related Topic</strong>
+
   <a href="https://developerblogs.github.io/blogs/rails_api_series/03" target="_blank">**Building API in Rails Part 3** </a> 
 </div>
 </div>
