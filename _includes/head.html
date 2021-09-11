@@ -5,7 +5,7 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="stylesheet" href= {% link /assets/css/main.css %}>
+  <link rel="stylesheet" href= {% link /assets/css/main.min.css %}>
   <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
   <script src={% link /assets/js/jquery.min.js %}></script>
   <script src={% link /assets/js/bootstrap.bundle.min.js %}></script>
