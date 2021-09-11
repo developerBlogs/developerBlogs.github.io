@@ -41,7 +41,8 @@ I will be using the **jsonapi-serializer** which is forked from **Fast JSON API*
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## But why use an external serializer gem anyway?
 
-In the previous part, we have seen that Rails has its own `render json: User.all` that renders the response in JSON format. And to modify the API response we can use Rails own [as json](https://apidock.com/rails/ActiveModel/Serializers/JSON/as_json) method so what's the point of using an external serializer gem? In short, if we have to modify the API response into a complex format such as **JSON:API** specification then doing it manually will increase complexity, our codebase will look dirty and hard to maintain.
+In the previous part, we have seen that Rails has its own `render json: User.all` that renders the response in JSON format. And to modify the API response we can use Rails own [as json](https://apidock.com/rails/ActiveModel/Serializers/JSON/as_json) method so what's the point of using an external serializer gem? 
+In short, if we have to modify the API response into a complex format such as **JSON:API** specification then doing it manually will increase complexity, our codebase will look dirty and hard to maintain.
 </div>
 </div>
 
@@ -83,7 +84,7 @@ Now we can see the API response format using curl in our terminal.
 
 ```ruby
  curl --location --request POST 'http://localhost:3000/api/v1/users' --header "Content-Type: application/json" \
---data-raw '{"user": {"fullname": "Sajan Basnet", "email": "sajan@gmail.com", "encrypted_password": "something", "gender": "1"}}'
+--data-raw '{"user": {"fullname": "Sajan Basnet", "email": "sajan@gmail.com", "password": "something", "gender": "1"}}'
 ```
 
 and then 
@@ -145,7 +146,7 @@ end
 
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
-Another thing I also like to do is install another gem known as <a href="https://github.com/stas/jsonapi.rb" target="_blank">jsonapi.rb</a>. Let's add it and do bundle install.
+Another thing I also like to do is install another gem known as <a href="https://github.com/stas/jsonapi.rb" target="_blank">jsonapi.rb</a> which works pretty well with the jsonapi-serializer. Let's add it and do bundle install.
 
 ```ruby
 gem 'jsonapi.rb'
@@ -208,7 +209,7 @@ module Api
       private
 
       def user_params
-        params.require(:user).permit(:fullname, :email, :encrypted_password, :gender)
+        params.require(:user).permit(:fullname, :email, :password, :gender)
       end
     end
   end
@@ -236,10 +237,10 @@ The code base is available [here](https://github.com/sajanbasnet75/rails_api_ser
 Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
 
 <div>
-<h3>Related Topic</h3>
-  <a href="http://localhost:4000/blogs/rails_api_series/02" target="_blank">**Building API in Rails Part 1** </a>
+<strong>Related Topic</strong>
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/01" target="_blank">**Building API in Rails Part 1** </a>
 
-  <a href="http://localhost:4000/blogs/rails_api_series/01" target="_blank">**Building API in Rails Part 2** </a> 
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" target="_blank">**Building API in Rails Part 2** </a> 
 </div>
 </div>
 </div>

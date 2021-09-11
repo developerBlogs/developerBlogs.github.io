@@ -42,10 +42,10 @@ So all the API we create will be inside this folder.
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Creating User model
 
-Let's say our **user** consists of attributes like **fullname**, **email**, **gender** and **encrypted_password**. Go to the terminal and type this to create a user model.
+Let's say our **user** consists of attributes like **fullname**, **email**, **gender** and **password**. Go to the terminal and type this to create a user model.
 
 ```ruby
-rails g model User fullname:string email:string encrypted_password:string gender:integer
+rails g model User fullname:string email:string password:string gender:integer
 ```
 
 This will create all the necessary files such as the migration file, user model file, and test cases files.
@@ -160,7 +160,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   it { should validate_presence_of(:email) }
   it { should validate_presence_of(:fullname) }
-  it { should validate_presence_of(:encrypted_password) }
+  it { should validate_presence_of(:password) }
   it {should validate_uniqueness_of(:email)}
 end
 ```
@@ -173,7 +173,7 @@ Our `user.rb` model will look something like this now
 
 ```ruby
 class User < ApplicationRecord
-  validates :email, :fullname, :encrypted_password, presence: true
+  validates :email, :fullname, :password, presence: true
   validates_uniqueness_of :email
 end
 ```
@@ -266,7 +266,7 @@ RSpec.describe 'Api::V1::Users', type: :request do
         user: {
           fullname: 'New User',
           email: 'new@gmail.com',
-          encrypted_password: 'asdasd12ad'
+          password: 'asdasd12ad'
         }
       }
       post api_v1_users_path, params: request_body
@@ -292,7 +292,7 @@ end
 private
 
 def user_params
-    params.require(:user).permit(:fullname, :email, :encrypted_password, :gender)
+    params.require(:user).permit(:fullname, :email, :password, :gender)
 end
 ```
 
@@ -318,8 +318,8 @@ The code base is available [here](https://github.com/sajanbasnet75/rails_api_ser
 Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
 
 <div>
-<h3>Related Topic</h3>
-  <a href="http://localhost:4000/blogs/rails_api_series/03" target="_blank">**Building API in Rails Part 3** </a> 
+<strong>Related Topic</strong>
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/03" target="_blank">**Building API in Rails Part 3** </a> 
 </div>
 </div>
 </div>

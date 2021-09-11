@@ -82,8 +82,8 @@ Great 🎉 🎉 we are done with the setup. Let's run `rails s` in the terminal 
 Please feel free to give your feedback on the comment section below or ping me at <a aria-label="Send email" href="mailto:sajanbasnet75@gmail.com"><i class="icon fa fa-envelope" style="font-size:32px; margin: 0px 3px;"></i></a> or  <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/sajan-basnet-b4b1b0148/"><i class="icon fa fa-linkedin-square" style="font-size:32px; margin: 0px 3px;" aria-hidden="true"></i></a>. Have a great time :smiley_cat:
 
 <div>
-<h3>Related Topic</h3>
-  <a href="http://localhost:4000/blogs/rails_api_series/02" target="_blank">**Building API in Rails Part 2** </a>
+<strong>Related Topic</strong>
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" target="_blank">**Building API in Rails Part 2** </a>
 </div>
 </div>
 </div>
