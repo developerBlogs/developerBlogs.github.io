@@ -45,11 +45,11 @@ So all the API we create will be inside this folder.
 Let's say our **user** consists of attributes like **fullname**, **email**, **gender** and **password**. Go to the terminal and type this to create a user model.
 
 ```ruby
-rails g model User fullname:string email:string password:string gender:integer
+rails g model User fullname:string email:string password_digest:string gender:integer
 ```
-
 This will create all the necessary files such as the migration file, user model file, and test cases files.
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/migration.png"> 
+
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/migration1.png"> 
 Let's do `rails db:migrate` in the terminal. 
 
 I also like to install a gem called <a href="https://github.com/ctran/annotate_models" rel="noreferrer" target="_blank">**annotate** </a> which is quite useful for reading the Active Record schema.
@@ -174,7 +174,7 @@ Our `user.rb` model will look something like this now
 ```ruby
 class User < ApplicationRecord
   validates :email, :fullname, :password, presence: true
-  validates_uniqueness_of :email
+  validates :email, uniqueness: true
 end
 ```
 

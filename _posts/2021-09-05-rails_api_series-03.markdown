@@ -32,6 +32,7 @@ In Ruby on Rails there are different available gems that we can use as a JSON se
 2. <a href="https://github.com/rails-api/active_model_serializers" rel="noreferrer" target="_blank">Active Model Serializers (AMS)</a>
 3. <a href="http://jsonapi-rb.org/" rel="noreferrer" target="_blank">JSONAPI-RB</a>
 4. <a href="https://github.com/jsonapi-serializer/jsonapi-serializer" rel="noreferrer" target="_blank">jsonapi-serizlizer</a>
+4. and others...
 
 I will be using the **jsonapi-serializer** which is forked from **Fast JSON API**. I am using this particular serializer because its fast and follows the <a href="https://jsonapi.org" rel="noreferrer" target="_blank">JSON:API</a> specifications.
 </div>
@@ -41,7 +42,8 @@ I will be using the **jsonapi-serializer** which is forked from **Fast JSON API*
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## But why use an external serializer gem anyway?
 
-In the previous part, we have seen that Rails has its own `render json: User.all` that renders the response in JSON format. And to modify the API response we can use Rails own [as json](https://apidock.com/rails/ActiveModel/Serializers/JSON/as_json) method so what's the point of using an external serializer gem? 
+In the previous part, we have seen that Rails has its own `render json: User.all` that renders the response in JSON format. And to modify the API response we can use Rails own [as json](https://apidock.com/rails/ActiveModel/Serializers/JSON/as_json) method so what's the point of using an external serializer gem?
+ 
 In short, if we have to modify the API response into a complex format such as **JSON:API** specification then doing it manually will increase complexity, our codebase will look dirty and hard to maintain.
 </div>
 </div>
@@ -239,9 +241,9 @@ Please feel free to give your feedback on the comment section below or ping me a
 <div>
 <strong>Related Topic</strong>
 
-  <a href="https://developerblogs.github.io/blogs/rails_api_series/01" rel="noreferrer" target="_blank">**Building API in Rails Part 1** </a>
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" rel="noreferrer" target="_blank">**Building API in Rails Part 3** </a> 
 
-  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" rel="noreferrer" target="_blank">**Building API in Rails Part 2** </a> 
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" rel="noreferrer" target="_blank">**Building API in Rails Part 4** </a> 
 </div>
 </div>
 </div>
