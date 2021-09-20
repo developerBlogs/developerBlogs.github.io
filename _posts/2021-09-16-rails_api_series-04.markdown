@@ -15,7 +15,11 @@ uniq_body_id: 'post8'
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 Hi there, welcome to the fourth part of Building API with Rails series. In this part we are going to discuss how we can secure our API.
-<a href='https://www.freepik.com/vectors/business' rel="noreferrer" target="_blank"><img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post8/security.jpg"> </a>
+<img class= "img-fluid img-thumbnail img-space mb-0" src="{{site.baseurl}}/assets/img/post8/security.jpg" alt="securing ruby on rails api">
+ <p class= "text-center mt-0">
+ <a href='https://www.freepik.com/vectors/business' class= "small">Business vector created by jcomp - www.freepik.com</a>
+</p>
+
 Normally when it comes to securing API or web application its done through the process of <a href="https://developerblogs.github.io/blogs/security/01#authentication-and-authorization" target="_blank noreferrer">authentication and authoriztion.</a>. 
 
 There are a mainly two ways for doing the authentication part which is **Session based Authentication** and **Token Based Authentication** and one of the best and renown one in Rails for session based authentication is <a href="https://github.com/heartcombo/devise" target="_blank" noreferrer> Devise</a>. 
@@ -101,7 +105,8 @@ Please feel free to give your feedback on the comment section below or ping me a
 
 <div>
 <strong>Related Topic</strong>
-  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" rel="noreferrer" target="_blank">**Building API in Rails Part 3** </a>
+
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/05" rel="noreferrer" target="_blank">**Building API in Rails Part 5** </a>
 </div>
 </div>
 </div>

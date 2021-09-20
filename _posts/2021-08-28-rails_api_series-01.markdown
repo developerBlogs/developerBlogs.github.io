@@ -15,7 +15,7 @@ uniq_body_id: 'post5'
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Getting it ready 
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/api.jpeg">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/api.jpeg" alt="API for ruby on rails">
 
 Hi there, welcome to the first part of the series of building API in rails. Let's just start with what this series will cover 
 

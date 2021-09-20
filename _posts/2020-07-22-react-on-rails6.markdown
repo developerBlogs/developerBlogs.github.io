@@ -13,7 +13,7 @@ uniq_body_id: 'post3'
 ---
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/ronronr.jpeg">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/ronronr.jpeg" alt="react on rails">
 
 **Prerequisites** 
 - Basic knowledge of Ruby on Rails and React Js.

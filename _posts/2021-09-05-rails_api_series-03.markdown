@@ -15,7 +15,7 @@ uniq_body_id: 'post7'
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 Hi there, welcome to the third part of Building API with Rails series. In this part we are going to serialize our API response. 
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post7/serialize.png"> 
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post7/serialize.png" alt="ruby on rails api serializer"> 
 
 Serialization is the process of translating a data structure or object state into a format that can be stored (for example, in a file or memory data buffer) or transmitted (for example, over a computer network) and reconstructed later. <small>[*Source: Wikipedia*]</small>
 </div>
@@ -241,9 +241,7 @@ Please feel free to give your feedback on the comment section below or ping me a
 <div>
 <strong>Related Topic</strong>
 
-  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" rel="noreferrer" target="_blank">**Building API in Rails Part 3** </a> 
-
-  <a href="https://developerblogs.github.io/blogs/rails_api_series/02" rel="noreferrer" target="_blank">**Building API in Rails Part 4** </a> 
+  <a href="https://developerblogs.github.io/blogs/rails_api_series/04" rel="noreferrer" target="_blank">**Building API in Rails Part 4** </a> 
 </div>
 </div>
 </div>

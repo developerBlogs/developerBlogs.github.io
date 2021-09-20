@@ -16,7 +16,7 @@ uniq_body_id: 'post6'
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Creating our first API endpoint 
 
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpg"> 
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/programmer.jpg" alt="ruby on rails API"> 
 
 Let's create our first <a href="https://www.altexsoft.com/blog/rest-api-design/" rel="noreferrer" target="_blank">RESTful API</a> endpoint which will be a CRUD endpoint for the user. Before doing that we need to make sure where our API code should go. I hope you are familiar with the rails MVC pattern and how Rails organizes its codebase. If not go ahead and check <a href="https://hackernoon.com/understanding-your-rails-application-structure-r8w32xj" rel="noreferrer" target="_blank">**this** </a> out first. 
 </div>
