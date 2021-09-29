@@ -160,7 +160,6 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   it { should validate_presence_of(:email) }
   it { should validate_presence_of(:fullname) }
-  it { should validate_presence_of(:password) }
   it {should validate_uniqueness_of(:email)}
 end
 ```
@@ -173,7 +172,7 @@ Our `user.rb` model will look something like this now
 
 ```ruby
 class User < ApplicationRecord
-  validates :email, :fullname, :password, presence: true
+  validates :email, :fullname, presence: true
   validates :email, uniqueness: true
 end
 ```

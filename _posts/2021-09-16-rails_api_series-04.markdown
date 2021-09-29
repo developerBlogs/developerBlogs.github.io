@@ -69,7 +69,7 @@ If you have noticed in the previous part we had stored the password as a plain t
 
 The first thing we need to do is uncomment `gem 'bcrypt', '~> 3.1.7'` this guy in the gem file and then `bundle install`.
 
-In the `User` model we then need to add `has_secure_password` 
+In the `User` model we then need to add `has_secure_password` and also active model validation for password presence.
 
 ```ruby
 class User < ApplicationRecord
