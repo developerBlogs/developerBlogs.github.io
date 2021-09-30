@@ -5,7 +5,7 @@ date: '2021-09-16'
 categories: rails
 author: Sajan Basnet
 tags: rails programming
-toc: true
+toc: false
 permalink: '/blogs/rails_api_series/04'
 summary: This is the fourth part of Building Rails API series where we will be talking about securing our api.
 uniq_heading_id: '#post8'
@@ -57,36 +57,6 @@ Authorization: Bearer <token>
 ```
 6. Finally, server matches the encoded `jwt` by decoding it and response backs with all the available cats :smile_cat: ​:smirk_cat: :smiley_cat:.
 </div>
-</div>
-
-<div class="row article-container mb-4">
-<div class="col-lg-9 col-md-9 mx-auto pt-3">
-## Using BCrypt for password encryption
-
-If you have noticed in the previous part we had stored the password as a plain text in the databse which is not secure. We can use the <a href="https://github.com/bcrypt-ruby/bcrypt-ruby" target="_blank" noreferrer>bcrypt</a> gem to secure the password.
-
-*Note: If we had used the `devise` gem then we didn't have to worry about this, as devise itself can handle this.*
-
-The first thing we need to do is uncomment `gem 'bcrypt', '~> 3.1.7'` this guy in the gem file and then `bundle install`.
-
-In the `User` model we then need to add `has_secure_password` and also active model validation for password presence.
-
-```ruby
-class User < ApplicationRecord
-  has_secure_password
-  validates :email, :fullname, :password, presence: true
-  validates :email, uniqueness: true
-end
-```
-
-*Note: Your column name in users table must be `password_digest` and not `password`.*
-
-Now when ever a new user is created their password is saved as encrypted hash instead of plain text. Also one advantage of using bcrypt is that we can easily authenticate the user as well. Let's check this in the `rails c`.
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post8/bcrypt1.png">
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post8/bcrypt2.png">
-<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post8/bcrypt3.png">
-For more information on how Bcrypt works you can read <a href="https://emmanuelhayford.com/understanding-the-bcrypt-hashing-function-and-its-role-in-rails/" target="_blank" noreferrer>here</a>
-</div> 
 </div>
 
 <div class="row article-container mb-4">

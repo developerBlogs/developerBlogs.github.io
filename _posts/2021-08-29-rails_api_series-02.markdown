@@ -114,6 +114,36 @@ end
 
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">
+## Using BCrypt for password encryption
+
+If you have noticed above we have stored the password as a plain text in the databse which is not secure. We can use the <a href="https://github.com/bcrypt-ruby/bcrypt-ruby" target="_blank" noreferrer>bcrypt</a> gem to secure the password.
+
+*Note: If we had used the `devise` gem then we didn't have to worry about this, as devise itself can handle this.*
+
+The first thing we need to do is uncomment `gem 'bcrypt', '~> 3.1.7'` this guy in the gem file and then `bundle install`.
+
+In the `User` model we then need to add `has_secure_password` and also active model validation for password presence.
+
+```ruby
+class User < ApplicationRecord
+  has_secure_password
+  validates :email, :fullname, :password, presence: true
+  validates :email, uniqueness: true
+end
+```
+
+*Note: Your column name in users table must be `password_digest` and not `password`.*
+
+Now when ever a new user is created their password is saved as encrypted hash instead of plain text. Also one advantage of using bcrypt is that we can easily authenticate the user as well. Let's check this in the `rails c`.
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post8/bcrypt1.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post8/bcrypt2.png">
+<img class= "img-fluid img-thumbnail img-space" src="{{site.baseurl}}/assets/img/post8/bcrypt3.png">
+For more information on how Bcrypt works you can read <a href="https://emmanuelhayford.com/understanding-the-bcrypt-hashing-function-and-its-role-in-rails/" target="_blank" noreferrer>here</a>
+</div> 
+</div>
+
+<div class="row article-container mb-4">
+<div class="col-lg-9 col-md-9 mx-auto pt-3">
 ## Setting up Routes
 
 Let's edit the generated `route.rb` file to something like this
@@ -161,6 +191,7 @@ RSpec.describe User, type: :model do
   it { should validate_presence_of(:email) }
   it { should validate_presence_of(:fullname) }
   it {should validate_uniqueness_of(:email)}
+  it {should validate_presence_of(:password)}
 end
 ```
 
@@ -172,7 +203,7 @@ Our `user.rb` model will look something like this now
 
 ```ruby
 class User < ApplicationRecord
-  validates :email, :fullname, presence: true
+  validates :email, :fullname, :password, presence: true
   validates :email, uniqueness: true
 end
 ```
