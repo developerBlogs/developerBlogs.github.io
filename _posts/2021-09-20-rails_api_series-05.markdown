@@ -10,6 +10,7 @@ permalink: '/blogs/rails_api_series/05'
 summary: This is the fifth part of Building Rails API series where we will secure our API using JWT.
 uniq_heading_id: '#post9'
 uniq_body_id: 'post9'
+til: false
 ---
 
 <div class="row article-container mb-4">

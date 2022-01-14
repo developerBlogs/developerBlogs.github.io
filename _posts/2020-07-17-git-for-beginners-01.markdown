@@ -10,6 +10,7 @@ author: Sajan Basnet
 permalink: '/blogs/git/01'
 uniq_heading_id: '#post1'
 uniq_body_id: 'post1'
+til: false
 ---
 
 <div class="row article-container mb-4">

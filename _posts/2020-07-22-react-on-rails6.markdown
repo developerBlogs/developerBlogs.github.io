@@ -10,6 +10,7 @@ permalink: '/blogs/rails/01'
 summary: In this topic we will learn how to quicky setup our reactjs on rails 6 application and use react components to print Hello World in our rails app.
 uniq_heading_id: '#post3'
 uniq_body_id: 'post3'
+til: false
 ---
 <div class="row article-container mb-4">
 <div class="col-lg-9 col-md-9 mx-auto pt-3">

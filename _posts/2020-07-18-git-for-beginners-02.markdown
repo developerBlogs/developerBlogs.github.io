@@ -10,6 +10,7 @@ permalink: '/blogs/git/02'
 summary: In this chapter we will learn a step by step approach to know how to initialize Git in our project, use different git commands and how to push the our project into the Github.
 uniq_heading_id: '#post2'
 uniq_body_id: 'post2'
+til: false
 ---
 
 <div class="row article-container mb-4">

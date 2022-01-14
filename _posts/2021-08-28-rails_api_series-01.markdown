@@ -10,6 +10,7 @@ permalink: '/blogs/rails_api_series/01'
 summary: This is the first part of Rails API series where we will set up our rails application, rspec, and other necessary gems.
 uniq_heading_id: '#post5'
 uniq_body_id: 'post5'
+til: false
 ---
 
 <div class="row article-container mb-4">

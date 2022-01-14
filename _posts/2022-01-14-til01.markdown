@@ -1,0 +1,38 @@
+---
+layout: til
+title:  "Debuggins in Elixir"
+date: '2021-01-14'
+categories: til
+author: Sajan Basnet
+tags: til
+toc: true
+permalink: '/til/01'
+summary: 
+uniq_heading_id: '#til-01'
+uniq_body_id: 'til-01'
+til: true
+til_tags: elixir
+---
+
+<div class="">
+<hr>
+  Just like  `binding.pry` in ruby on rails we can use `IEx.pry` in eixir/phoenix.  
+  
+  ```ruby
+  def fun_name(arguments) do
+    require IEx; IEx.pry
+    ...
+  end
+  ```
+
+  In order for this to work we need to start the server through IEx. ```iex -S mix phoenix.server```
+
+  In order for this to work we need to start the server through IEx.
+
+
+  In order for this to work we need to start the server through IEx.
+
+
+  In order for this to work we need to start the server through IEx.
+<hr>
+</div>

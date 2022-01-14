@@ -10,6 +10,7 @@ permalink: '/blogs/rails_api_series/04'
 summary: This is the fourth part of Building Rails API series where we will be talking about securing our api.
 uniq_heading_id: '#post8'
 uniq_body_id: 'post8'
+til: false
 ---
 
 <div class="row article-container mb-4">

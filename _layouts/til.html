@@ -21,16 +21,9 @@
     font-size: 22px;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  stong {
-    font-size: 22px;
-    margin-top: 1em;
-    padding-top: 10px;
-    line-height: 1.25;
+  .til-header {
     color: #495057;
+    font-size: 3rem;
   }
 
   .foot-text {
@@ -103,33 +96,9 @@
 
 <!-- Main Content -->
 <div class="container" style="margin-bottom: 100px;">
-  <div class="row m-lg-3 p-3">
+  <div class="row m-lg-1 p-1">
     <div class="col-lg-12 col-md-12 mx-auto">
-      <a href={{"" | prepend: site.tag_url }} class="m-2 p-2 badge badge-light badge-pill">
-        <p class="badge-font text-capitalize">:ledger: all</p>
-      </a>
-      {% for tag in site.tags %}
-        <a href={{tag[0] | prepend: site.tag_url }} class="m-2 p-2 badge badge-light badge-pill">
-          {% if tag[0] == "git" %}
-            <p class="badge-font text-capitalize text-capitalize"><i class="devicon-git-plain colored icons"></i> {{ tag[0] }}</p>
-          {% elsif tag[0] == "programming" %}
-            <p class="badge-font text-capitalize">:computer: {{ tag[0] }}</p>
-          {% elsif tag[0] == "rails" %}
-            <p class="badge-font text-capitalize"><i class="devicon-rails-plain colored"></i> {{ tag[0] }}</p>
-          {% elsif tag[0] == "react" %}
-            <p class="badge-font text-capitalize"><i class="devicon-react-original colored"></i> {{ tag[0] }}</p>
-          {% elsif tag[0] == "flutter" %}
-            <p class="badge-font text-capitalize"><i class="devicon-flutter-plain colored"></i> {{ tag[0] }}</p>
-          {% elsif tag[0] == "security" %}
-            <p class="badge-font text-capitalize">:closed_lock_with_key: {{ tag[0] }}</p>
-          {% else %}
-            <p class="badge-font text-capitalize">{{ tag[0] }}</p>
-          {% endif %}
-        </a>
-      {% endfor %}
-      <a href={{"" | prepend: site.tag_url }} class="m-2 p-2 badge badge-light badge-pill">
-        <p class="badge-font text-capitalize">:man_student: TIL</p>
-      </a>
+      <h1 class="text-center til-header">TODAY I LEARN</h1>
     </div>
   </div>
   <div class="row">
