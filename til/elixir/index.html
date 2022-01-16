@@ -25,7 +25,7 @@ layout: til
       <div class="pt-3">
         {% for tag in post.til_tags %}
           {% assign tag_url = tag | prepend: "/til/" %}
-          <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light">{{ tag }}</a>
+          <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light"><i class="devicon-{{tag}}-plain p-1 colored"></i>{{ tag }}</a>
         {% endfor %}
       </div>
     </div>

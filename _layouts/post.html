@@ -99,7 +99,7 @@
             <div class="col-lg-12 col-md-12 mx-auto">
               {% for tag in page.tags %}
               {% assign tag_url = tag | prepend: "/blogs/" %}
-              <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light">{{ tag }}</a>
+              <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light"><i class="devicon-{{tag}}-plain p-1 colored"></i>{{ tag }}</a>
               {% endfor %}
             </div>
           </div>
@@ -141,7 +141,7 @@
       <div class="col-lg-9 col-md-9 mx-auto mb-4">
         {% for tag in page.tags %}
         {% assign tag_url = tag | prepend: "/blogs/" %}
-        <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light">{{ tag }}</a>
+        <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light"><i class="devicon-{{tag}}-plain p-1 colored"></i>{{ tag }}</a>
         {% endfor %}
       </div>
     </div>
