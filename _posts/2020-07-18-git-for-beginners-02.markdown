@@ -4,7 +4,7 @@ title: Getting Started With Git - Chapter Two
 date: 2020-07-18 17:51
 categories: blog
 author: Sajan Basnet
-tags: git programming
+tags: git rails programming
 toc: true
 permalink: '/blogs/git/02'
 summary: In this chapter we will learn a step by step approach to know how to initialize Git in our project, use different git commands and how to push the our project into the Github.

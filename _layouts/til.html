@@ -27,6 +27,31 @@
     font-size: 86%;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  stong {
+    font-size: 22px;
+    margin-top: 1em;
+    padding-top: 10px;
+    line-height: 1.25;
+    color: #495057;
+  }
+
+  .foot-text {
+    font-size: 18px;
+  }
+
+  .foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+
   @media only screen and (max-width: 768px) {
     p {
       font-size: 15px;
@@ -71,8 +96,8 @@
 <div class="nav" style="background-color: #1a222c;">
   <!-- <div class="overlay"></div> -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+    <div class="d-flex justify-content-around">
+      <div class="">
         <div class="site-heading">
           <a href={{ '/blogs' | prepend: site.baseurl }}>
             <h2 style="color: snow; margin: 0px; padding: 10px;">DevBlogs</h2>

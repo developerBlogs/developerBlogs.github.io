@@ -54,6 +54,10 @@
       font-size: 15px;
     }
 
+    .badge {
+    font-size: 60%;
+    }
+
     .badge-font {
       font-size: 15px;
       padding: 0px 0px;
@@ -93,8 +97,8 @@
 <div class="nav" style="background-color: #1a222c;">
   <!-- <div class="overlay"></div> -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+    <div class="d-flex justify-content-around">
+      <div class="">
         <div class="site-heading">
           <a href={{ '/blogs' | prepend: site.baseurl }}>
             <h2 style="color: snow; margin: 0px; padding: 10px;">DevBlogs</h2>
@@ -109,29 +113,50 @@
 <div class="container" style="margin-bottom: 100px;">
   <div class="row m-lg-3 p-3">
     <div class="col-lg-12 col-md-12 mx-auto">
-      <a href={{"" | prepend: site.tag_url }} class="m-2 p-2 badge badge-light badge-pill">
-        <p class="badge-font text-capitalize">:ledger: all</p>
-      </a>
+      <!-- <a href={{"" | prepend: site.tag_url }} class="m-2 p-2 badge badge-light badge-pill">
+        {% if page.path == "blogs/index.html"%}
+        {% assign active-tab_all = "badge-pill badge-info p-3 m-0" %}
+      {% endif %}
+        <p class="badge-font {{active-tab_all}} text-capitalize">:ledger: all</p>
+      </a> -->
       {% for tag in site.tags %}
         <a href={{tag[0] | prepend: site.tag_url }} class="m-2 p-2 badge badge-light badge-pill">
           {% if tag[0] == "git" %}
-            <p class="badge-font text-capitalize text-capitalize"><i class="devicon-git-plain colored icons"></i> {{ tag[0] }}</p>
+            {% if page.path == "blogs/git/index.html"%}
+              {% assign active-tab_git = "badge-pill badge-info p-3 m-0" %}
+            {% endif %}
+            <p class="badge-font {{active-tab_git}} text-capitalize"><i class="devicon-git-plain colored icons"></i> {{ tag[0] }}</p>
           {% elsif tag[0] == "programming" %}
-            <p class="badge-font text-capitalize">:computer: {{ tag[0] }}</p>
+            {% if page.path == "blogs/programming/index.html"%}
+              {% assign active-tab_pro = "badge-pill badge-info p-3 m-0" %}
+            {% endif %}
+            <p class="badge-font {{active-tab_pro}} text-capitalize">:computer: {{ tag[0] }}</p>
           {% elsif tag[0] == "rails" %}
-            <p class="badge-font text-capitalize"><i class="devicon-rails-plain colored"></i> {{ tag[0] }}</p>
+            {% if page.path == "blogs/rails/index.html"%}
+              {% assign active-tab_rails = "badge-pill badge-info p-3 m-0" %}
+            {% endif %}
+            <p class="badge-font {{active-tab_rails}} text-capitalize"><i class="devicon-rails-plain colored"></i> {{ tag[0] }}</p>
           {% elsif tag[0] == "react" %}
-            <p class="badge-font text-capitalize"><i class="devicon-react-original colored"></i> {{ tag[0] }}</p>
+            {% if page.path == "blogs/react/index.html"%}
+              {% assign active-tab_react = "badge-pill badge-info p-3 m-0" %}
+            {% endif %}
+            <p class="badge-font {{active-tab_react}} text-capitalize"><i class="devicon-react-original colored"></i> {{ tag[0] }}</p>
           {% elsif tag[0] == "flutter" %}
-            <p class="badge-font text-capitalize"><i class="devicon-flutter-plain colored"></i> {{ tag[0] }}</p>
+            {% if page.path == "blogs/flutter/index.html"%}
+              {% assign active-tab_fl = "badge-pill badge-info p-3 m-0" %}
+            {% endif %}
+            <p class="badge-font {{active-tab_fl}} text-capitalize"><i class="devicon-flutter-plain colored"></i> {{ tag[0] }}</p>
           {% elsif tag[0] == "security" %}
-            <p class="badge-font text-capitalize">:closed_lock_with_key: {{ tag[0] }}</p>
+            {% if page.path == "blogs/security/index.html"%}
+              {% assign active-tab_sec = "badge-pill badge-info p-3 m-0" %}
+            {% endif %}
+            <p class="badge-font {{active-tab_sec}} text-capitalize">:closed_lock_with_key: {{ tag[0] }}</p>
           {% else %}
             <p class="badge-font text-capitalize">{{ tag[0] }}</p>
           {% endif %}
         </a>
       {% endfor %}
-      <a href="https://developerblogs.github.io/til" class="m-2 p-2 badge badge-light badge-pill">
+      <a href="https://developerblogs.github.io/til" class="m-2 p-2 badge badge-light badge-pill border border-success">
         <p class="badge-font text-capitalize">:man_student: TIL</p>
       </a>
     </div>
