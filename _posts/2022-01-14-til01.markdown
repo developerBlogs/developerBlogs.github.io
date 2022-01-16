@@ -1,6 +1,6 @@
 ---
 layout: til
-title:  "Debuggins in Elixir"
+title:  "Debugging in Elixir"
 date: '2021-01-14'
 categories: til elixir
 author: Sajan Basnet
@@ -25,6 +25,8 @@ til_tags: elixir
   end
   ```
 
-  In order for this to work we need to start the server through IEx. ```iex -S mix phoenix.server```. Also like we type `exit` in `binding.pry` to continu next process we can type `respawn()` in elixir. 
+  In order for this to work we need to start the server through IEx  `iex -S mix phoenix.server`.
+  
+  Also like we type `exit` in `binding.pry` to continu next process we can type `respawn()` in elixir. 
 <hr>
 </div>
