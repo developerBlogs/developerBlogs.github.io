@@ -6,21 +6,6 @@
   href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
   rel='stylesheet' type='text/css'>
 <style>
-  p {
-    line-height: 1.5;
-    margin: 1px 0;
-    font-size: 24px;
-  }
-
-  .badge-font {
-    font-size: 18px;
-    padding: 0px 11px;
-  }
-
-  .badge-font>.icons {
-    font-size: 22px;
-  }
-
   .til-header {
     color: #495057;
     font-size: 3rem;
@@ -36,6 +21,10 @@
     left: 0;
     width: 100%;
     padding: 20px;
+  }
+
+  .badge {
+    font-size: 86%;
   }
 
   @media only screen and (max-width: 768px) {
@@ -120,9 +109,25 @@
   </div>
 </div>
 </div>
+
 <footer class="footer foot">
   <!-- <p>&copy; {{site.username}}</p> -->
   <span class="foot-text">Made with <span class="love"><i class="fa fa-heart" aria-hidden="true"></i></span>
     by <a href="https://developerblogs.github.io/">Sajan Basnet</a></span>
 </footer>
 {% include google-analytics.html %}
+
+<script type="text/javascript">
+  $(window).scroll(function () {
+    var a = 900;
+    var pos = $(window).scrollTop();
+    if (pos < a) {
+      $('#lg-float').hide();
+    }
+    else {
+      $('.float-toc').css({ "top": "1px", "visibility": 'visible' });
+      $('#lg-float').slideDown();
+    }
+  });
+</script>
+

@@ -1,8 +1,7 @@
 ---
 layout: til
 ---
-
-{% for post in site.categories.til %}
+{% for post in site.categories.elixir %}
   <div  class="post-preview">
     <div class="d-flex justify-content-between" id="accordion">
       <div class="small">
@@ -23,13 +22,10 @@ layout: til
       <span class="post-font">
         <p> {{ post.content }} </p>
       </span>
-      <div class="">
+      <div class="pt-3">
         {% for tag in post.til_tags %}
           {% assign tag_url = tag | prepend: "/til/" %}
-          <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light">
-            <i class="devicon-{{tag}}-plain p-1"></i>
-            {{ tag }}
-          </a>
+          <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light">{{ tag }}</a>
         {% endfor %}
       </div>
     </div>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Building API in Rails - Part 5"
 date: '2021-09-20'
-categories: rails
+categories: blog
 author: Sajan Basnet
 tags: rails programming
 toc: true

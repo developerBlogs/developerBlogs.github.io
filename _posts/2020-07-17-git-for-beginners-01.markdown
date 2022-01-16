@@ -2,7 +2,7 @@
 layout: post
 title:  "Getting Started With Git - Chapter One"
 date: '2020-07-17'
-categories: git 01
+categories: blog
 summary: In this chapter we will learn what is a version control system, what the heck is Git and why we should use it in our projects.
 toc: false
 tags: git programming

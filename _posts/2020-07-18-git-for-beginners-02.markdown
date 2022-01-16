@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started With Git - Chapter Two
 date: 2020-07-18 17:51
-categories: git chapter 02
+categories: blog
 author: Sajan Basnet
 tags: git programming
 toc: true

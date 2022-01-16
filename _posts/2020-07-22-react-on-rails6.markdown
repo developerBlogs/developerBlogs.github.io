@@ -2,7 +2,7 @@
 layout: post
 title: Quick React On Rails 6 SetUp
 date: 2020-07-22
-categories: rails react
+categories: blog
 author: Sajan Basnet
 tags: rails react programming
 toc: true
