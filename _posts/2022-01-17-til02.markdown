@@ -1,0 +1,38 @@
+---
+layout: til
+title:  "Client-Side debug for Phoenix LiveView "
+date: '2022-01-17'
+categories: til phoenix
+author: Sajan Basnet
+tags:
+toc: true
+permalink: '/til/02'
+summary: 
+uniq_heading_id: '#til-02'
+uniq_body_id: 'til-02'
+til: true
+til_tags: phoenix
+---
+
+<div class="">
+<hr>
+ If we see the `app.js` file in the phoenix project we can find the this line at the end. 
+ 
+ ```ruby
+ window.liveSocket = liveSocket
+ ```
+
+ What this line is doing is exposing the `liveSocket` instance on the window. So, now we can access the `liveSocket` on the **console** of our browser.
+
+ To enable the debugging and see what response we are getting when we make the request to Phoenix LiveView page from the browser, we can simply add this line in browser console.
+
+ ```ruby
+ liveSocket.enableDebug();
+ ```
+
+ And for disabling the debug we have 
+ ```ruby
+ liveSocket.disableDebug();
+ ```
+<hr>
+</div>

@@ -5,7 +5,7 @@ date: '2020-07-17'
 categories: blog
 summary: In this chapter we will learn what is a version control system, what the heck is Git and why we should use it in our projects.
 toc: false
-tags: git rails programming
+tags: git programming
 author: Sajan Basnet
 permalink: '/blogs/git/01'
 uniq_heading_id: '#post1'

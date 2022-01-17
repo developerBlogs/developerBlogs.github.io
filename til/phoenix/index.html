@@ -1,13 +1,12 @@
 ---
 layout: til
 ---
-
-{% for post in site.categories.til %}
+{% for post in site.categories.phoenix %}
   <div  class="post-preview">
     <div class="d-flex justify-content-between" id="accordion">
       <div class="small">
         <div>
-          <span class="post_title_in_list title-color">
+          <span class="post_title_in_list">
             {{ post.title }}
           </span>
         </div>
@@ -23,18 +22,11 @@ layout: til
       <span class="post-font">
         <p> {{ post.content }} </p>
       </span>
-    </div>
-    <div class = "d-flex mt-2 justify-content-between" >
-      <div class="">
+      <div class="pt-3">
         {% for tag in post.til_tags %}
-        {% assign tag_url = tag | prepend: "/til/" %}
-        <a href={{tag_url | prepend: site.baseurl }} class="p-2 badge badge-light"><i class="devicon-{{tag}}-plain p-1 colored"></i>
-          {{ tag }}
-        </a>
+          {% assign tag_url = tag | prepend: "/til/" %}
+          <a href={{tag_url | prepend: site.baseurl }} class="mr-2 p-2 badge badge-light"><i class="devicon-{{tag}}-plain p-1 colored"></i>{{ tag }}</a>
         {% endfor %}
-      </div>
-      <div class = "post-meta posted-by">
-          {{ post.date | date_to_string }}
       </div>
     </div>
   </div>
