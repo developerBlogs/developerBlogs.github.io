@@ -128,8 +128,6 @@ In the `User` model we then need to add `has_secure_password` and also active mo
 ```ruby
 class User < ApplicationRecord
   has_secure_password
-  validates :email, :fullname, :password_digest, presence: true
-  validates :email, uniqueness: true
 end
 ```
 
