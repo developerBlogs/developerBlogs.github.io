@@ -44,7 +44,7 @@ Make sure that you have
    
    For node, we can install it with <a href="https://github.com/tj/n" rel="noreferrer" target="_blank">**nvm** </a>. I love using <a href="https://github.com/tj/n" rel="noreferrer" target="_blank">**n** </a> as node version manager.
 
-   In Rails 7 <a href="https://github.com/rails/importmap-rails" rel="noreferrer" target="_blank"> Import Map</a> is going to be the new and default way of importing javascript assets into the rails application so we might not even need node ​:man_shrugging
+   In Rails 7 <a href="https://github.com/rails/importmap-rails" rel="noreferrer" target="_blank"> Import Map</a> is going to be the new and default way of importing javascript assets into the rails application so we might not even need node ​:man_shrugging:
 6. Rails installed.
    Open the terminal and enter `gem install rails`
 7. Check your rails version with the `rails version` command. For this series, we will be using the **Rails version 6.1.4**
