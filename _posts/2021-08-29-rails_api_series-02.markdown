@@ -7,7 +7,7 @@ author: Sajan Basnet
 tags: rails programming
 toc: true
 permalink: '/blogs/rails_api_series/02'
-summary: This is the second part of Building Rails API series where we will build our first api endpoints while following some TDD.
+summary: This is the second part of Building Rails API series where we will build our <strong class="text-info">first api endpoints</strong> while following some <strong class="text-info">TDD</strong>.
 uniq_heading_id: '#post6'
 uniq_body_id: 'post6'
 til: false

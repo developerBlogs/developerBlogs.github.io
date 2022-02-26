@@ -7,7 +7,7 @@ author: Sajan Basnet
 tags: rails programming
 toc: false
 permalink: '/blogs/rails_api_series/01'
-summary: This is the first part of Rails API series where we will set up our rails application, rspec, and other necessary gems.
+summary: This is the first part of Rails API series where we will <strong class="text-info">set up our rails application</strong>, <strong class="text-info">rspec</strong>, and other necessary <strong class="text-info">gems</strong>.
 uniq_heading_id: '#post5'
 uniq_body_id: 'post5'
 til: false

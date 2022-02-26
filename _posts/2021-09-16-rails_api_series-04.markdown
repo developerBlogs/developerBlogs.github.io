@@ -7,7 +7,7 @@ author: Sajan Basnet
 tags: rails programming
 toc: false
 permalink: '/blogs/rails_api_series/04'
-summary: This is the fourth part of Building Rails API series where we will be talking about securing our api.
+summary: This is the fourth part of Building Rails API series where we will be talking about <strong class="text-info">securing our api</strong>.
 uniq_heading_id: '#post8'
 uniq_body_id: 'post8'
 til: false

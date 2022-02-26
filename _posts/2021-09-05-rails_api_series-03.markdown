@@ -7,7 +7,7 @@ author: Sajan Basnet
 tags: rails programming
 toc: false
 permalink: '/blogs/rails_api_series/03'
-summary: This is the third part of Building Rails API series where we will serialize the API resources.
+summary: This is the third part of Building Rails API series where we will <strong class="text-info">serialize the API resources</strong>.
 uniq_heading_id: '#post7'
 uniq_body_id: 'post7'
 til: false
