@@ -52,6 +52,7 @@ Now after we have added the necessary we just need to run the install generator 
 rails g rswag:install
 ```
 This will create some initializers and helper files as
+This will create some initializers and helper files as
 
 ```ruby
 1. spec/swagger_helper.rb

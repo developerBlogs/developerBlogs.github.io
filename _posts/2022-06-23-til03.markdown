@@ -1,0 +1,55 @@
+---
+layout: til
+title:  "Import Maps in Rails 7 and Adding Bootstrap 5"
+date: '2022-06-23'
+categories: til rails
+author: Sajan Basnet
+tags:
+toc: true
+permalink: '/til/03'
+summary: 
+uniq_heading_id: '#til-03'
+uniq_body_id: 'til-03'
+til: true
+til_tags: rails
+---
+
+<div class="">
+<hr>
+With rails 7.0+ **import maps** comes as default which is a new way of handling JavaScript assets.  
+
+[Import maps](https://github.com/WICG/import-maps) let you import JavaScript modules using logical names that map to versioned/digested files – directly from the browser. So you can [build modern JavaScript applications using JavaScript libraries made for ES modules (ESM) without the need for transpiling or bundling](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755). This frees you from needing Webpack, Yarn, npm, or any other part of the JavaScript toolchain. All you need is the asset pipeline that's already included in Rails. [source](https://github.com/rails/importmap-rails#importmap-for-rails)
+<hr>
+</div>
+
+<div class="">
+### Adding Bootstrap
+
+**Step 1**: Add `gem 'bootstrap', '~> 5.1.3'` gem in the Gemfile, also uncomment the `gem "sassc-rails"` and run `bundle install`
+
+**Step 2**: Rename the file `assets/stylesheets/application.css` to `assets/stylesheets/application.scss` and in the file add
+```scss
+@import "bootstrap";
+```
+**Step 3**: In the terminal run `rails assets:precompile`
+
+**Step 4**: Add this inside  `config/initializers/assets.rb` for precompiling the bootstrap.min.js
+```ruby
+Rails.application.config.assets.precompile += %w( bootstrap.min.js popper.js )
+```
+**Step 5**: In the terminal run the command below to pin the compiled assets
+```ruby
+bin/importmap pin bootstrap --download
+```
+**Step 6**: Inside `config/importmap.rb` update the pinned assets as 
+```ruby
+pin "popper", to: 'popper.js', preload: true
+pin "bootstrap", to: 'bootstrap.min.js', preload: true
+```
+**Step 7**:  In file `app/javascript/application.js`add bootstrap
+```ruby
+import "popper"
+import "bootstrap"
+```
+<hr>
+<div/>
