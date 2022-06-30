@@ -1,0 +1,67 @@
+---
+layout: til
+title:  "Turbo Drive in Rails 7"
+date: '2022-06-30'
+categories: til rails
+author: Sajan Basnet
+tags:
+toc: true
+permalink: '/til/04'
+summary: 
+uniq_heading_id: '#til-04'
+uniq_body_id: 'til-04'
+til: true
+til_tags: rails
+---
+
+<div class="">
+<hr>
+With rails 7.0+ Turbo Drive gets installed by default. We can see in the Gemfile as
+
+```ruby
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+gem 'turbo-rails'
+```
+
+And in the `application.js` as
+```ruby
+// Entry point for the build script in your package.json
+import "@hotwired/turbo-rails"
+import "./controllers"
+```
+</div>
+
+<div class="">
+<hr>
+  Before we had `Turbolink` which was used to make the navigation of web applications faster by intercepting the click on `links`. Now we have Turbo Drive which intercepts the `link` click and also the `form` submissions so that it does not completely refresh the web application when we navigate to a page or submit the form.
+
+  When we navigate to a web page through a click of a link, Turbo Drive will override the HTML request to an AJAX request and replaces only the `<body>` of the page with the changes. The `<head>` will remain unchanged thus we don't need load the `css bundle`, `js bundle`, `fonts`, and so on. It does the same thing with the `form` submission as well i.e by transforming the HTML request to an AJAX request during form submission.
+</div>
+
+<div class="">
+<hr>
+### Disabling the Turbo Drive
+
+1. Disabling in link
+
+   We need to add the data-attribute `data-turbo="false"`
+   ```ruby
+     <%=link_to "Click here", data: { turbo: false } %>
+   ```
+2. Disabling in form submission
+
+   ```ruby
+     <%= form_with model: @article, html: {data: { turbo: false } } do |form| %>
+        Form contents
+     <% end %>
+   ```
+
+3. Disabling for whole application
+
+    In ```application.js``` file we need to add this
+    ```ruby
+      import { Turbo } from "@hotwired/turbo-rails"
+      Turbo.session.drive = false
+    ```
+<hr>
+</div>
