@@ -1,0 +1,80 @@
+---
+layout: til
+title:  "Turbo Frame in Rails 7"
+date: '2022-09-15'
+categories: til rails
+author: Sajan Basnet
+tags:
+toc: true
+permalink: '/til/05'
+summary: 
+uniq_heading_id: '#til-05'
+uniq_body_id: 'til-05'
+til: true
+til_tags: rails
+---
+
+<div class="">
+<hr>
+Turbo frames are similar to react components. A portions of a of webpage can be defined as an turbo frame and after a request is made only the this portion can be replaced instead of a complete page refresh.
+</div>
+
+<div class="">
+<hr>
+### Creating a turbo frame
+
+   We can create a turbo frame by using the rails helper `turbo_frame_tag` and wrapping the portion of the webpage inside it. Also the turbo_frame_tag will require an id for identifying the frame.
+
+   ```ruby
+     <%# index.html.erb %>
+     <div>
+       <h1>List of Employees</h1>
+       <@employees.each do |emp|>
+         <%= turbo_frame_tag emp do %>
+           <p><%= emp.full_name %>
+           <%= link_to "Edit Employee", edit_employee_path(employee) %>
+         <% end %>
+       <%end%>
+     </div>
+   ```
+
+### Replacing the portion with new content
+
+   When the link inside the turbo frame is clicked then the target page (for our case edit employee page) should also contain the matching id. After the request the content inside the turbo frame in the source page will be replaced with the target page content.
+
+   ```ruby
+      <%# edit.html.erb %>
+      <%= turbo_frame_tag "first_turbo_frame" do %>
+        <%= render "form", quote: @quote %>
+      <% end %>
+   ```
+
+### Replacing the whole page with new content
+
+   We can use `data-turbo-frame="_top"` which will replace the whole source page with the target page content.
+
+   ```ruby
+     <%= link_to "Edit Employee", edit_employee_path(employee), data: { turbo_frame: "_top" }%>
+   ```
+
+### Replacting the turbo frame with an outside link.
+   
+   We may have some links that can be outside of the turbo frame we define. But by using the `data-turbo-frame` data attribute and giving it the same id of the turbo frame we can replace the content of it.
+
+   ```ruby
+     <%# source_page.html.erb %>
+     <%= link_to "Some page", some_page_path, data: { turbo_frame: "replace-here" } %>
+
+     <%= turbo_frame_tag "my_frame" do %>
+       ...replace here
+     <%end%>
+   ```
+
+   ```ruby
+     <%# some_page.html.erb %>
+     <%= turbo_frame_tag "my_frame" do %>
+       ...replace with this
+     <%end%>
+   ```
+<hr>
+</div>

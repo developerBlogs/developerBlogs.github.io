@@ -1,7 +1,7 @@
 ---
 layout: til
 title:  "Turbo Drive in Rails 7"
-date: '2022-06-30'
+date: '2022-09-01'
 categories: til rails
 author: Sajan Basnet
 tags:
@@ -16,7 +16,7 @@ til_tags: rails
 
 <div class="">
 <hr>
-With rails 7.0+ Turbo Drive gets installed by default. We can see in the Gemfile as
+With rails 7.0+ [Turbo Drive](https://turbo.hotwired.dev/handbook/drive) gets installed by default. We can see in the Gemfile as
 
 ```ruby
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
