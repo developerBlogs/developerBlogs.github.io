@@ -1,0 +1,51 @@
+---
+layout: til
+title:  "ActiveModel::Model in Rails"
+date: '2022-10-25'
+categories: til rails
+author: Sajan Basnet
+tags:
+toc: true
+permalink: '/til/06'
+summary: 
+uniq_heading_id: '#til-06'
+uniq_body_id: 'til-06'
+til: true
+til_tags: rails
+---
+
+<div class="">
+<hr>
+ActiveModel::Model is useful when we come across a task where we want to create a model without a database table. It was useful for me while creating a multipart form feature.
+
+Lets say we need a model `Actor` with a name
+
+```ruby
+  class Actor
+    include ActiveModel::Model
+    attr_accessor :name
+    validates :name, presence: true
+  end
+
+  irb> actor = Actor.new(name: 'Sajan')
+  irb> actor.name #sajan
+  irb> actor.valid? #true
+```
+
+If we want to declare the attribute type then we can use `ActiveModel::Attributes`
+
+```ruby
+  class Actor
+    include ActiveModel::Model
+    include ActiveModel::Attributes
+    attribute :name, :string, default: ""
+    attribute :awards, array: true, default: []
+  end
+
+  irb> actor = Actor.new(name: 'Sajan', awards: ['Academy', 'Nobel'])
+  irb> actor.name #sajan
+  irb> actor.awards # ['Academy', 'Nobel']
+  irb> actor.valid? #true
+```
+<hr>
+</div>
