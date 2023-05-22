@@ -23,7 +23,7 @@ With rails 7.0+ [Turbo Drive](https://turbo.hotwired.dev/handbook/drive) gets in
 gem 'turbo-rails'
 ```
 
-And in the `application.js` as
+And in the `application.js` there are some default imports
 ```ruby
 // Entry point for the build script in your package.json
 import "@hotwired/turbo-rails"
@@ -35,7 +35,23 @@ import "./controllers"
 <hr>
   Before we had `Turbolink` which was used to make the navigation of web applications faster by intercepting the click on `links`. Now we have Turbo Drive which intercepts the `link` click and also the `form` submissions so that it does not completely refresh the web application when we navigate to a page or submit the form.
 
-  When we navigate to a web page through a click of a link, Turbo Drive will override the HTML request to an AJAX request and replaces only the `<body>` of the page with the changes. The `<head>` will remain unchanged thus we don't need load the `css bundle`, `js bundle`, `fonts`, and so on. It does the same thing with the `form` submission as well i.e by transforming the HTML request to an AJAX request during form submission.
+  When we navigate to a web page through a click of a link, Turbo Drive will override the HTML request to an AJAX request and replaces only the `<body>` of the page with the changes. The `<head>` will remain unchanged thus we don't need load the `css bundle`, `js bundle`, `fonts`, and so on. It does the same thing with the `form` submission as well i.e by transforming the HTML request to an AJAX request during form submission. Turbo Drive will only force a page reload if the assets have been changed which is tracked by the `"data-turbo-track": "reload"` in the `application.html.erb`
+</div>
+
+<div class="">
+<hr>
+When the navigation or form submission takes place under the action of Turbo Drive we won't be able to see the native load progress indication in the web browser. Instead we will see a css-based progress indicator bar. In order to see it properly we can add this line in the `app/javascript/application.js` file
+```ruby
+Turbo.setProgressBarDelay(1)
+```
+
+Also to chanage the styles of the progress bar we can add the class as
+```css
+.turbo-progress-bar { 
+  height: 12px;
+  background-color: red;
+ }
+```
 </div>
 
 <div class="">
