@@ -6,10 +6,10 @@ categories: til rails
 author: Sajan Basnet
 tags:
 toc: true
-permalink: '/til/06'
+permalink: '/til/07'
 summary: 
-uniq_heading_id: '#til-06'
-uniq_body_id: 'til-06'
+uniq_heading_id: '#til-07'
+uniq_body_id: 'til-07'
 til: true
 til_tags: rails
 ---
