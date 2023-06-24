@@ -1,7 +1,7 @@
 ---
 layout: til
 title:  "Turbo Stream in Rails 7"
-date: '2022-09-15'
+date: '2022-09-16'
 categories: til rails
 author: Sajan Basnet
 tags:

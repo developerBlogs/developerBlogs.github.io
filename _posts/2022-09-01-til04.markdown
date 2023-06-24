@@ -1,7 +1,7 @@
 ---
 layout: til
 title:  "Turbo Drive in Rails 7"
-date: '2022-09-01'
+date: '2022-09-14'
 categories: til rails
 author: Sajan Basnet
 tags:

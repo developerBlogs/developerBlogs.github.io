@@ -1,0 +1,33 @@
+---
+layout: til
+title:  "Enable Stimulus Debug Mode"
+date: '2023-06-20'
+categories: til rails
+author: Sajan Basnet
+tags:
+toc: true
+permalink: '/til/08'
+summary: 
+uniq_heading_id: '#til-08'
+uniq_body_id: 'til-08'
+til: true
+til_tags: rails
+---
+
+<div class="">
+<hr>
+Inorder to see the behaviour of the stimulus controller we can turn on the debugger mode.
+
+```ruby
+  // app/javascript/controllers/index.js
+  import { Application } from "@hotwired/stimulus";
+
+  const application = Application.start();
+  application.debug = true;
+```
+
+Or in the browser console we can do something like
+```ruby
+  window.Stimulus.debug = true
+```
+</div>
