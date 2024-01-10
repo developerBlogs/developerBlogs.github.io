@@ -16,7 +16,7 @@ til_tags: rails
 
 <div class="">
 <hr>
-When working with Turbo Frames, we can only update a single DOM element at a time that matches the DOM ID. However, what if we need to update multiple DOM elements with a single request? In such cases, Turbo Stream comes to the rescue.
+When working with Turbo Frames, we can only update a single frame at a time that matches the DOM ID by directly interacting with it. However, what if we need to update any part of the page with a single request? In such cases, Turbo Stream comes to the rescue. Turbo Streams let us change any part of the page in response to updates sent over a WebSocket connection, SSE or other transport.
 
 </div>
 
