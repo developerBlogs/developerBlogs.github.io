@@ -7,7 +7,7 @@ author: Sajan Basnet
 tags:
 toc: true
 permalink: '/til/05'
-summary: 
+summary:
 uniq_heading_id: '#til-05'
 uniq_body_id: 'til-05'
 til: true
@@ -40,12 +40,14 @@ Turbo frames are similar to react components. A portions of a of webpage can be 
 
 ### Replacing the portion with new content
 
-   When the link inside the turbo frame is clicked then the target page (for our case edit employee page) should also contain the matching id. After the request the content inside the turbo frame in the source page will be replaced with the target page content.
+   When the link inside the turbo frame is clicked then the target page (for our case edit employee page) should also contain the matching id. We are using the `employee_id` in our case which will look like `employee_1`. We can use the dom_id also ` <%= turbo_frame_tag dom_id(emp) do %> ` but since emp is active record modal we dont need to add it.
+
+   After the request the content inside the turbo frame in the source page will be replaced with the target page content. In our case the list detail of the employee will be replaced with a form.
 
    ```ruby
       <%# edit.html.erb %>
-      <%= turbo_frame_tag "first_turbo_frame" do %>
-        <%= render "form", quote: @quote %>
+      <%= turbo_frame_tag @emp do %>
+        <%= render "form", emp: @emp %>
       <% end %>
    ```
 
@@ -58,21 +60,21 @@ Turbo frames are similar to react components. A portions of a of webpage can be 
    ```
 
 ### Replacting the turbo frame with an outside link.
-   
+
    We may have some links that can be outside of the turbo frame we define. But by using the `data-turbo-frame` data attribute and giving it the same id of the turbo frame we can replace the content of it.
 
    ```ruby
      <%# source_page.html.erb %>
-     <%= link_to "Some page", some_page_path, data: { turbo_frame: "replace-here" } %>
+     <%= link_to "Some page", some_page_path, data: { turbo_frame: "replace_here" } %>
 
-     <%= turbo_frame_tag "my_frame" do %>
+     <%= turbo_frame_tag "replace_here" do %>
        ...replace here
      <%end%>
    ```
 
    ```ruby
      <%# some_page.html.erb %>
-     <%= turbo_frame_tag "my_frame" do %>
+     <%= turbo_frame_tag "replace_here" do %>
        ...replace with this
      <%end%>
    ```
